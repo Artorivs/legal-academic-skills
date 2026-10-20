@@ -1,17 +1,27 @@
 {
-  "name": "legal-academic-agent-skills",
-  "version": "2.0.0",
-  "description": "Modular workflows for rigorous academic legal research, source verification, argument development, drafting, peer review, and citation auditing.",
-  "author": {
-    "name": "Artorivs"
-  },
-  "repository": "https://github.com/Artorivs/legal-academic-agent-skills",
-  "license": "GPL-3.0-only",
-  "keywords": [
-    "legal-academia",
-    "legal-research",
-    "academic-writing",
-    "source-verification",
-    "agent-skills"
-  ]
+    "schema_version": "1.0",
+    "name": "legal-academic-skills",
+    "version": "0.1.1",
+    "description": "Modular workflows for rigorous academic legal research, source verification, argument development, drafting, peer review, and citation auditing.",
+    "author": {
+        "name": "Artorivs"
+    },
+    "repository": "https://github.com/Artorivs/legal-academic-skills",
+    "license": "GPL-3.0-only",
+    "keywords": [
+        "legal-academia",
+        "legal-research",
+        "academic-writing",
+        "source-verification",
+        "agent-skills"
+    ],
+    "entrypoints": {
+        "claude_code": ".claude-plugin/plugin.json",
+        "agent_skills": ".agents/skills",
+        "project_instructions": "project-import/PROJECT_INSTRUCTIONS.md",
+        "project_bundle": "project-import/PROJECT_UPLOAD_BUNDLE.md"
+    },
+    "skill_source": "skills/",
+    "install_script": "scripts/install-agent-skills.sh",
+    "note": "Repository-specific metadata only; not a standard recognized by Claude Code."
 }

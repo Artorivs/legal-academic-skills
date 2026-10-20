@@ -4,7 +4,7 @@ This archive contains **additional** repository files; it intentionally does not
 
 ## Merge into your repository
 
-Extract this archive at the root of `legal-academic-agent-skills`, preserving directory structure. Review each file before committing.
+Extract this archive at the root of `legal-academic-skills`, preserving directory structure. Review each file before committing.
 
 ## Contents
 
