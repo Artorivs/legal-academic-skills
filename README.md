@@ -1,31 +1,65 @@
-# Legal Academic Agent Skills
+# Legal Academic Skills
 
-A model-agnostic skill kit for academic legal research and writing, with modular `SKILL.md` workflows and a consolidated upload bundle for AI Projects that do not natively load skills.
+A skill kit for academic legal research and writing. It ships as a **Claude Code plugin**, as portable **Agent Skills** (`SKILL.md` workflows) for other runtimes, and as a consolidated **upload bundle** for AI Projects that do not natively load skills.
 
 The kit is designed for administrative law, human rights, law and society, and public international law. It also supports doctrinal, comparative, theoretical, historical, empirical, socio-legal, and interdisciplinary work.
 
-## Design reference
+> **Human responsibility.** These workflows help structure research, drafting, and checking. They do not certify that any output is legally or academically correct. Verify every authority, quotation, and proposition yourself before relying on it.
 
-The kit takes inspiration from the composable, task-specific skill approach in [mattpocock/skills](https://github.com/mattpocock/skills/tree/main): use a small skill for a clearly defined task instead of loading one giant procedure for every request. This repository is independently authored for academic legal work. It is not affiliated with Matt Pocock or his repository, and it does not copy their individual skill texts.
+## Choose your install route
 
-Individual skills follow the open [Agent Skills format](https://agentskills.io/specification): each skill is a directory whose entry point is `SKILL.md`, with required `name` and `description` YAML frontmatter and Markdown instructions. Runtime support varies by platform; the format does not make every chat project auto-load skills.
+### A. Claude Code plugin (recommended)
 
-## Choose your import route
+In Claude Code, add this repository as a marketplace and install the plugin:
 
-### A. AI Project upload (ChatGPT Projects, Claude Projects, Gemini or similar)
+```zsh
+/plugin marketplace add Artorivs/legal-academic-skills
+/plugin install legal-academic-skills@legal-academic-skills
+```
+
+Skills are namespaced by the plugin, for example `legal-academic-skills:citation-audit`. The plugin also provides two agents, `legal-manuscript-editor` and `legal-research-reviewer`.
+
+To try it from a local clone without installing:
+
+```zsh
+git clone https://github.com/Artorivs/legal-academic-skills.git
+claude --plugin-dir ./legal-academic-skills
+```
+
+Claude Cowork and the Claude desktop app also support plugins; check Anthropic's current documentation for how to add a GitHub marketplace or upload a zip of this repository.
+
+### B. Native Agent Skills (other runtimes)
+
+Each skill is a directory whose entry point is `SKILL.md`, following the open [Agent Skills format](https://agentskills.io/specification). For an agent or runtime that follows this convention, copy the chosen skill directories from `skills/` into that runtime's documented skill directory (for example a project-local `.agents/skills/` or `.claude/skills/` location). Keep each skill directory intact.
+
+- `skills/` is the canonical source.
+- `.agents/skills` is a symbolic link to `../skills`, provided for tools that discover skills there. On Windows, Git may check it out as a plain text file unless symlink support is enabled; copy from `skills/` instead if that happens.
+- `scripts/install-agent-skills.sh` is a helper for copying skills. Inspect it before running.
+
+Runtime support varies. See `docs/compatibility.md` for notes.
+
+### C. AI Project upload (ChatGPT Projects, Claude Projects, Gemini, or similar)
 
 1. Add `project-import/PROJECT_INSTRUCTIONS.md` to the project's instruction field, if the platform offers one.
 2. Upload `project-import/PROJECT_UPLOAD_BUNDLE.md` as the central project reference. It contains the project-wide rules, all workflows, templates, and quick prompts in one Markdown file.
 3. For a long project, also upload the relevant working templates from `templates/` and maintain them as project files.
 4. Start with a prompt from `project-import/QUICK_PROMPTS.md`.
 
-If the platform has file limits, upload the instruction file and only the relevant workflow/template documents. A generic AI Project may not automatically execute a workflow because it is present in the uploaded bundle; invoke the workflow explicitly by name.
+If the platform has file limits, upload the instruction file and only the relevant workflow and template documents. A generic AI Project may not execute a workflow just because it is present in the bundle; invoke the workflow explicitly by name.
 
-### B. Native Agent Skills
+## What's included
 
-The `skills/` directory contains independently loadable skills. For an agent/runtime that follows the Agent Skills convention, copy the chosen skill directories to its documented skill directory (for example, a project-local `.claude/skills/` or `.agents/skills/` location, depending on the agent). Keep each skill directory intact. Use the platform's current documentation for the exact install path.
-
-For example, in a Claude Code project, copy selected folders under `.claude/skills/`; for Codex, use the current Codex skill discovery path documented for your installed version. This ZIP itself is not a registered platform plugin and cannot force a runtime to discover skills.
+| Path | Contents |
+| --- | --- |
+| `skills/` | 15 independently loadable workflows (full index: [`SKILL_INDEX.md`](SKILL_INDEX.md)) |
+| `agents/` | `legal-manuscript-editor`, `legal-research-reviewer` |
+| `templates/` | Registers, argument map, source ledger, project brief, handover |
+| `examples/` | Illustrative claim-evidence matrix and research log |
+| `evals/` | Human-review cases: citation fidelity, adverse authority, manuscript integrity |
+| `references/` | Legal research quality standards |
+| `project-import/` | Instructions, upload bundle, and quick prompts for AI Projects |
+| `docs/compatibility.md` | Platform and packaging notes |
+| `scripts/`, `tests/` | Validator, installer helper, and structure tests |
 
 ## Included workflows
 
@@ -49,20 +83,30 @@ For example, in a Claude Code project, copy selected folders under `.claude/skil
 
 - **Small task:** project instructions plus one relevant workflow.
 - **Article drafting:** project instructions, project brief, argument map, claim/source ledger, and `academic-legal-drafting`.
-- **Critical revision:** add `adversarial-writing-cycle` and its log; use a separate reviewer conversation/model where practical.
+- **Critical revision:** add `adversarial-writing-cycle` and its log; use a separate reviewer conversation or model where practical.
 - **Long project:** keep a `HANDOVER.md`, stable IDs, decision/correction/claim/source registers, and refresh the handover at the end of each substantial session.
 - **Submission:** use `citation-audit` and `final-manuscript-audit`, but retain human responsibility for legal correctness and final judgment.
 
 ## Validation
 
-Run:
+From the repository root:
 
 ```bash
+claude plugin validate ./
 python3 scripts/validate_skills.py
+python3 -m unittest discover -s tests -v
 ```
 
-The validator checks skill folder names against frontmatter and confirms every skill has a description. It is a structural check, not a proof of academic or legal correctness.
+`claude plugin validate` checks the plugin and marketplace manifests. The Python validator checks skill folder names against frontmatter and confirms every skill has a description. These are structural checks, not proof of academic or legal correctness.
 
-## Public release and licence
+## Design reference
 
-This package does not include a licence grant yet. Before publishing, choose and add a licence that matches the intended reuse permissions. See `LICENSING.md`. Cite the upstream design reference in attribution/documentation, but do not imply endorsement or affiliation.
+The kit takes inspiration from the composable, task-specific skill approach in [mattpocock/skills](https://github.com/mattpocock/skills/tree/main): use a small skill for a clearly defined task instead of loading one giant procedure for every request. This repository is independently authored for academic legal work. It is not affiliated with Matt Pocock or his repository, and it does not copy their individual skill texts. See [`REFERENCES.md`](REFERENCES.md).
+
+## Licence
+
+Released under the GNU General Public License v3.0 only (`GPL-3.0-only`). See [`LICENSE`](LICENSE). Cite the upstream design reference in attribution and documentation, and do not imply endorsement or affiliation.
+
+## Contributing and security
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for contribution guidelines and [`SECURITY.md`](SECURITY.md) for how to report a concern.
