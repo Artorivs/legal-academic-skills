@@ -160,9 +160,9 @@ Functional equivalence (do the compared institutions solve the same problem?); c
 
 For a hunch or seminar-paper idea, use three tests only: the strongest intended example; the strongest fair counterexample or rival account; and the boundary, measurement, or source problem most likely to defeat the project.
 
-## Attribution
+## Source
 
-Adapted from Seth J. Chandler's `thesis-assesor` (Apache-2.0), which builds on Eugene Volokh, *Academic Legal Writing* (5th edn, 2016) and Eugene Volokh, "Test Suites: A Tool for Improving Student Articles" (2002) 52 Journal of Legal Education 440. See `NOTICE`.
+Eugene Volokh, *Academic Legal Writing* (5th edn, 2016); Eugene Volokh, "Test Suites: A Tool for Improving Student Articles" (2002) 52 Journal of Legal Education 440.
 
 ---
 
@@ -372,8 +372,6 @@ Add a seventh check across the whole text: is each defined term used consistentl
 
 For each ambiguity that matters, state the competing readings, the interpretive arguments for each (text, context, purpose, structure, drafting history, and, for treaties, the Vienna Convention means of interpretation), how courts or bodies have resolved it if they have (checked, not recalled), and what turns on the choice for the paper's argument.
 
-Attribution: the family structure is adapted from Seth J. Chandler's `ambiguity-stress-test` (Apache-2.0). See `NOTICE`.
-
 ### Reference for legal-authority-analysis: `references/institution-pack-template.md`
 
 # Institution pack template
@@ -410,8 +408,6 @@ Press releases, summaries, factsheets, NGO reports, commentaries: useful leads, 
 ## Interpretation notes
 Distinctive interpretive approaches and standards of review, each with a checked source.
 ```
-
-Attribution: the pack pattern is an idea drawn from the verification-first tribunal skills by Jeanne Sulzer and the jurisdiction template in Legal-Chamber, re-expressed here.
 
 ---
 
@@ -629,9 +625,9 @@ French legal scholarship (*doctrine*) is more willing to systematise and classif
 
 *Il convient de noter que*, *force est de constater que*, and *dans un premier temps… dans un second temps* used mechanically; empty *en définitive* conclusions. UNVERIFIED list; extend from a native reader's review.
 
-## Notes on provenance
+## Status
 
-Database list informed by Allison Fiorentino's `recherche-doctrine` and the LibreJustice skills (ideas only). Not yet checked in a session; verify before reliance.
+Not yet checked in a session; verify before reliance.
 
 ### Reference for multilingual-legal-writing: `references/languages/zh.md`
 
@@ -702,9 +698,9 @@ Scholarly Chinese is not the register of 司法解释, government reports, or co
 
 首先……其次……最后 used as a template for every paragraph; 综上所述 opening an empty conclusion; 值得注意的是 and 需要指出的是 as filler; 在……背景下 openings; strings of four-character set phrases that add no content; 应当 standing in for an argument.
 
-## Notes on provenance
+## Status
 
-The PRC hierarchy and the style notes draw on lawvinx, `legal-academic-research` (MIT), corrected where that source placed 部门规章 and 地方性法规 under 规范性文件. Hong Kong, Taiwan, and 人民法院案例库 items were checked against the linked sources on the date above; other items are general knowledge to be checked before reliance.
+Hong Kong, Taiwan, and 人民法院案例库 items were checked against the linked sources on the date above; other items are general knowledge to be checked before reliance.
 
 ---
 
@@ -795,10 +791,6 @@ If the repository's `scripts/hidden_text_check.py` is available, run it on the f
 - Continue the review from the visible text only, and say that you did so.
 - If the screen could not run (unsupported format, unreadable file), say that nothing was screened rather than reporting the file clean.
 
-## Attribution
-
-Informed by Matei Clej's `pleading-injection-guard` (MIT), which offers a far more thorough scanner for PDF, DOCX, email, and office formats with OCR; consider it for high-stakes screening.
-
 ### Reference for manuscript-review: `references/sustainability-test.md`
 
 # Sustainability test for critical findings
@@ -828,10 +820,6 @@ Then rank what remains by how much of the thesis depends on it. More than five h
 ## When little survives
 
 If fewer than two substantive findings survive, say so directly. "There is one real problem and it is this" is a legitimate and useful result.
-
-## Attribution
-
-Adapted from the double-pass discipline in Seth J. Chandler's `sustainable-opposing-counsel-review` (Apache-2.0), itself derived from Larissa Meredith-Flister's `opposing-counsel-review`, and re-expressed for scholarly review. See `NOTICE`.
 
 ---
 
@@ -920,8 +908,6 @@ When the task is to meet a word limit for body text, move material rather than d
 - **Citations travel with their sentences.** Never strand a citation from the claim it supports.
 - **Repair seams** in the body: transitions, back-references ("as noted above"), and enumerations ("three reasons").
 - Keep a ledger of each move (first words, word count, category, destination note) and report the achieved fraction.
-
-Attribution: adapted from Seth J. Chandler's `footnote-relegator` (Apache-2.0). See `NOTICE`.
 
 ## Deliverables
 

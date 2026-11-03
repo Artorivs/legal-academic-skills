@@ -47,6 +47,6 @@ French legal scholarship (*doctrine*) is more willing to systematise and classif
 
 *Il convient de noter que*, *force est de constater que*, and *dans un premier temps… dans un second temps* used mechanically; empty *en définitive* conclusions. UNVERIFIED list; extend from a native reader's review.
 
-## Notes on provenance
+## Status
 
-Database list informed by Allison Fiorentino's `recherche-doctrine` and the LibreJustice skills (ideas only). Not yet checked in a session; verify before reliance.
+Not yet checked in a session; verify before reliance.

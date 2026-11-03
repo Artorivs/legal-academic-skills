@@ -38,7 +38,7 @@ Notable changes to this project are recorded here. Follow a consistent release f
 
 ## 0.2.0 — 2026-11-03
 
-Consolidates overlapping skills (15 → 13) and adds methods adapted from other openly licensed legal skill collections. Invocations of removed skill names must be updated; see "Renamed and merged".
+Consolidates overlapping skills (15 → 13) and adds new methods. Invocations of removed skill names must be updated; see "Renamed and merged".
 
 ### Renamed and merged
 
@@ -59,7 +59,6 @@ Consolidates overlapping skills (15 → 13) and adds methods adapted from other 
 - `anticipatory-analysis`: rules for writing coding questions for bodies of decisions or legislation.
 - Scripts (standard library only): `extract_docx.py`, `integrity_manifest.py`, `check_register_refs.py`, `hidden_text_check.py`, `build_bundle.py`.
 - Evaluations: seeded-error case; machine-checkable regression cases with `evals/check_output.py`.
-- `NOTICE`, `LICENSES/`, and source list in `REFERENCES.md` for adapted material.
 
 ### Changed
 

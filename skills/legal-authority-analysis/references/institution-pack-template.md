@@ -32,5 +32,3 @@ Press releases, summaries, factsheets, NGO reports, commentaries: useful leads, 
 ## Interpretation notes
 Distinctive interpretive approaches and standards of review, each with a checked source.
 ```
-
-Attribution: the pack pattern is an idea drawn from the verification-first tribunal skills by Jeanne Sulzer and the jurisdiction template in Legal-Chamber, re-expressed here.

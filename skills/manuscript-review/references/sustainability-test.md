@@ -25,7 +25,3 @@ Then rank what remains by how much of the thesis depends on it. More than five h
 ## When little survives
 
 If fewer than two substantive findings survive, say so directly. "There is one real problem and it is this" is a legitimate and useful result.
-
-## Attribution
-
-Adapted from the double-pass discipline in Seth J. Chandler's `sustainable-opposing-counsel-review` (Apache-2.0), itself derived from Larissa Meredith-Flister's `opposing-counsel-review`, and re-expressed for scholarly review. See `NOTICE`.

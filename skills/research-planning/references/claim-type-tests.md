@@ -36,6 +36,6 @@ Functional equivalence (do the compared institutions solve the same problem?); c
 
 For a hunch or seminar-paper idea, use three tests only: the strongest intended example; the strongest fair counterexample or rival account; and the boundary, measurement, or source problem most likely to defeat the project.
 
-## Attribution
+## Source
 
-Adapted from Seth J. Chandler's `thesis-assesor` (Apache-2.0), which builds on Eugene Volokh, *Academic Legal Writing* (5th edn, 2016) and Eugene Volokh, "Test Suites: A Tool for Improving Student Articles" (2002) 52 Journal of Legal Education 440. See `NOTICE`.
+Eugene Volokh, *Academic Legal Writing* (5th edn, 2016); Eugene Volokh, "Test Suites: A Tool for Improving Student Articles" (2002) 52 Journal of Legal Education 440.

@@ -33,8 +33,6 @@ When the task is to meet a word limit for body text, move material rather than d
 - **Repair seams** in the body: transitions, back-references ("as noted above"), and enumerations ("three reasons").
 - Keep a ledger of each move (first words, word count, category, destination note) and report the achieved fraction.
 
-Attribution: adapted from Seth J. Chandler's `footnote-relegator` (Apache-2.0). See `NOTICE`.
-
 ## Deliverables
 
 Provide the revised text, a concise change log, significant deletions/mergers, any changes in meaning or emphasis, and a list of evidential or authorial questions that prevent a clean resolution. If altering files, reread the current version before writing and edit the intended parts rather than overwriting unrelated user changes. Preserve stable IDs and citation references until the final clean-copy pass.

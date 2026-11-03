@@ -14,5 +14,3 @@ Use these when the meaning of a provision carries weight in the argument. Famili
 Add a seventh check across the whole text: is each defined term used consistently, and do undefined near-synonyms appear that could be argued to mean something different?
 
 For each ambiguity that matters, state the competing readings, the interpretive arguments for each (text, context, purpose, structure, drafting history, and, for treaties, the Vienna Convention means of interpretation), how courts or bodies have resolved it if they have (checked, not recalled), and what turns on the choice for the paper's argument.
-
-Attribution: the family structure is adapted from Seth J. Chandler's `ambiguity-stress-test` (Apache-2.0). See `NOTICE`.

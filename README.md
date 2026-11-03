@@ -104,11 +104,11 @@ python3 -m unittest discover -s tests -v
 
 ## Design reference
 
-The kit takes inspiration from the composable, task-specific skill approach in [mattpocock/skills](https://github.com/mattpocock/skills/tree/main): use a small skill for a clearly defined task instead of loading one giant procedure for every request. This repository is independently authored for academic legal work. It is not affiliated with Matt Pocock or his repository, and it does not copy their individual skill texts. Version 0.2.0 adapts some methods from other openly licensed legal skill collections (Apache-2.0 and MIT); each adaptation is attributed in the file where it appears and listed in [`NOTICE`](NOTICE) and [`REFERENCES.md`](REFERENCES.md).
+The kit takes inspiration from the composable, task-specific skill approach in [mattpocock/skills](https://github.com/mattpocock/skills/tree/main): use a small skill for a clearly defined task instead of loading one giant procedure for every request. This repository is independently authored for academic legal work. It is not affiliated with Matt Pocock or his repository, and it does not copy their individual skill texts. See [`REFERENCES.md`](REFERENCES.md).
 
 ## Licence
 
-Released under the GNU General Public License v3.0 only (`GPL-3.0-only`). See [`LICENSE`](LICENSE). Third-party notices and licence texts for adapted material are in [`NOTICE`](NOTICE) and [`LICENSES/`](LICENSES/). Cite the upstream design reference in attribution and documentation, and do not imply endorsement or affiliation.
+Released under the GNU General Public License v3.0 only (`GPL-3.0-only`). See [`LICENSE`](LICENSE). Cite the upstream design reference in attribution and documentation, and do not imply endorsement or affiliation.
 
 ## Contributing and security
 

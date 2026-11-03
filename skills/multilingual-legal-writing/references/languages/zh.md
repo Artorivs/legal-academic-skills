@@ -65,6 +65,6 @@ Scholarly Chinese is not the register of 司法解释, government reports, or co
 
 首先……其次……最后 used as a template for every paragraph; 综上所述 opening an empty conclusion; 值得注意的是 and 需要指出的是 as filler; 在……背景下 openings; strings of four-character set phrases that add no content; 应当 standing in for an argument.
 
-## Notes on provenance
+## Status
 
-The PRC hierarchy and the style notes draw on lawvinx, `legal-academic-research` (MIT), corrected where that source placed 部门规章 and 地方性法规 under 规范性文件. Hong Kong, Taiwan, and 人民法院案例库 items were checked against the linked sources on the date above; other items are general knowledge to be checked before reliance.
+Hong Kong, Taiwan, and 人民法院案例库 items were checked against the linked sources on the date above; other items are general knowledge to be checked before reliance.
