@@ -1,6 +1,6 @@
 ---
 name: academic-project-router
-description: "Choose and coordinate the appropriate academic legal research or writing workflow. Use when a task spans several kinds of work or the next step is unclear."
+description: "Pick and sequence the right skills when a request spans several kinds of work or the next step is unclear. Not needed when one skill obviously fits."
 ---
 
 # Academic Project Router
@@ -14,19 +14,19 @@ Read the project brief and handover if available. Identify the deliverable, rese
 ## Route by task
 
 - Research question, scope, method, or source strategy; or whether an existing thesis is novel and worth pursuing → `research-planning`.
-- A legal proposition, case, treaty, statute, or doctrinal issue → `legal-authority-analysis` and, where relevant, `source-verification`.
-- Checking a source before relying on it, or auditing a manuscript's footnotes, pinpoints, quotations, and bibliography → `source-verification`.
+- What a case, treaty, statute, or decision holds and how far it reaches → `legal-authority-analysis`.
+- Whether a source exists and supports the sentence it is cited for, for one source or a whole manuscript's footnotes → `source-verification`.
 - Literature debate or state of scholarship → `literature-synthesis`.
-- Thesis, inference, structure, or counterargument → `argument-mapping`.
-- Turning notes into connected academic prose → `academic-legal-drafting`.
+- The author's own chain of reasoning, its premises, and its weakest links → `argument-mapping`.
+- Writing or rewriting a passage or section → `academic-legal-drafting`.
 - A one-off critical read of a manuscript: desk review, referee report, or pre-submission audit → `manuscript-review`.
 - Iterated critique and revision, or responding to real referee reports → `adversarial-writing-cycle`.
 - Writing, revising, or translating in any language other than British English, or using foreign-language sources → `multilingual-legal-writing`.
-- Repetition, ordering, terminology, cross-document consistency, or meeting a word limit → `manuscript-consolidation`.
+- Restructuring, de-duplicating, or shortening a whole manuscript → `manuscript-consolidation`.
 - Continuing a long-running project or handing it to another model → `project-continuity`.
 - Interpreting a future event, or coding a body of decisions or legislation under rules fixed in advance → `anticipatory-analysis`.
 
-Use at most the few skills materially required. When one skill explicitly calls for another, follow that dependency; otherwise avoid redundant audits.
+For pairs that are easily confused, use the "Telling similar skills apart" table in `SKILL_INDEX.md` at the repository root. Use at most the few skills materially required. When one skill explicitly calls for another, follow that dependency; otherwise avoid redundant audits.
 
 ## Project records
 

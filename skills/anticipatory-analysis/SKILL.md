@@ -1,6 +1,6 @@
 ---
 name: anticipatory-analysis
-description: "Create and apply a pre-specified protocol for analysing future events or incoming evidence without retrofitting the method to the outcome."
+description: "Fix an analytical method before seeing the evidence, as a protocol for interpreting a future event or a codebook for coding many judgments, decisions, or statutes, then apply it without retrofitting."
 ---
 
 # Anticipatory Analysis Protocol

@@ -1,6 +1,6 @@
 ---
 name: manuscript-consolidation
-description: "Consolidate a manuscript by removing repetition, improving structure and transitions, and preserving necessary evidence, qualifications, and argumentative steps; or bring it under a word limit by relegating non-essential material to footnotes."
+description: "Restructure a whole manuscript or long section: remove repetition, reorder sections, standardise terms, fix transitions and cross-references, or meet a word limit by moving material to footnotes. For drafting or rewriting individual passages, use academic-legal-drafting."
 ---
 
 # Manuscript Consolidation

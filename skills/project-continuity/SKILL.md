@@ -1,6 +1,6 @@
 ---
 name: project-continuity
-description: "Continue a long academic research project across sessions or models using stable records, explicit decisions, corrections, evidence gaps, and concise handovers."
+description: "Resume or hand over a long project across sessions or models: read and update the handover and registers, check them against the files, and write a cold-start handover."
 ---
 
 # Project Continuity and Handover

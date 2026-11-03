@@ -1,6 +1,6 @@
 ---
 name: academic-legal-drafting
-description: "Turn notes, sources, outlines, or rough prose into connected academic legal writing with a clear claim, developed reasoning, and careful source use."
+description: "Write or rewrite passages: turn notes, sources, and outlines into connected academic legal prose, or revise a paragraph or section. Holds the kit's prose rules on style, enumeration, and cross-references. For restructuring or cutting a whole manuscript, use manuscript-consolidation."
 ---
 
 # Academic Legal Drafting

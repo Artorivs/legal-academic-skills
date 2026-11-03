@@ -1,6 +1,6 @@
 ---
 name: research-planning
-description: "Design a rigorous research plan for academic legal work, including research questions, scope, method, source strategy, and manageable research stages; or assess whether an existing thesis or article idea is novel, worth pursuing, and sound enough to build on."
+description: "Plan a new project (question, provisional thesis, scope, method, sources, stages), or judge whether an existing thesis or article idea is novel, useful, sound, and worth pursuing. Use before research or drafting starts. For the step-by-step logic of a thesis already chosen, use argument-mapping."
 ---
 
 # Research Planning

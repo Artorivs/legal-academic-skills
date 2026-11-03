@@ -64,19 +64,21 @@ If the platform has file limits, upload the instruction file and only the releva
 
 ## Included workflows
 
-- `academic-project-router` — Choose and coordinate the appropriate academic legal research or writing workflow. Use when a task spans several kinds of work or the next step is unclear.
-- `research-planning` — Design a rigorous research plan for academic legal work, including research questions, scope, method, source strategy, and manageable research stages; or assess whether an existing thesis or article idea is novel, worth pursuing, and sound enough to build on.
-- `source-verification` — Verify legal, academic, empirical, and archival sources and test whether each supports the exact proposition it is cited for, either for one source before relying on it or across a whole manuscript's footnotes, quotations, pinpoints, and bibliography.
-- `legal-authority-analysis` — Analyse cases, legislation, treaties, international legal materials, and administrative decisions with attention to authority, context, reasoning, limits, and competing readings.
-- `literature-synthesis` — Synthesize legal and interdisciplinary scholarship into an analytical account of debates, methods, evidence, and contribution rather than a sequence of source summaries.
-- `argument-mapping` — Map an academic legal thesis into linked claims, evidence, warrants, assumptions, counterarguments, and vulnerabilities before drafting or revising.
-- `academic-legal-drafting` — Turn notes, sources, outlines, or rough prose into connected academic legal writing with a clear claim, developed reasoning, and careful source use.
-- `manuscript-review` — Review a legal academic manuscript as an editor, peer reviewer, examiner, or pre-submission auditor, and report consequential weaknesses ranked by severity with specific remedies. Use for a desk read, a full referee report, or a final audit before submission.
-- `adversarial-writing-cycle` — Run a repeatable draft–critique–response–revision–retest cycle to expose weaknesses in an academic legal argument and record unresolved objections. Also use to work through external referee reports, editor letters, or co-author comments and draft a response to reviewers.
-- `multilingual-legal-writing` — Draft, revise, or translate legal scholarship in or between any languages, and work with foreign-language legal sources, while preserving doctrinal meaning, jurisdiction-specific terminology, and scholarly register.
-- `manuscript-consolidation` — Consolidate a manuscript by removing repetition, improving structure and transitions, and preserving necessary evidence, qualifications, and argumentative steps; or bring it under a word limit by relegating non-essential material to footnotes.
-- `project-continuity` — Continue a long academic research project across sessions or models using stable records, explicit decisions, corrections, evidence gaps, and concise handovers.
-- `anticipatory-analysis` — Create and apply a pre-specified protocol for analysing future events or incoming evidence without retrofitting the method to the outcome.
+Not sure which skill fits? See the stage table and "Telling similar skills apart" in [`SKILL_INDEX.md`](SKILL_INDEX.md).
+
+- `academic-project-router` — Pick and sequence the right skills when a request spans several kinds of work or the next step is unclear. Not needed when one skill obviously fits.
+- `research-planning` — Plan a new project (question, provisional thesis, scope, method, sources, stages), or judge whether an existing thesis or article idea is novel, useful, sound, and worth pursuing. Use before research or drafting starts. For the step-by-step logic of a thesis already chosen, use argument-mapping.
+- `literature-synthesis` — Map the scholarship on a question into positions, disagreements, methods, and gaps, and place the paper's contribution among them. For whether one specific thesis is already preempted, use research-planning.
+- `source-verification` — Check that a source exists, is the right document and version, and supports the exact sentence it is cited for: one source before relying on it, or every footnote, quotation, pinpoint, and bibliography entry in a manuscript. For what an authority means or how far it reaches, use legal-authority-analysis.
+- `legal-authority-analysis` — Interpret a case, statute, treaty, or administrative or international decision: what it holds, how it reasons, its binding force, limits, ambiguities, and competing readings. For whether a citation exists and supports a sentence, use source-verification.
+- `argument-mapping` — Lay out the author's own thesis as linked claims, evidence, warrants, assumptions, and weakest links, before drafting or when restructuring, and keep the claim register. For a reader's judgment of a finished manuscript, use manuscript-review.
+- `academic-legal-drafting` — Write or rewrite passages: turn notes, sources, and outlines into connected academic legal prose, or revise a paragraph or section. Holds the kit's prose rules on style, enumeration, and cross-references. For restructuring or cutting a whole manuscript, use manuscript-consolidation.
+- `multilingual-legal-writing` — Write, revise, or translate scholarship in any language other than British English or between languages, and use foreign-language sources, keeping legal meaning and the terminology of the right legal system, not just the right language.
+- `manuscript-review` — Give a one-off critical assessment of a manuscript as a desk editor, referee, examiner, or pre-submission auditor, with findings ranked by severity. Produces a report, not revised text. For repeated critique-and-revision rounds, or answering real referee reports, use adversarial-writing-cycle.
+- `adversarial-writing-cycle` — Run rounds of critique, author response, revision, and retest until the argument holds, or work through real referee reports and draft the response letter. Produces revised text and a response matrix. For a single critical report, use manuscript-review.
+- `manuscript-consolidation` — Restructure a whole manuscript or long section: remove repetition, reorder sections, standardise terms, fix transitions and cross-references, or meet a word limit by moving material to footnotes. For drafting or rewriting individual passages, use academic-legal-drafting.
+- `project-continuity` — Resume or hand over a long project across sessions or models: read and update the handover and registers, check them against the files, and write a cold-start handover.
+- `anticipatory-analysis` — Fix an analytical method before seeing the evidence, as a protocol for interpreting a future event or a codebook for coding many judgments, decisions, or statutes, then apply it without retrofitting.
 
 ## Suggested use
 

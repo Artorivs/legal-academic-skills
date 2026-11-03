@@ -1,6 +1,6 @@
 ---
 name: multilingual-legal-writing
-description: "Draft, revise, or translate legal scholarship in or between any languages, and work with foreign-language legal sources, while preserving doctrinal meaning, jurisdiction-specific terminology, and scholarly register."
+description: "Write, revise, or translate scholarship in any language other than British English or between languages, and use foreign-language sources, keeping legal meaning and the terminology of the right legal system, not just the right language."
 ---
 
 # Multilingual Legal Writing

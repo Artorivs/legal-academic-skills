@@ -1,6 +1,6 @@
 ---
 name: adversarial-writing-cycle
-description: "Run a repeatable draft–critique–response–revision–retest cycle to expose weaknesses in an academic legal argument and record unresolved objections. Also use to work through external referee reports, editor letters, or co-author comments and draft a response to reviewers."
+description: "Run rounds of critique, author response, revision, and retest until the argument holds, or work through real referee reports and draft the response letter. Produces revised text and a response matrix. For a single critical report, use manuscript-review."
 ---
 
 # Adversarial Writing Cycle

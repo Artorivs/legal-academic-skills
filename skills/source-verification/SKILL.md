@@ -1,6 +1,6 @@
 ---
 name: source-verification
-description: "Verify legal, academic, empirical, and archival sources and test whether each supports the exact proposition it is cited for, either for one source before relying on it or across a whole manuscript's footnotes, quotations, pinpoints, and bibliography."
+description: "Check that a source exists, is the right document and version, and supports the exact sentence it is cited for: one source before relying on it, or every footnote, quotation, pinpoint, and bibliography entry in a manuscript. For what an authority means or how far it reaches, use legal-authority-analysis."
 ---
 
 # Source Verification

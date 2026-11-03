@@ -1,6 +1,6 @@
 ---
 name: manuscript-review
-description: "Review a legal academic manuscript as an editor, peer reviewer, examiner, or pre-submission auditor, and report consequential weaknesses ranked by severity with specific remedies. Use for a desk read, a full referee report, or a final audit before submission."
+description: "Give a one-off critical assessment of a manuscript as a desk editor, referee, examiner, or pre-submission auditor, with findings ranked by severity. Produces a report, not revised text. For repeated critique-and-revision rounds, or answering real referee reports, use adversarial-writing-cycle."
 ---
 
 # Manuscript Review

@@ -46,7 +46,7 @@ def split_frontmatter(text: str) -> tuple[dict, str]:
 
 def skill_order() -> list[str]:
     index = (ROOT / "SKILL_INDEX.md").read_text(encoding="utf-8")
-    return re.findall(r"\(skills/([a-z0-9-]+)/SKILL\.md\)", index)
+    return list(dict.fromkeys(re.findall(r"\(skills/([a-z0-9-]+)/SKILL\.md\)", index)))
 
 
 def build() -> str:

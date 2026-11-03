@@ -1,6 +1,6 @@
 ---
 name: legal-authority-analysis
-description: "Analyse cases, legislation, treaties, international legal materials, and administrative decisions with attention to authority, context, reasoning, limits, and competing readings."
+description: "Interpret a case, statute, treaty, or administrative or international decision: what it holds, how it reasons, its binding force, limits, ambiguities, and competing readings. For whether a citation exists and supports a sentence, use source-verification."
 ---
 
 # Legal Authority Analysis

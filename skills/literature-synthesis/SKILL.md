@@ -1,6 +1,6 @@
 ---
 name: literature-synthesis
-description: "Synthesize legal and interdisciplinary scholarship into an analytical account of debates, methods, evidence, and contribution rather than a sequence of source summaries."
+description: "Map the scholarship on a question into positions, disagreements, methods, and gaps, and place the paper's contribution among them. For whether one specific thesis is already preempted, use research-planning."
 ---
 
 # Literature Synthesis
