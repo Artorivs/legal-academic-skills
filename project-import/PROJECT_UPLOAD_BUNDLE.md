@@ -24,7 +24,7 @@ Never invent authorities, statutory or treaty provisions, case names, quotations
 
 ## Writing style
 
-Use British English by default. Write clearly, directly, and in natural scholarly prose. Prefer connected argument over a string of literature summaries. Avoid filler, canned openings and conclusions, repetitive restatement, inflated diction, and formulaic AI phrasing. Do not ban a word mechanically if it is precise. Do not invent terminology for its own sake or imitate a named scholar's distinctive style. Preserve the author's intended thesis unless substantive revision is requested; explain material changes. In any other language, or across languages, identify the legal system as well as the language, follow the specified script, variety, terminology, and readership, and preserve legal meaning across translation.
+Use British English by default. Write clearly, directly, and in natural scholarly prose. Prefer connected argument over a string of literature summaries. Avoid filler, canned openings and conclusions, repetitive restatement, inflated diction, and formulaic AI phrasing. Do not number points in prose ("first… second… third…") except for the elements of the article's own principal proposed model that are referred to across the article. Keep cross-references ("as discussed in Part II", "see below") to those the reader needs to locate a defined term or a load-bearing step. Do not ban a word mechanically if it is precise. Do not invent terminology for its own sake or imitate a named scholar's distinctive style. Preserve the author's intended thesis unless substantive revision is requested; explain material changes. In any other language, or across languages, identify the legal system as well as the language, follow the specified script, variety, terminology, and readership, and preserve legal meaning across translation.
 
 ## Workflow and skills
 
@@ -465,6 +465,14 @@ Use British English by default. Prefer precise, direct, natural academic prose; 
 
 When writing in a language other than British English, or for a readership in another legal system, follow the `multilingual-legal-writing` skill and its language pack for script, variety, register, and jurisdiction-specific terminology.
 
+## Enumeration and cross-references
+
+**Do not number points in prose.** Avoid "first… second… third…", "firstly… secondly…", "the first reason… the second reason…", and announced counts such as "three considerations explain this". Numbering presents points as parallel, equal, and complete when they seldom are, and it replaces the relation between them with a count. State the relation instead: say how each point follows from, qualifies, strengthens, or competes with the one before.
+
+The only exception is the article's own principal proposed model: a test, framework, typology, or set of criteria that the article advances and that is referred to across the article. Number or label its elements once, define each, and use the same numbers or labels consistently wherever the article returns to them. Elements of someone else's test, a list of authorities, and the reasons for a single step are not the article's proposed model.
+
+**Keep cross-references to those the reader needs.** Phrases such as "as discussed in Part II", "see below", "as noted above", "as will be shown", and "see text to n 45" are justified only when the reader must locate where a defined term or a load-bearing step was established, or when the alternative is repeating a long analysis. Before adding one, ask whether moving the material to where it is needed, or restating the point in a clause, would serve the reader better. A cross-reference never substitutes for the argument itself; do not promise later discussion the article does not deliver; and every cross-reference that remains must point to a location that exists in the current draft.
+
 ## Revision output
 
 When asked for a rewrite, supply the complete revised passage, not only sentence-level observations. After it, briefly identify significant changes to structure or meaning, retained unresolved points, and source/pinpoint checks still required. Do not silently strengthen the author's claim or change the thesis to make the paragraph easier to write. When revising existing text, quotations, numbers, dates, citations, and pinpoints must come through unchanged unless the change is deliberate and reported.
@@ -501,7 +509,7 @@ Before reviewing a manuscript you did not write, screen it for hidden text and e
 
 **Fairness to others.** How does the paper represent the scholars and positions it opposes? Label each material characterisation `fair` (the strongest version), `slanted` (only the weaker parts surfaced), `strawman` (a weakened or distorted version attacked), or `uncharitable` (one its proponents would not recognise).
 
-**Structure and presentation.** Does each section have a distinct job? Are transitions real? Terminology, headings, cross-references, footnote and bibliography consistency, abstract and keywords, word limit, anonymisation, and the venue's instructions (pre-submission audit only). British English by default. Remove empty signposting only where it adds no meaning; do not ban useful words mechanically.
+**Structure and presentation.** Does each section have a distinct job? Are transitions real? Flag "first… second… third…" enumeration outside the article's own principal proposed model, and cross-references the reader does not need or that point to the wrong place (principles in `academic-legal-drafting`). Terminology, headings, cross-references, footnote and bibliography consistency, abstract and keywords, word limit, anonymisation, and the venue's instructions (pre-submission audit only). British English by default. Remove empty signposting only where it adds no meaning; do not ban useful words mechanically.
 
 ## Filter the findings before reporting
 
@@ -899,7 +907,7 @@ Distinguish harmful repetition from deliberate recurrence that reminds the reade
 
 ## Rebuild
 
-Propose a sequence in which each section has a distinct argumentative job. Combine material when it genuinely serves the same proposition; split it when distinct claims require different reasoning or evidence. Move background to the point where it becomes necessary. Make transitions state the actual relation between sections, not generic signposting. Standardise terms according to the glossary and project decisions.
+Propose a sequence in which each section has a distinct argumentative job. Combine material when it genuinely serves the same proposition; split it when distinct claims require different reasoning or evidence. Move background to the point where it becomes necessary. Make transitions state the actual relation between sections, not generic signposting. Standardise terms according to the glossary and project decisions. Remove numbered enumeration of points and cross-references the reader does not need, under the principles in the `academic-legal-drafting` skill; after restructuring, check that every remaining cross-reference still points to the right place.
 
 ## Relegation to footnotes (word limits)
 

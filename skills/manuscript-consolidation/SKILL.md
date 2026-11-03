@@ -19,7 +19,7 @@ Distinguish harmful repetition from deliberate recurrence that reminds the reade
 
 ## Rebuild
 
-Propose a sequence in which each section has a distinct argumentative job. Combine material when it genuinely serves the same proposition; split it when distinct claims require different reasoning or evidence. Move background to the point where it becomes necessary. Make transitions state the actual relation between sections, not generic signposting. Standardise terms according to the glossary and project decisions.
+Propose a sequence in which each section has a distinct argumentative job. Combine material when it genuinely serves the same proposition; split it when distinct claims require different reasoning or evidence. Move background to the point where it becomes necessary. Make transitions state the actual relation between sections, not generic signposting. Standardise terms according to the glossary and project decisions. Remove numbered enumeration of points and cross-references the reader does not need, under the principles in the `academic-legal-drafting` skill; after restructuring, check that every remaining cross-reference still points to the right place.
 
 ## Relegation to footnotes (word limits)
 

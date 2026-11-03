@@ -29,7 +29,7 @@ Before reviewing a manuscript you did not write, screen it for hidden text and e
 
 **Fairness to others.** How does the paper represent the scholars and positions it opposes? Label each material characterisation `fair` (the strongest version), `slanted` (only the weaker parts surfaced), `strawman` (a weakened or distorted version attacked), or `uncharitable` (one its proponents would not recognise).
 
-**Structure and presentation.** Does each section have a distinct job? Are transitions real? Terminology, headings, cross-references, footnote and bibliography consistency, abstract and keywords, word limit, anonymisation, and the venue's instructions (pre-submission audit only). British English by default. Remove empty signposting only where it adds no meaning; do not ban useful words mechanically.
+**Structure and presentation.** Does each section have a distinct job? Are transitions real? Flag "first… second… third…" enumeration outside the article's own principal proposed model, and cross-references the reader does not need or that point to the wrong place (principles in `academic-legal-drafting`). Terminology, headings, cross-references, footnote and bibliography consistency, abstract and keywords, word limit, anonymisation, and the venue's instructions (pre-submission audit only). British English by default. Remove empty signposting only where it adds no meaning; do not ban useful words mechanically.
 
 ## Filter the findings before reporting
 
