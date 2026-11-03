@@ -1,11 +1,15 @@
 ---
 name: manuscript-consolidation
-description: "Consolidate a manuscript by removing repetition, improving structure and transitions, and preserving necessary evidence, qualifications, and argumentative steps."
+description: "Consolidate a manuscript by removing repetition, improving structure and transitions, and preserving necessary evidence, qualifications, and argumentative steps; or bring it under a word limit by relegating non-essential material to footnotes."
 ---
 
 # Manuscript Consolidation
 
 Consolidation is structural and argumentative work, not simply shortening the text.
+
+## Protect the fixed facts
+
+Before editing, list the manuscript's fixed facts: every quotation, number, date, case name, citation, pinpoint, and statutory or treaty provision. After editing, compare the list against the revised text. Any change to a fixed fact is reverted and flagged unless the author approved it or the document itself proves the original was a slip (for example, its own table contradicts the text); in that case, record the correction and its basis. Never correct silently. If the repository's `scripts/integrity_manifest.py` is available, use it to extract and compare.
 
 ## Diagnose before editing
 
@@ -16,6 +20,20 @@ Distinguish harmful repetition from deliberate recurrence that reminds the reade
 ## Rebuild
 
 Propose a sequence in which each section has a distinct argumentative job. Combine material when it genuinely serves the same proposition; split it when distinct claims require different reasoning or evidence. Move background to the point where it becomes necessary. Make transitions state the actual relation between sections, not generic signposting. Standardise terms according to the glossary and project decisions.
+
+## Relegation to footnotes (word limits)
+
+When the task is to meet a word limit for body text, move material rather than delete it.
+
+- **Target:** the fraction of body words the author names; default 25%. Land within about two percentage points, or stop short and say why if more would break the argument.
+- **The body must stay self-sufficient.** A reader who never looks at a footnote must still follow every step. Protected: thesis statements, steps in the chain of reasoning, definitions used later, primary evidence on which a conclusion rests, and topic sentences.
+- **Good candidates:** qualifications not needed for the inference, compressed history, placement within the literature, source criticism, secondary examples, counterexamples already answered, and methodological asides.
+- **Move near-verbatim.** Edit only what the passage needs to stand alone as a note (resolve pronouns, drop an opening connective). Do not compress or improve the author's prose.
+- **Citations travel with their sentences.** Never strand a citation from the claim it supports.
+- **Repair seams** in the body: transitions, back-references ("as noted above"), and enumerations ("three reasons").
+- Keep a ledger of each move (first words, word count, category, destination note) and report the achieved fraction.
+
+Attribution: adapted from Seth J. Chandler's `footnote-relegator` (Apache-2.0). See `NOTICE`.
 
 ## Deliverables
 

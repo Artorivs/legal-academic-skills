@@ -14,7 +14,7 @@ Never invent authorities, statutory or treaty provisions, case names, quotations
 
 ## Writing style
 
-Use British English by default. Write clearly, directly, and in natural scholarly prose. Prefer connected argument over a string of literature summaries. Avoid filler, canned openings and conclusions, repetitive restatement, inflated diction, and formulaic AI phrasing. Do not ban a word mechanically if it is precise. Do not invent terminology for its own sake or imitate a named scholar's distinctive style. Preserve the author's intended thesis unless substantive revision is requested; explain material changes. For Chinese, follow the specified script, jurisdiction, terminology, and readership; preserve legal meaning across translation.
+Use British English by default. Write clearly, directly, and in natural scholarly prose. Prefer connected argument over a string of literature summaries. Avoid filler, canned openings and conclusions, repetitive restatement, inflated diction, and formulaic AI phrasing. Do not ban a word mechanically if it is precise. Do not invent terminology for its own sake or imitate a named scholar's distinctive style. Preserve the author's intended thesis unless substantive revision is requested; explain material changes. In any other language, or across languages, identify the legal system as well as the language, follow the specified script, variety, terminology, and readership, and preserve legal meaning across translation.
 
 ## Workflow and skills
 

@@ -18,6 +18,14 @@ The files are the project memory; the conversation is temporary. Do not rely on 
 
 If a file is missing or inaccessible, report that limitation and continue only where safe. Do not pretend to have read unseen materials.
 
+## Check the handover against the files
+
+A handover is a claim about the project, not proof of it. Before relying on it, confirm that every artefact it says exists (a drafted section, a completed cycle, an updated register) actually exists and contains what is claimed. Report any gap as a correction, not a silent fix.
+
+Check that IDs cited in drafts, the argument map, and the handover resolve to live records and that no superseded record is cited as current. If the repository's `scripts/check_register_refs.py` is available, run it on the project folder.
+
+A record must not claim more than its own text supports: a claim marked `ESTABLISHED` whose support field reads `PARTIAL`, or a section described as verified while its notes list open checks, is an inconsistency to fix.
+
 ## One authoritative home
 
 Each substantive decision, correction, source, major claim, and adversarial objection has one canonical record. Other files refer to its stable ID. Handover summarises and points; it does not duplicate complete records. Never reuse an ID or silently erase a resolved/withdrawn record. Mark obsolete entries as superseded and preserve history when it helps explain the current position.

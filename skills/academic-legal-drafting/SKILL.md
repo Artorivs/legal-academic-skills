@@ -19,10 +19,10 @@ Use quotations when the precise wording, framing, or interpretive choice matters
 
 ## Style
 
-Use British English by default. Prefer precise, direct, natural academic prose; clear verbs; concrete legal and institutional detail; and transitions that express the actual logical relationship. Avoid filler, canned openings, exaggerated novelty claims, repetitive conclusions, inflated diction, and formulaic AI phrases. Explain specialist terms where they first become material. Do not invent terminology merely to make an argument look original. Do not add deliberate mistakes or imitate a named scholar's distinctive style.
+Use British English by default. Prefer precise, direct, natural academic prose; clear verbs; concrete legal and institutional detail; and transitions that express the actual logical relationship. Avoid filler, canned openings, exaggerated novelty claims, repetitive conclusions, inflated diction, and formulaic AI phrases. Explain specialist terms where they first become material. Do not invent terminology merely to make an argument look original. Do not add deliberate mistakes or imitate a named scholar's distinctive style. Do not rewrite text to evade AI-detection tools or claim that text is undetectable; the aim is accurate, natural scholarship, not a classifier score.
 
-For Chinese writing, follow the requested script, variety, jurisdiction-specific terminology, and intended readership. When no exact translation exists, retain a source-language term where useful and explain the choice.
+When writing in a language other than British English, or for a readership in another legal system, follow the `multilingual-legal-writing` skill and its language pack for script, variety, register, and jurisdiction-specific terminology.
 
 ## Revision output
 
-When asked for a rewrite, supply the complete revised passage, not only sentence-level observations. After it, briefly identify significant changes to structure or meaning, retained unresolved points, and source/pinpoint checks still required. Do not silently strengthen the author's claim or change the thesis to make the paragraph easier to write.
+When asked for a rewrite, supply the complete revised passage, not only sentence-level observations. After it, briefly identify significant changes to structure or meaning, retained unresolved points, and source/pinpoint checks still required. Do not silently strengthen the author's claim or change the thesis to make the paragraph easier to write. When revising existing text, quotations, numbers, dates, citations, and pinpoints must come through unchanged unless the change is deliberate and reported.

@@ -17,7 +17,7 @@ In Claude Code, add this repository as a marketplace and install the plugin:
 /plugin install legal-academic-skills@legal-academic-skills
 ```
 
-Skills are namespaced by the plugin, for example `legal-academic-skills:citation-audit`. The plugin also provides two agents, `legal-manuscript-editor` and `legal-research-reviewer`.
+Skills are namespaced by the plugin, for example `legal-academic-skills:source-verification`. The plugin also provides two agents, `legal-manuscript-editor` and `legal-research-reviewer`.
 
 To try it from a local clone without installing:
 
@@ -51,32 +51,31 @@ If the platform has file limits, upload the instruction file and only the releva
 
 | Path | Contents |
 | --- | --- |
-| `skills/` | 15 independently loadable workflows (full index: [`SKILL_INDEX.md`](SKILL_INDEX.md)) |
+| `skills/` | 13 independently loadable workflows (full index: [`SKILL_INDEX.md`](SKILL_INDEX.md)) |
 | `agents/` | `legal-manuscript-editor`, `legal-research-reviewer` |
 | `templates/` | Registers, argument map, source ledger, project brief, handover |
 | `examples/` | Illustrative claim-evidence matrix and research log |
-| `evals/` | Human-review cases: citation fidelity, adverse authority, manuscript integrity |
+| `evals/` | Human-review cases (citation fidelity, adverse authority, manuscript integrity, seeded errors) and machine-checkable regression cases |
 | `references/` | Legal research quality standards |
 | `project-import/` | Instructions, upload bundle, and quick prompts for AI Projects |
 | `docs/compatibility.md` | Platform and packaging notes |
-| `scripts/`, `tests/` | Validator, installer helper, and structure tests |
+| `scripts/` | Validator, installer, bundle builder, and standard-library helpers: `extract_docx.py` (body and footnotes, chunking), `integrity_manifest.py` (fixed-fact diff), `check_register_refs.py` (record IDs), `hidden_text_check.py` (hidden text in manuscripts) |
+| `tests/` | Structure tests and script tests |
 
 ## Included workflows
 
 - `academic-project-router` — Choose and coordinate the appropriate academic legal research or writing workflow. Use when a task spans several kinds of work or the next step is unclear.
-- `research-planning` — Design a rigorous research plan for academic legal work, including research questions, scope, method, source strategy, and manageable research stages.
-- `source-verification` — Verify legal, academic, empirical, and archival sources and match each source to the precise proposition it supports. Use before relying on unfamiliar citations or adding authorities.
+- `research-planning` — Design a rigorous research plan for academic legal work, including research questions, scope, method, source strategy, and manageable research stages; or assess whether an existing thesis or article idea is novel, worth pursuing, and sound enough to build on.
+- `source-verification` — Verify legal, academic, empirical, and archival sources and test whether each supports the exact proposition it is cited for, either for one source before relying on it or across a whole manuscript's footnotes, quotations, pinpoints, and bibliography.
 - `legal-authority-analysis` — Analyse cases, legislation, treaties, international legal materials, and administrative decisions with attention to authority, context, reasoning, limits, and competing readings.
 - `literature-synthesis` — Synthesize legal and interdisciplinary scholarship into an analytical account of debates, methods, evidence, and contribution rather than a sequence of source summaries.
 - `argument-mapping` — Map an academic legal thesis into linked claims, evidence, warrants, assumptions, counterarguments, and vulnerabilities before drafting or revising.
 - `academic-legal-drafting` — Turn notes, sources, outlines, or rough prose into connected academic legal writing with a clear claim, developed reasoning, and careful source use.
-- `adversarial-writing-cycle` — Run a repeatable draft–critique–response–revision–retest cycle to expose weaknesses in an academic legal argument and record unresolved objections.
-- `critical-peer-review` — Review a legal academic manuscript as a rigorous peer reviewer, examiner, or editor and identify consequential weaknesses with specific remedies.
-- `citation-audit` — Audit footnotes, pinpoint citations, quotations, bibliographies, and source-to-claim fit in a legal academic manuscript.
-- `bilingual-legal-writing` — Draft, revise, or translate legal scholarship between English and Chinese while preserving doctrinal meaning, jurisdictional terminology, and register.
+- `manuscript-review` — Review a legal academic manuscript as an editor, peer reviewer, examiner, or pre-submission auditor, and report consequential weaknesses ranked by severity with specific remedies. Use for a desk read, a full referee report, or a final audit before submission.
+- `adversarial-writing-cycle` — Run a repeatable draft–critique–response–revision–retest cycle to expose weaknesses in an academic legal argument and record unresolved objections. Also use to work through external referee reports, editor letters, or co-author comments and draft a response to reviewers.
+- `multilingual-legal-writing` — Draft, revise, or translate legal scholarship in or between any languages, and work with foreign-language legal sources, while preserving doctrinal meaning, jurisdiction-specific terminology, and scholarly register.
+- `manuscript-consolidation` — Consolidate a manuscript by removing repetition, improving structure and transitions, and preserving necessary evidence, qualifications, and argumentative steps; or bring it under a word limit by relegating non-essential material to footnotes.
 - `project-continuity` — Continue a long academic research project across sessions or models using stable records, explicit decisions, corrections, evidence gaps, and concise handovers.
-- `manuscript-consolidation` — Consolidate a manuscript by removing repetition, improving structure and transitions, and preserving necessary evidence, qualifications, and argumentative steps.
-- `final-manuscript-audit` — Perform the final substantive and editorial audit of an academic legal manuscript before submission or circulation.
 - `anticipatory-analysis` — Create and apply a pre-specified protocol for analysing future events or incoming evidence without retrofitting the method to the outcome.
 
 ## Suggested use
@@ -85,7 +84,8 @@ If the platform has file limits, upload the instruction file and only the releva
 - **Article drafting:** project instructions, project brief, argument map, claim/source ledger, and `academic-legal-drafting`.
 - **Critical revision:** add `adversarial-writing-cycle` and its log; use a separate reviewer conversation or model where practical.
 - **Long project:** keep a `HANDOVER.md`, stable IDs, decision/correction/claim/source registers, and refresh the handover at the end of each substantial session.
-- **Submission:** use `citation-audit` and `final-manuscript-audit`, but retain human responsibility for legal correctness and final judgment.
+- **Responding to referees:** use `adversarial-writing-cycle` in its external-reviews mode.
+- **Submission:** use `source-verification` in manuscript mode and `manuscript-review` in pre-submission mode, but retain human responsibility for legal correctness and final judgment.
 
 ## Validation
 
@@ -94,6 +94,7 @@ From the repository root:
 ```bash
 claude plugin validate ./
 python3 scripts/validate_skills.py
+python3 scripts/build_bundle.py --check
 python3 -m unittest discover -s tests -v
 ```
 
@@ -101,11 +102,11 @@ python3 -m unittest discover -s tests -v
 
 ## Design reference
 
-The kit takes inspiration from the composable, task-specific skill approach in [mattpocock/skills](https://github.com/mattpocock/skills/tree/main): use a small skill for a clearly defined task instead of loading one giant procedure for every request. This repository is independently authored for academic legal work. It is not affiliated with Matt Pocock or his repository, and it does not copy their individual skill texts. See [`REFERENCES.md`](REFERENCES.md).
+The kit takes inspiration from the composable, task-specific skill approach in [mattpocock/skills](https://github.com/mattpocock/skills/tree/main): use a small skill for a clearly defined task instead of loading one giant procedure for every request. This repository is independently authored for academic legal work. It is not affiliated with Matt Pocock or his repository, and it does not copy their individual skill texts. Version 0.2.0 adapts some methods from other openly licensed legal skill collections (Apache-2.0 and MIT); each adaptation is attributed in the file where it appears and listed in [`NOTICE`](NOTICE) and [`REFERENCES.md`](REFERENCES.md).
 
 ## Licence
 
-Released under the GNU General Public License v3.0 only (`GPL-3.0-only`). See [`LICENSE`](LICENSE). Cite the upstream design reference in attribution and documentation, and do not imply endorsement or affiliation.
+Released under the GNU General Public License v3.0 only (`GPL-3.0-only`). See [`LICENSE`](LICENSE). Third-party notices and licence texts for adapted material are in [`NOTICE`](NOTICE) and [`LICENSES/`](LICENSES/). Cite the upstream design reference in attribution and documentation, and do not imply endorsement or affiliation.
 
 ## Contributing and security
 

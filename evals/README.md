@@ -1,6 +1,9 @@
 # Evaluation suite
 
-These are starter, human-review evaluation cases for the legal-academic skills. They are not a benchmark of legal correctness and should be adapted to the repository's actual skill inventory, jurisdictions, citation conventions, and intended users.
+Two kinds of evaluation live here. Neither is a benchmark of legal correctness; adapt them to your jurisdictions, citation conventions, and users.
+
+- `cases/`: human-review cases, scored with the rubric below. Case 04 seeds known errors into a manuscript and measures how many are caught.
+- `automated/cases.json`: machine-checkable regression cases, one or more per access mode (`live source`, `user-supplied source`, `source missing`). Each lists phrases an output must include and must not include. Save outputs as `<case-id>.txt` and run `python3 evals/check_output.py <folder>`. These catch hard failures (judging from memory, missing labels, upgraded certainty), not quality.
 
 ## Scoring rubric (0–2 each)
 

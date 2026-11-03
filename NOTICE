@@ -1,0 +1,63 @@
+Legal Academic Skills
+Copyright Artorivs. Released under GPL-3.0-only (see LICENSE).
+
+This product includes material adapted from the works below. Adapted material was
+rewritten for academic legal scholarship; each adaptation is also attributed in the
+file where it appears. The licence texts are in LICENSES/.
+
+----------------------------------------------------------------------
+Apache License 2.0 (LICENSES/Apache-2.0.txt)
+----------------------------------------------------------------------
+
+Seth J. Chandler, legal skills published via https://legaled.ai and the
+lawve-ai/awesome-legal-skills collection. Copyright 2026 Seth J. Chandler.
+  - thesis-assesor: claim-type test suites and thesis-assessment criteria
+    -> skills/research-planning (section "Assessing an existing thesis"),
+       skills/research-planning/references/claim-type-tests.md
+  - sustainable-opposing-counsel-review (itself derived from Larissa
+    Meredith-Flister's opposing-counsel-review): sustainability tests and
+    failure modes -> skills/manuscript-review/references/sustainability-test.md
+  - footnote-relegator: relegation rules -> skills/manuscript-consolidation
+  - ambiguity-stress-test: ambiguity families and trigger words
+    -> skills/legal-authority-analysis/references/ambiguity-families.md
+  - reader-first-technical-edit: fixed-fact manifest and diff
+    -> skills/manuscript-consolidation, scripts/integrity_manifest.py (new code)
+  - law-review-editor: chunking long .docx manuscripts with footnotes
+    -> scripts/extract_docx.py (new code)
+
+Anthony Searle, proposition-audit. Copyright 2026 Anthony Searle.
+  - "Interpolated" verdict, claim salience, salience-based remediation, and
+    rhetorical-fairness labels -> skills/source-verification,
+    skills/manuscript-review, skills/literature-synthesis
+
+Legal Quants, LegalQuants/lq-skills. Copyright 2026 Legal Quants.
+  - ACCESS-MODES and proposition-checking: access modes and no-source
+    verification queue -> skills/source-verification
+  - legal-translation: glossary-first workflow and equivalence bands;
+    foreign-law-research: never upgrading certainty
+    -> skills/multilingual-legal-writing
+  - collating-reviewer-feedback: reviewer-feedback matrix
+    -> skills/adversarial-writing-cycle (section "External reviews")
+  - evals.yaml convention: must-include / must-not-include checks
+    -> evals/automated/cases.json, evals/check_output.py (new code)
+
+----------------------------------------------------------------------
+MIT License
+----------------------------------------------------------------------
+
+lawvinx, legal-academic-research (LICENSES/MIT-lawvinx.txt).
+Copyright (c) 2026 lawvinx.
+  - PRC source categories and Chinese scholarly-style notes, corrected
+    -> skills/multilingual-legal-writing/references/languages/zh.md
+
+----------------------------------------------------------------------
+Ideas only (no text or code reproduced)
+----------------------------------------------------------------------
+
+Jeanne Sulzer (verification-first tribunal skills); Larissa Meredith-Flister
+(judicial-first-impression); Allison Fiorentino (recherche-doctrine); Matei
+Clej (pleading-injection-guard, MIT); Legal-Chamber (Business Source License
+1.1); Harvard Library Innovation Lab, lawskills-hub. These informed the
+verification gradient, institution packs, desk-review mode, metadata rule,
+hidden-text screen, disk-versus-claim check, and rubric design, which are
+independently written here.

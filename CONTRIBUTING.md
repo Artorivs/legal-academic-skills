@@ -16,6 +16,7 @@ Thank you for improving Legal Academic Skills. Contributions should make workflo
   ```bash
   claude plugin validate ./
   python3 scripts/validate_skills.py
+  python3 scripts/build_bundle.py --check
   python3 -m unittest discover -s tests -v
   ```
 
@@ -32,7 +33,9 @@ Thank you for improving Legal Academic Skills. Contributions should make workflo
 ## When you add or change a skill
 
 - Add or update its entry in `SKILL_INDEX.md` and in the workflow list in `README.md`.
-- Update `project-import/PROJECT_UPLOAD_BUNDLE.md` if the skill should appear in the upload bundle.
+- Regenerate the upload bundle with `python3 scripts/build_bundle.py` (CI fails if it is out of date).
+- Keep skill-specific detail in the skill's own `references/` folder so the skill stays self-contained.
+- Record any adapted third-party material in `NOTICE` and `REFERENCES.md`, with its licence text in `LICENSES/`. Only Apache-2.0, MIT, or other GPL-3.0-compatible material may be adapted; everything else is ideas only, written independently.
 - Add a line to `CHANGELOG.md` under "Unreleased".
 
 ## Releases and versioning
