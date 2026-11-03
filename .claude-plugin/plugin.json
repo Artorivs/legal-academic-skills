@@ -1,7 +1,7 @@
 {
   "name": "legal-academic-skills",
   "description": "Skill kit for academic legal research and writing",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "author": { "name": "Artorivs" },
   "license": "GPL-3.0-only"
 }

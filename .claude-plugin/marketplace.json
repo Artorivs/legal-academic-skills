@@ -1,7 +1,7 @@
 {
   "name": "legal-academic-skills",
-  "version": "0.1.2",
-  "description": "Modular workflows for rigorous academic legal research, source verification, argument development, drafting, peer review, and citation auditing.",
+  "version": "0.2.0",
+  "description": "Modular workflows for rigorous academic legal research, source verification, argument development, drafting, manuscript review, multilingual writing, and citation auditing.",
   "owner": {
     "name": "Artorivs"
   },
@@ -10,7 +10,7 @@
       "name": "legal-academic-skills",
       "source": "./",
       "description": "Skill kit for academic legal research and writing",
-      "version": "0.1.2",
+      "version": "0.2.0",
       "author": { "name": "Artorivs" },
       "repository": "https://github.com/Artorivs/legal-academic-skills",
       "license": "GPL-3.0-only",

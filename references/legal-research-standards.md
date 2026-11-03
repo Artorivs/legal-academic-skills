@@ -56,14 +56,15 @@ Do not infer that a case remains good law from its age, citation, or appearance 
 
 ## 7. Uncertainty labels
 
-Use explicit labels when appropriate:
+Use the labels defined in the `source-verification` skill so that every workflow and register speaks the same vocabulary:
 
-- **Verified from primary source** — source text inspected and relevant passage located.
-- **Verified from secondary source** — secondary source inspected; primary-source confirmation remains outstanding.
-- **Partially verified** — source exists, but a relevant detail or status is unchecked.
-- **Unverified lead** — candidate source or proposition requiring confirmation.
-- **Inference / analysis** — reasoned conclusion, not a direct quotation or source statement.
-- **Research limitation** — a specific source, database, date range, or jurisdiction could not be checked.
+- **Access mode:** live source, user-supplied source, source missing.
+- **Source status:** Inspected, Partly inspected, Lead only, Unavailable, Inauthentic/incorrect.
+- **Verification level reached:** Existence, Content, Paragraph.
+- **Claim support:** Direct support, Partial support, Inference required, Interpolated, Quotation inaccurate, Contradicted, Not addressed, Not yet assessed.
+- **Salience:** load-bearing, supporting, illustrative.
+
+Mark the agent's own reasoning as inference or analysis, and record a research limitation whenever a source, database, date range, or jurisdiction could not be checked.
 
 ## 8. Final quality gate
 

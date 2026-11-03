@@ -1,6 +1,6 @@
 ---
 name: argument-mapping
-description: "Map an academic legal thesis into linked claims, evidence, warrants, assumptions, counterarguments, and vulnerabilities before drafting or revising."
+description: "Lay out the author's own thesis as linked claims, evidence, warrants, assumptions, and weakest links, before drafting or when restructuring, and keep the claim register. For a reader's judgment of a finished manuscript, use manuscript-review."
 ---
 
 # Argument Mapping
