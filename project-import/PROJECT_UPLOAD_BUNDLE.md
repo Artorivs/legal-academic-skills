@@ -467,7 +467,7 @@ If no text was supplied (only a placeholder or a description), ask for the passa
 
 ## Choose the depth and scope
 
-Decide from the request and the length of the text; do not ask.
+Decide from the request and the length of the text; do not ask. Wording beats length: a request to score, assess or use a named rubric means standard depth even for one paragraph.
 
 | Depth | Use when | Gives |
 |---|---|---|
@@ -475,11 +475,11 @@ Decide from the request and the length of the text; do not ask.
 | **Standard** | The text is several paragraphs, or the user asks to "check", "assess" or "score" it | Everything in *Output* |
 | **Teaching** | The user wants to learn, or says they write in a second language | Standard, plus each recurring pattern with a rule and two corrected examples from the text |
 
-Lens: if the user names a test or framework (TOEFL, GRE, Cambridge, PTE, CEFR, AP, VALUE, Goethe, TestDaF, DALF), score the language with that rubric's own criterion names and scale from `rubric-crosswalk.md` instead of the default four, and say that the result is a lens, not that test's score. For a text in French or German with no lens named, use the DALF C1 or Goethe-Zertifikat C1 criteria; for another language with no test listed, use the CEFR grid.
+Lens: if the user names a test or framework (TOEFL, GRE, Cambridge, PTE, CEFR, AP, VALUE, Goethe, TestDaF, DALF), score the language with that rubric's own criterion names and scale from `rubric-crosswalk.md` instead of the default four, and say that the result is a lens, not that test's score. Where a rubric has grids for several task types (DALF has *essai* and *synthèse*), use the grid for the kind of text checked: an argued text takes the essay grid, a summary of sources the synthesis grid. For a text in French or German with no lens named, use the DALF C1 or Goethe-Zertifikat C1 criteria; for another language with no test listed, use the CEFR grid.
 
 Scope: "the English", "grammar", "language" → **language only**. "The argument", "the reasoning", "the logic" → **argument only**. Otherwise both. Depth sets which parts appear; scope then removes the parts that do not apply. State depth and scope in a few words at the top, so the user can ask for another.
 
-**Keep it in proportion.** Excluding the corrected passage, aim for about 150 words at quick depth and no more than about 600 at standard depth, whatever the length of the text; for a long text, report the most damaging findings and say how many lesser ones were left out. Say each problem once: the scorecard gives the band and the fix, and the findings do not repeat it.
+**Keep it in proportion.** Counting everything except the corrected passage (tables included), aim for about 150 words at quick depth and no more than about 600 at standard depth, whatever the length of the text; for a long text, report the most damaging findings and say how many lesser ones were left out. Say each problem once: the scorecard gives the band and the fix, and the findings do not repeat it.
 
 ## 1. Sense: read the passage as argument
 
