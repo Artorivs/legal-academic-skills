@@ -61,6 +61,8 @@ Every result opens with a short **bottom line** in plain words. Tables and label
 
 The full vocabulary is in [`references/legal-research-standards.md`](references/legal-research-standards.md).
 
+To see how the workflows, agents and records fit together, and why, read [`docs/how-it-works.md`](docs/how-it-works.md) (diagrams).
+
 ## How much of the kit do you need?
 
 - **One task:** install, then ask. Nothing else is needed.
@@ -136,6 +138,7 @@ bash scripts/install-agent-skills.sh /path/to/your/agent/skills
 | `evals/` | Human-review cases and machine-checkable regression cases |
 | `references/` | Legal research quality standards and the shared label vocabulary |
 | `project-import/` | Instructions, upload bundle, and quick prompts for AI Projects |
+| `docs/how-it-works.md` | Diagrams of routing, workflows, shared standards, the check, the adversarial cycle and project records, with the reasons for each design choice |
 | `docs/compatibility.md` | Platform and packaging notes |
 | `scripts/` | Validator, installer, bundle builder, and helpers: `extract_docx.py` (body and footnotes), `integrity_manifest.py` (fixed-fact diff), `check_register_refs.py` (record IDs), `hidden_text_check.py` (hidden text in manuscripts) |
 | `tests/` | Structure tests and script tests |
