@@ -9,7 +9,7 @@ Sense what is wrong, say why, fix it, and show the writer how to avoid it next t
 
 The two references hold the standards:
 
-- `references/argument-model.md`: the parts of an argument, kinds of claim and evidence, standard form, validity and strength, and a symptom-to-repair table.
+- `references/argument-model.md`: the parts of an argument, kinds and functions of claim, kinds of evidence, standard form, validity and strength, organising claims across paragraphs, and a symptom-to-repair table.
 - `references/language-rubric.md`: a nine-band scorecard on four criteria (task and position; coherence and cohesion; lexical resource; grammatical range and accuracy), modelled on the structure of the IELTS Writing band descriptors and rewritten for legal scholarship.
 
 ## Choose the depth
@@ -29,7 +29,8 @@ Use **argument only** or **language only** when the user asks for one.
 3. Name the kind of claim (§2) and the kind of each piece of evidence (§3).
 4. Check each part with its test: the claim is arguable; each reason passes the challenge and because tests; evidence is the right kind and passes its tests; the warrant would be accepted by the intended reader or is backed; the qualifier matches the support; the strongest objection is met.
 5. Judge the step: valid or strong, and how strong. Look for a counterexample.
-6. Check whether the passage argues at all, or only describes or explains (§6).
+6. Check whether the passage argues at all, or only describes or explains (§6), and whether it synthesises sources or only summarises them (§7).
+7. For a section or introduction of several paragraphs, make a reverse outline (§7): one sentence per paragraph stating its claim and function, labelled general, narrowing or specific, with the positive-to-critical turn located.
 
 Do not verify sources here. Where a finding depends on what an authority says, mark it `[SUPPORT TO CHECK]` and point to `source-verification`. Do not assess support from memory.
 
@@ -41,7 +42,7 @@ For a language other than British English, apply the same criteria with the rele
 
 ## 3. Diagnose
 
-List findings in order of what most damages the passage. For each: the quoted words, the problem in plain terms, its effect on the reader, and the repair. Use the symptom table in `argument-model.md` §7 for argument faults. Keep each finding to two or three lines.
+List findings in order of what most damages the passage. For each: the quoted words, the problem in plain terms, its effect on the reader, and the repair. Use the symptom table in `argument-model.md` §8 for argument faults. Keep each finding to two or three lines.
 
 Apply the sustainability test from `manuscript-review` before reporting: cut any finding the author could dismiss in one sentence.
 
@@ -61,7 +62,7 @@ End with what to practise: the two or three patterns most worth fixing across th
 ## Output
 
 1. **Bottom line** in two sentences: the passage's main strength and the one change that would improve it most.
-2. **Argument** in standard form, then a table: part | present? | problem | repair.
+2. **Argument** in standard form (and the reverse outline, for a multi-paragraph text), then a table: part | present? | problem | repair.
 3. **Language scorecard** (table from `language-rubric.md`).
 4. **Findings**, most damaging first.
 5. **Corrected passage.**

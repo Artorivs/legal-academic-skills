@@ -19,7 +19,7 @@ Does the text do what this piece of writing is for, and hold a clear position th
 | 5 | Position stated but not developed; ideas limited; irrelevant detail; may not reach a conclusion. |
 | 4 and below | No clear position, or the text answers a different question from the one set. |
 
-In legal scholarship, check particularly: does the passage claim more than its evidence carries (see `argument-model.md` §7), and does it stay within the jurisdiction, period and question set?
+In legal scholarship, check particularly: does the passage claim more than its evidence carries (see `argument-model.md` §8), and does it stay within the jurisdiction, period and question set?
 
 ## Criterion 2. Coherence and cohesion
 
@@ -34,7 +34,7 @@ Is the text organised so that the reader follows the reasoning, and are its conn
 | 5 | Some organisation but no overall progression; connectives inaccurate or over-used; repetition because the writer does not refer back or substitute. |
 | 4 and below | Ideas not arranged coherently; paragraphing absent or arbitrary. |
 
-In legal scholarship, check particularly: connectives that state a false relation (*therefore* where nothing follows; *however* where nothing contrasts); enumeration ("first… second… third…") used in place of stating how points relate (see `academic-legal-drafting`); cross-references the reader does not need.
+In legal scholarship, check particularly: whether the text moves from general to specific and makes its positive-to-critical turn (`argument-model.md` §7); connectives that state a false relation (*therefore* where nothing follows; *however* where nothing contrasts); enumeration ("first… second… third…") used in place of stating how points relate (see `academic-legal-drafting`); cross-references the reader does not need.
 
 ## Criterion 3. Lexical resource
 
