@@ -1,15 +1,14 @@
 # The argument model
 
-One shared model of argument for the whole kit. `argument-and-language-check` uses it to diagnose and repair passages; `argument-mapping`, `academic-legal-drafting`, `manuscript-review` and `adversarial-writing-cycle` use the same vocabulary.
+The kit's one model of argument. `argument-and-language-check` uses it to diagnose and repair passages. `argument-mapping`, `academic-legal-drafting`, `manuscript-review` and `adversarial-writing-cycle` use the same terms.
 
-It combines four sources (see `REFERENCES.md` at the repository root):
+It combines four sources, listed in `REFERENCES.md` at the repository root:
+- the University of Pittsburgh's claim–reason–evidence model;
+- Dowden's *Logical Reasoning*, chapter 2;
+- Toulmin's layout of arguments;
+- section 2 of Link's *Scientific Writing for Publication*.
 
-- the claim–reason–evidence model of the University of Pittsburgh's Department of Communication guide, with its two tests for reasons and its tests for evidence;
-- Bradley Dowden, *Logical Reasoning*, chapter 2 ("Claims, Issues, and Arguments"): standard form, indicator words, implicit premises and conclusions, validity and strength, and the difference between arguments, explanations and descriptions;
-- Stephen Toulmin's layout of arguments (warrant, backing, qualifier, rebuttal), already used in the kit as "warrant";
-- Stephanie Link, *Scientific Writing for Publication*, section 2, "Claim Structure and Organization": functional claims, the general-to-specific flow, synthesis rather than summary, and the positive-to-critical turn that opens a gap.
-
-The model is a diagnostic aid, not a template every paragraph must display.
+It is a diagnostic aid, not a template every paragraph must display.
 
 ---
 

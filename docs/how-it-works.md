@@ -1,6 +1,6 @@
 # How the kit works
 
-Six diagrams with the reasoning behind each design choice. GitHub renders the diagrams; elsewhere, paste a block into [mermaid.live](https://mermaid.live).
+Diagrams of how the kit works, in six parts, each with the reasoning behind its design. GitHub renders the diagrams; elsewhere, paste a block into [mermaid.live](https://mermaid.live).
 
 1. [From request to workflow](#1-from-request-to-workflow)
 2. [The workflows across a project](#2-the-workflows-across-a-project)
@@ -81,7 +81,7 @@ flowchart LR
 flowchart TB
     subgraph STD["Defined once"]
         AMOD["Argument model<br/>claim · reason · evidence · warrant<br/>qualifier · rebuttal · functional claims"]
-        LRUB["Language rubric<br/>4 criteria × 9 bands<br/>+ crosswalk to 10 other rubrics"]
+        LRUB["Language rubric<br/>4 criteria × 9 bands<br/>+ lenses for 10 other tests"]
         PROSE["Prose rules<br/>British English · no 'first, second'<br/>needed cross-references only"]
         LABELS["Label vocabulary<br/>access · status · level · support · salience"]
         SEV["Severity scale<br/>critical · major · moderate · minor"]
@@ -109,6 +109,8 @@ flowchart TD
     DEP -->|"'teach me', second-language writer"| TE["Teaching"]
     QK & ST & TE --> S1["Sense the argument<br/>standard form · implicit premises<br/>kind and function of claim<br/>reverse outline for sections"]
     QK & ST & TE --> S2["Sense the language<br/>band per criterion<br/>with one quoted phrase"]
+    S2 -.->|"test named,<br/>or not English"| LENS["Test lens<br/>that test's criteria<br/>meets · close · below"]
+    LENS -.-> DG
     S1 & S2 --> DG["Diagnose<br/>symptom → cause → repair<br/>cut what fails the sustainability test"]
     DG --> CO["Correct<br/>same position, narrowed if unsupported<br/>citations and numbers untouched<br/>[SUPPORT NEEDED] where it must be"]
     CO --> IM["Improve<br/>2–3 patterns to practise"]
@@ -120,6 +122,7 @@ flowchart TD
 - *Depth follows the text.* A three-sentence paragraph does not need a seven-part report; trial runs showed that without a budget, the check produced a thousand words for three sentences.
 - *Standard form exposes what prose hides.* Writing premises above a line shows the unstated warrant and the claim that goes further than its reasons.
 - *The rubric borrows a structure, not a score.* Four criteria from a widely used writing assessment give a familiar frame, but the descriptors are rewritten for legal writing, so the bands are never presented as an exam result.
+- *One scorecard, many lenses.* Every check scores the same four criteria. A named test changes only how the result is reported: under that test's criteria, against its top level, with no number on its scale, because a number would read as an official score. The lens file is read only when a test is named, so ordinary checks stay short.
 - *The writer's position is protected.* The check may narrow an overclaim; it never replaces or strengthens the thesis, and never changes a citation.
 
 ---

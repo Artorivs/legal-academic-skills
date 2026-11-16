@@ -32,7 +32,7 @@ Thank you for improving Legal Academic Skills. Contributions should make workflo
 
 ## When you add or change a skill
 
-- Add or update its entry in `SKILL_INDEX.md` and in the workflow list in `README.md`.
+- Add or update its entry in `SKILL_INDEX.md` and its row in the "What do you want to do?" table in `README.md`.
 - Regenerate the upload bundle with `python3 scripts/build_bundle.py` (CI fails if it is out of date).
 - Keep skill-specific detail in the skill's own `references/` folder so the skill stays self-contained.
 - Add a line to `CHANGELOG.md` under "Unreleased".

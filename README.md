@@ -57,9 +57,10 @@ Every result opens with a short **bottom line** in plain words. Tables and label
 | `Direct support` / `Partial support` / `Interpolated` | Whether a source says what it is cited for. *Interpolated* means the draft added a detail the source does not contain |
 | `Inspected` / `Lead only` | Whether the assistant actually read the source, or only found a reference to it |
 | `[SOURCE TO VERIFY]`, `[PINPOINT TO VERIFY]`, `[SUPPORT NEEDED]` | A gap left visible on purpose instead of being filled with a guess |
-| Band 1–9 | Language scorecard level on one criterion. It is modelled on the IELTS band structure but is **not** an IELTS score. You can also ask for TOEFL, GRE, Cambridge, CEFR, AP, Goethe, TestDaF or DALF criteria as the lens; the result is never that test's official score |
+| Band 1–9 | Language scorecard level on one criterion. It is modelled on the IELTS band structure but is **not** an IELTS score |
+| Meets / close / below | How a text compares with the top level of a test you named (TOEFL, GRE, Cambridge, PTE, CEFR, AP, VALUE, Goethe, TestDaF, DALF). A lens, never that test's score |
 
-The full vocabulary is in [`references/legal-research-standards.md`](references/legal-research-standards.md).
+Every label, with where it is defined, is in [`docs/labels.md`](docs/labels.md).
 
 To see how the workflows, agents and records fit together, and why, read [`docs/how-it-works.md`](docs/how-it-works.md) (diagrams).
 
@@ -73,29 +74,7 @@ To see how the workflows, agents and records fit together, and why, read [`docs/
 
 ## All workflows
 
-Fourteen workflows, each for one kind of work. The stage table and "Telling similar skills apart" are in [`SKILL_INDEX.md`](SKILL_INDEX.md).
-
-**Everyday:**
-
-- `argument-and-language-check` — Check a passage, abstract, or short section for the quality of its argument (claim, reasons, evidence, warrant, objections) and its language (task, coherence, vocabulary, grammar): find the problems, score them, correct the text, and show how to improve. For a full referee-style report on a whole manuscript, use manuscript-review.
-- `academic-legal-drafting` — Write or rewrite passages: turn notes, sources, and outlines into connected academic legal prose, or revise a paragraph or section. Holds the kit's prose rules on style, enumeration, and cross-references. For restructuring or cutting a whole manuscript, use manuscript-consolidation.
-- `source-verification` — Check that a source exists, is the right document and version, and supports the exact sentence it is cited for: one source before relying on it, or every footnote, quotation, pinpoint, and bibliography entry in a manuscript. For what an authority means or how far it reaches, use legal-authority-analysis.
-- `legal-authority-analysis` — Interpret a case, statute, treaty, or administrative or international decision: what it holds, how it reasons, its binding force, limits, ambiguities, and competing readings. For whether a citation exists and supports a sentence, use source-verification.
-- `manuscript-review` — Give a one-off critical assessment of a manuscript as a desk editor, referee, examiner, or pre-submission auditor, with findings ranked by severity. Produces a report, not revised text. For repeated critique-and-revision rounds, or answering real referee reports, use adversarial-writing-cycle.
-
-**For particular stages:**
-
-- `academic-project-router` — Pick and sequence the right skills when a request spans several kinds of work or the next step is unclear. Not needed when one skill obviously fits.
-- `research-planning` — Plan a new project (question, provisional thesis, scope, method, sources, stages), or judge whether an existing thesis or article idea is novel, useful, sound, and worth pursuing. Use before research or drafting starts. For the step-by-step logic of a thesis already chosen, use argument-mapping.
-- `literature-synthesis` — Map the scholarship on a question into positions, disagreements, methods, and gaps, and place the paper's contribution among them. For whether one specific thesis is already preempted, use research-planning.
-- `argument-mapping` — Lay out the author's own thesis as linked claims, evidence, warrants, assumptions, and weakest links, before drafting or when restructuring, and keep the claim register. For a reader's judgment of a finished manuscript, use manuscript-review.
-- `multilingual-legal-writing` — Write, revise, or translate scholarship in any language other than British English or between languages, and use foreign-language sources, keeping legal meaning and the terminology of the right legal system, not just the right language.
-- `adversarial-writing-cycle` — Run rounds of critique, author response, revision, and retest until the argument holds, or work through real referee reports and draft the response letter. Produces revised text and a response matrix. For a single critical report, use manuscript-review.
-- `manuscript-consolidation` — Restructure a whole manuscript or long section: remove repetition, reorder sections, standardise terms, fix transitions and cross-references, or meet a word limit by moving material to footnotes. For drafting or rewriting individual passages, use academic-legal-drafting.
-- `project-continuity` — Resume or hand over a long project across sessions or models: read and update the handover and registers, check them against the files, and write a cold-start handover.
-- `anticipatory-analysis` — Fix an analytical method before seeing the evidence, as a protocol for interpreting a future event or a codebook for coding many judgments, decisions, or statutes, then apply it without retrofitting.
-
-The plugin also provides two agents for a review from a fresh context: `legal-manuscript-editor` and `legal-research-reviewer`.
+The table above lists all fourteen. [`SKILL_INDEX.md`](SKILL_INDEX.md) arranges them by stage of a project and shows how to tell similar ones apart. The plugin also has two agents that review from a fresh context: `legal-manuscript-editor` and `legal-research-reviewer`.
 
 ---
 
@@ -118,7 +97,7 @@ Each skill is a directory whose entry point is `SKILL.md`, in the open [Agent Sk
 bash scripts/install-agent-skills.sh /path/to/your/agent/skills
 ```
 
-`skills/` is the canonical source. `.agents/skills` is a symbolic link to it for tools that look there; on Windows, Git may check it out as a plain file unless symlinks are enabled, in which case copy from `skills/`. Runtime support varies; see [`docs/compatibility.md`](docs/compatibility.md).
+`skills/` is the canonical source. For the `.agents/skills` link and what has been checked on each platform, see [`docs/compatibility.md`](docs/compatibility.md).
 
 ### AI Projects in detail
 
@@ -133,13 +112,12 @@ bash scripts/install-agent-skills.sh /path/to/your/agent/skills
 | --- | --- |
 | `skills/` | The 14 workflows, each with its own `references/` where needed |
 | `agents/` | `legal-manuscript-editor`, `legal-research-reviewer` |
-| `templates/` | Project brief, handover, registers, argument map, source ledger |
-| `examples/` | A claim–evidence matrix and a research log |
+| `templates/` | Project brief, handover, registers, argument map, source ledger, search log |
 | `evals/` | Human-review cases and machine-checkable regression cases |
-| `references/` | Legal research quality standards and the shared label vocabulary |
 | `project-import/` | Instructions, upload bundle, and quick prompts for AI Projects |
 | `docs/how-it-works.md` | Diagrams of routing, workflows, shared standards, the check, the adversarial cycle and project records, with the reasons for each design choice |
-| `docs/compatibility.md` | Platform and packaging notes |
+| `docs/labels.md` | Every label the answers use, in plain words |
+| `docs/compatibility.md` | What has been checked on each platform |
 | `scripts/` | Validator, installer, bundle builder, and helpers: `extract_docx.py` (body and footnotes), `integrity_manifest.py` (fixed-fact diff), `check_register_refs.py` (record IDs), `hidden_text_check.py` (hidden text in manuscripts) |
 | `tests/` | Structure tests and script tests |
 

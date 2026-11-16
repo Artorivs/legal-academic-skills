@@ -19,6 +19,7 @@ Use only the files the project needs.
 | `source-ledger.md` | Each source, whether it was read, and what it supports | a source is checked |
 | `glossary.md` | Terms used in a settled sense | a term is defined or changed |
 | `documents-wanted.md` | Material still to obtain, by priority | a gap is found or filled |
+| `search-log.md` | What was searched, where, when, and what was left out | a search is run |
 | `adversarial-cycle-log.md` | Objections and responses in a review cycle | a cycle runs |
 
 Each decision, correction, claim and source has one home; other files point to it by ID. Draft prose goes in `draft.md` and topic research in `findings-*.md`. If the assistant cannot open a file, it says so rather than assuming what is in it.

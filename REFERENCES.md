@@ -12,9 +12,17 @@
 - IELTS Writing Task 2 band descriptors (public version), British Council, IDP: IELTS Australia and Cambridge English — the four-criterion structure (Task Response; Coherence and Cohesion; Lexical Resource; Grammatical Range and Accuracy) on which the language rubric is modelled. The kit's descriptors are its own wording, and its bands are not IELTS scores. Copy read 16 November 2026: https://www.dei.unict.it/sites/default/files/documenti_sito/Writing-Band-descriptors-Task-2.pdf
 - Stephanie Link, *Scientific Writing for Publication*, Oklahoma State University Open Library, section 2 "For Research Argument: Claim Structure and Organization": https://open.library.okstate.edu/writingforpublication/part/section-2-for-research-argument-claim-structure-and-organization/ (CC BY 4.0) — functional claim types (cause, effect, solution, best practice, limitation, future direction), the general-to-specific flow, synthesis rather than summary, the positive-to-critical turn, and the reverse outline. Read from a saved copy of the page supplied by the maintainer, 16 November 2026, because the page could not be fetched directly.
 
-## Other writing rubrics (`argument-and-language-check/references/rubric-crosswalk.md`)
+## Test lenses (`argument-and-language-check/references/test-lenses.md`)
 
-Read 16 November 2026. Versions and full citations are given in that file.
+All read 16 November 2026. Version notes:
+- TOEFL: the 2024 rubrics, with the 1–6 band reporting scale introduced in January 2026.
+- GRE: the Issue task only. ETS labels its Argument scoring guide as for tests before 22 September 2023.
+- Cambridge: the C2 teacher guide (600977).
+- PTE: the 2012 guide (v4); scoring may have changed since.
+- CEFR: Table C4 of the Manual.
+- Goethe: the 2024 Modular Modellsatz (2nd ed); the 2014 edition used four criteria.
+- TestDaF: no published writing descriptors.
+- DALF: the grid copy read is undated, and revised grids were announced in October 2022.
 
 - ETS: *TOEFL iBT Writing Rubrics* (2024): https://www.ets.org/content/dam/ets-org/pdfs/toefl/toefl-ibt-writing-rubrics.pdf; *Score Scale Update 2026*: https://www.mx.ets.org/content/dam/ets-org/pdfs/toefl/score-scale-update-2026.pdf; GRE Analytical Writing scoring: https://www.ets.org/gre/test-takers/general-test/prepare/content/analytical-writing/scoring.html
 - Cambridge English, *Teacher guide for writing: C2 Proficiency*: https://www.cambridgeenglish.org/Images/600977-teacher-guide-for-writing-c2-proficiency.pdf

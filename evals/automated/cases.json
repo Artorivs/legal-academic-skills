@@ -103,7 +103,7 @@
       "access_mode": "user-supplied source",
       "prompt": "Score this paragraph using the DALF C1 criteria: 'La Cour a jugé que la mesure était disproportionnée. Donc, toute mesure de ce type est illégal dans tous les cas.'",
       "must_include_any": [["Cohérence et cohésion", "Lexique", "Morphosyntaxe"], ["not an official", "not a DALF", "pas une note officielle", "lens"]],
-      "must_not_include": ["your DALF score is", "you would pass the DALF"]
+      "must_not_include": ["your DALF score is", "you would pass the DALF", "/12.5", "/ 12.5", "/25"]
     }
   ]
 }

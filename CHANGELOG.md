@@ -44,7 +44,7 @@ Easier to start with, and a new workflow for checking and improving argument and
 
 - `argument-and-language-check`: finds, scores, corrects and teaches. Argument checked in standard form against a shared argument model (claim, reason, evidence, warrant, backing, qualifier, rebuttal; kinds of claim and evidence; validity and strength; a symptom-to-repair table). Language scored on four criteria in nine bands, modelled on the structure of the IELTS Writing band descriptors and rewritten for legal scholarship. Functional claims, general-to-specific organisation, synthesis over summary and the positive-to-critical turn, from Link's *Scientific Writing for Publication*. Quick, standard and teaching depths.
 - `docs/how-it-works.md`: Mermaid diagrams of routing, the workflows across a project, shared standards, the argument-and-language check, the adversarial cycle and project records, each with its design rationale.
-- `argument-and-language-check`: a rubric crosswalk to TOEFL, GRE, Cambridge C1/C2, PTE, the CEFR written assessment grid, AP English Language, the AAC&U VALUE rubric, Goethe-Zertifikat C1, TestDaF and DALF C1, usable as scoring lenses (never as official scores), with a separate register-and-genre row where those rubrics have one.
+- `argument-and-language-check`: test lenses for TOEFL, GRE, Cambridge C1/C2, PTE, the CEFR written assessment grid, AP English Language, the AAC&U VALUE rubric, Goethe-Zertifikat C1, TestDaF and DALF C1. Each lens reports the scorecard under that test's criteria, judged against its top level, with no number on the test's scale and never as an official score. Read only when a test is named or the text is not in English. A register-and-genre row is added when needed.
 - Evaluation case 05 and automated cases for the new workflow.
 - Test that the installer refuses to overwrite the canonical skills.
 
@@ -55,9 +55,19 @@ Easier to start with, and a new workflow for checking and improving argument and
 - Project instructions, router and `project-continuity`: the author need not name workflows; every answer opens with a plain bottom line; author decisions are asked one at a time with a recommendation first.
 - `argument-mapping`, `academic-legal-drafting`, `manuscript-review` and `adversarial-writing-cycle` use the shared argument model; drafting self-checks before delivering; review can score language with the rubric.
 - `SKILL_INDEX.md` names the five most-used workflows; `templates/README-project.md` says which templates each size of project needs.
+- `literature-synthesis` gains an Output section. `research-planning` and `literature-synthesis` keep their search record in a new `templates/search-log.md`.
+- `docs/labels.md` replaces `references/legal-research-standards.md`. It is a plain-language list of every label, marker and band the answers use, with where each is defined. The old file was loaded by no skill, and its standards are already in the skills and the project instructions.
+- `docs/compatibility.md` now says what has been checked on each platform, instead of general advice.
+- README no longer repeats every skill description; the goal table lists all fourteen, and `SKILL_INDEX.md` holds the descriptions.
+- The router leaves project records to `project-continuity`.
+
+### Removed
+
+- `examples/`. The claim–evidence matrix repeated `templates/claim-register.md`; the useful part of the research log became `templates/search-log.md`.
 
 ### Fixed
 
+- Project instructions used `[SUPPORTING AUTHORITY NEEDED]` where every skill uses `[SUPPORT NEEDED]`.
 - `scripts/install-agent-skills.sh` no longer deletes the canonical skills when run with its old default target, `.agents/skills`, which is a symlink to `skills/`. It now takes a target directory and refuses the canonical one.
 
 ## 0.2.0 — 2026-11-03

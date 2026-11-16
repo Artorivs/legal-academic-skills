@@ -27,7 +27,7 @@ Act as a rigorous research assistant, analytical interlocutor, and scholarly edi
 
 Attend to jurisdiction, date, legal hierarchy, procedural posture, applicable regime, institutional setting, method, and remedy where material. Distinguish what a source expressly states from inference, contested interpretation, normative proposal, hypothesis, and unresolved matter. Do not infer practice from formal law alone, causation from correlation, or consensus from a few sources. For administrative law, human rights, law and society, and public international law, apply field-specific concepts only when relevant; do not force a checklist onto every paper.
 
-Never invent authorities, statutory or treaty provisions, case names, quotations, paragraph numbers, bibliographic details, DOIs, URLs, or pinpoints. Separate primary authorities, scholarship, empirical material, and search leads. A verified source may still fail to support a claim. Mark gaps visibly: `[SOURCE TO VERIFY]`, `[PINPOINT TO VERIFY]`, `[SUPPORTING AUTHORITY NEEDED]`. Cite the specific proposition supported. Use the citation system required by the user or target publication; otherwise state that the format is provisional.
+Never invent authorities, statutory or treaty provisions, case names, quotations, paragraph numbers, bibliographic details, DOIs, URLs, or pinpoints. Separate primary authorities, scholarship, empirical material, and search leads. A verified source may still fail to support a claim. Mark gaps visibly: `[SOURCE TO VERIFY]`, `[PINPOINT TO VERIFY]`, `[SUPPORT NEEDED]`. Cite the specific proposition supported. Use the citation system required by the user or target publication; otherwise state that the format is provisional.
 
 ## Writing style
 
@@ -75,9 +75,7 @@ Read the project brief and handover if available. Identify the deliverable, rese
 
 For pairs that are easily confused, use the "Telling similar skills apart" table in `SKILL_INDEX.md` at the repository root. Use at most the few skills materially required. When one skill explicitly calls for another, follow that dependency; otherwise avoid redundant audits.
 
-## Project records
-
-Where working files exist, read the handover and the relevant canonical records before changing them. Keep each substantive decision, correction, claim, and source in one authoritative register. Update dependent records after material changes. Do not claim to have modified a file unless the environment actually permits file editing and the change was made.
+Where the project keeps records, `project-continuity` governs how they are read and updated.
 
 ## Response discipline
 
@@ -126,7 +124,7 @@ Use this mode when the author already has a thesis, article idea, or several com
 5. **Run the claim-type tests** in `references/claim-type-tests.md`, choosing the smallest set that can expose the thesis's real weaknesses.
 6. **Give a verdict**: `green` (proceed, with remaining work), `yellow` (viable core; a specified change in scope, warrant, or framing is needed, with a revised thesis), or `red` (novelty or soundness fails materially; propose pivots). Do not average the ratings: novelty and soundness can each be decisive.
 
-Report: claim as assessed; bottom line; preemption map (closest work, overlap, remaining difference); the four ratings; surviving objections; best revised thesis; next research moves; and a research record (date, databases and tools used, representative queries, access limits).
+Report: claim as assessed; bottom line; preemption map (closest work, overlap, remaining difference); the four ratings; surviving objections; best revised thesis; next research moves; and a research record (date, databases and tools used, representative queries, access limits), kept in the project's `search-log.md` where the project has files.
 
 Never call a thesis novel because a search found nothing. Write "no preemption located in the sources searched as of [date]" and state the search's limits.
 
@@ -190,7 +188,7 @@ Group sources by the question they answer, conceptual commitments, legal interpr
 
 For each important source, identify the claim it makes, the evidence or reasoning offered, the limits recognised by its author, and its relevance to the current project. Distinguish a genuine debate from several authors addressing adjacent issues. Assess whether the sample is representative enough to speak of a consensus or a gap. Seek primary materials behind secondary accounts when the paper makes a legal proposition.
 
-Search beyond one language where the debate is not confined to one. Record which languages and databases were searched; a literature mapped only in English should not be described as the state of the field.
+Search beyond one language where the debate is not confined to one. Record which languages and databases were searched, in the project's `search-log.md` where it has one. A literature mapped only in English should not be described as the state of the field.
 
 Represent each position as its proponents would recognise it. Before relying on a characterisation of another scholar, check it against their text and label it honestly: `fair` (the strongest version), `slanted`, `strawman`, or `uncharitable`. Revise anything that is not fair.
 
@@ -199,6 +197,14 @@ Represent each position as its proponents would recognise it. Before relying on 
 Explain what the literature establishes, what remains disputed or under-explained, why that unresolved issue matters, and how the present paper changes the account. A contribution may refine a doctrine, expose an assumption, reconcile authorities, provide a better comparative explanation, challenge an empirical generalisation, or defend a normative position. It need not claim that prior scholars have ignored an entire subject.
 
 Do not write a succession of paragraphs beginning with authors' names unless the historiography itself requires that form. Prefer paragraph structures that make a proposition, compare evidence, assess limitations, and draw a consequence for the research question. Use quotations sparingly and accurately. Do not overstate the work of sources you have not inspected; mark search leads separately.
+
+## Output
+
+1. **Bottom line:** the state of the debate in two or three sentences, and where the paper fits.
+2. **Map of positions:** a table with one row per position, giving its proponents, its central claim, the premises it depends on, its evidence or method, the kind of disagreement with its rivals (law, facts, concepts, causation, values, method), and how fairly the paper currently represents it (`fair`, `slanted`, `strawman` or `uncharitable`).
+3. **What is settled, what is disputed, and what is missing**, each with the sources that show it.
+4. **The contribution:** one paragraph on how the paper changes the account.
+5. **Search limits:** the languages, databases and period covered, and the sources that are leads only, not yet read.
 
 ---
 
@@ -455,11 +461,11 @@ Provide a one-paragraph thesis, a text-based argument tree, and a vulnerability 
 
 Sense what is wrong, say why, fix it, and show the writer how to avoid it next time. Works on anything from a paragraph to a short section, in a draft by the author or by the model itself.
 
-The two references hold the standards:
+The standards are in three references:
 
-- `references/argument-model.md`: the parts of an argument, kinds and functions of claim, kinds of evidence, standard form, validity and strength, organising claims across paragraphs, and a symptom-to-repair table.
-- `references/language-rubric.md`: a nine-band scorecard on four criteria (task and position; coherence and cohesion; lexical resource; grammatical range and accuracy), modelled on the structure of the IELTS Writing band descriptors and rewritten for legal scholarship.
-- `references/rubric-crosswalk.md`: the writing criteria of TOEFL, GRE, Cambridge, PTE, the CEFR grid, AP English Language, the AAC&U VALUE rubric, Goethe-Zertifikat, TestDaF and DALF, mapped to the kit's criteria.
+- `references/argument-model.md` (always read): the parts of an argument, the kinds and functions of claim, the kinds of evidence, standard form, validity and strength, organising claims across paragraphs, and a symptom-to-repair table.
+- `references/language-rubric.md` (always read): the scorecard. Four criteria on nine bands, modelled on the structure of the IELTS Writing band descriptors and rewritten for legal scholarship, plus a register row when needed.
+- `references/test-lenses.md` (read only when needed): for reporting the scorecard under another test's criteria, such as TOEFL, GRE, Cambridge, PTE, CEFR, AP, VALUE, Goethe, TestDaF or DALF, and for texts not in English.
 
 ## Before starting
 
@@ -475,7 +481,7 @@ Decide from the request and the length of the text; do not ask. Wording beats le
 | **Standard** | The text is several paragraphs, or the user asks to "check", "assess" or "score" it | Everything in *Output* |
 | **Teaching** | The user wants to learn, or says they write in a second language | Standard, plus each recurring pattern with a rule and two corrected examples from the text |
 
-Lens: if the user names a test or framework (TOEFL, GRE, Cambridge, PTE, CEFR, AP, VALUE, Goethe, TestDaF, DALF), score the language with that rubric's own criterion names and scale from `rubric-crosswalk.md` instead of the default four, and say that the result is a lens, not that test's score. Where a rubric has grids for several task types (DALF has *essai* and *synthèse*), use the grid for the kind of text checked: an argued text takes the essay grid, a summary of sources the synthesis grid. For a text in French or German with no lens named, use the DALF C1 or Goethe-Zertifikat C1 criteria; for another language with no test listed, use the CEFR grid.
+Lens: if the user names a test or framework, or the text is not in English, follow `test-lenses.md`. Otherwise do not read it.
 
 Scope: "the English", "grammar", "language" → **language only**. "The argument", "the reasoning", "the logic" → **argument only**. Otherwise both. Depth sets which parts appear; scope then removes the parts that do not apply. State depth and scope in a few words at the top, so the user can ask for another.
 
@@ -495,9 +501,7 @@ Do not verify sources here. Where a finding depends on what an authority says, m
 
 ## 2. Sense: read the passage as language
 
-Score each criterion in `language-rubric.md` on its nine bands, with one short quoted phrase that decided the score. Errors that change legal meaning (a wrong modal, the scope of a negation, *and* for *or*) weigh more than errors of form.
-
-For a language other than British English, apply the same criteria with the relevant pack in the `multilingual-legal-writing` skill.
+Score each criterion in `language-rubric.md` on its nine bands, with one short quoted phrase that decided the score. Add the register row only when register is the main weakness or the lens asks for it. Errors that change legal meaning (a wrong modal, the scope of a negation, *and* for *or*) weigh more than errors of form.
 
 ## 3. Diagnose
 
@@ -522,7 +526,7 @@ End with what to practise: the two or three patterns most worth fixing across th
 
 1. **Bottom line** in two sentences: the passage's main strength and the one change that would improve it most.
 2. **Argument** in standard form (and the reverse outline, for a multi-paragraph text), with the kind of claim and whether the step is valid or how strong it is. No separate table of parts: each problem goes in the findings.
-3. **Language scorecard**: one row per criterion with the band, one quoted phrase, and the fix.
+3. **Language scorecard**: the table in `language-rubric.md`, or the lens rows from `test-lenses.md`.
 4. **Findings**, most damaging first, argument and language together; each two or three lines.
 5. **Corrected passage.**
 6. **For you to decide or check**: only what the author must supply, choose or verify.
@@ -540,16 +544,15 @@ A score is a structured judgment, not a measurement, and never an IELTS or other
 
 # The argument model
 
-One shared model of argument for the whole kit. `argument-and-language-check` uses it to diagnose and repair passages; `argument-mapping`, `academic-legal-drafting`, `manuscript-review` and `adversarial-writing-cycle` use the same vocabulary.
+The kit's one model of argument. `argument-and-language-check` uses it to diagnose and repair passages. `argument-mapping`, `academic-legal-drafting`, `manuscript-review` and `adversarial-writing-cycle` use the same terms.
 
-It combines four sources (see `REFERENCES.md` at the repository root):
+It combines four sources, listed in `REFERENCES.md` at the repository root:
+- the University of Pittsburgh's claim–reason–evidence model;
+- Dowden's *Logical Reasoning*, chapter 2;
+- Toulmin's layout of arguments;
+- section 2 of Link's *Scientific Writing for Publication*.
 
-- the claim–reason–evidence model of the University of Pittsburgh's Department of Communication guide, with its two tests for reasons and its tests for evidence;
-- Bradley Dowden, *Logical Reasoning*, chapter 2 ("Claims, Issues, and Arguments"): standard form, indicator words, implicit premises and conclusions, validity and strength, and the difference between arguments, explanations and descriptions;
-- Stephen Toulmin's layout of arguments (warrant, backing, qualifier, rebuttal), already used in the kit as "warrant";
-- Stephanie Link, *Scientific Writing for Publication*, section 2, "Claim Structure and Organization": functional claims, the general-to-specific flow, synthesis rather than summary, and the positive-to-critical turn that opens a gap.
-
-The model is a diagnostic aid, not a template every paragraph must display.
+It is a diagnostic aid, not a template every paragraph must display.
 
 ---
 
@@ -667,9 +670,11 @@ Single arguments have to be arranged into a line of reasoning.
 
 # The language rubric
 
-A scorecard for the quality of written scholarly English (or, with the relevant language pack, another language). Its four criteria follow the structure of the IELTS Writing band descriptors (public version): Task Response, Coherence and Cohesion, Lexical Resource, and Grammatical Range and Accuracy. The descriptors below are rewritten for academic legal writing and are this kit's own. **A score here is not an IELTS score, does not convert to one,** and must never be reported as one.
+The scorecard every check uses. It has four criteria on a nine-band scale, plus a fifth row for register when it is needed. The criteria follow the structure of the IELTS Writing band descriptors (public version): Task Response, Coherence and Cohesion, Lexical Resource, and Grammatical Range and Accuracy. The descriptors are this kit's own, rewritten for academic legal writing. **A band here is not an IELTS score, does not convert to one,** and is never reported as one.
 
-Score each criterion on the nine-point scale. Report the score with the observation that decided it, tied to a short quoted phrase from the text. Do not average the criteria into one number unless the user asks; when you do, round down to the nearest half point and say that the average hides which criterion is weakest.
+The scorecard works for any language. For a text not in British English, read the criteria with the language pack in `multilingual-legal-writing`. To report the result under another test's criteria, use `test-lenses.md`.
+
+Report each band with the observation that decided it and a short quoted phrase. Do not average the criteria into one number unless the user asks. If they do, round down to the nearest half band, and say that an average hides the weakest criterion.
 
 ---
 
@@ -743,9 +748,20 @@ In legal scholarship, check particularly: scope of negation and of qualifiers ("
 
 ---
 
-## Register and genre
+## Register and genre (when needed)
 
-The four criteria above treat register under lexical resource. Several other rubrics give it a criterion of its own (Cambridge *Communicative Achievement*, Goethe *Register, soziokulturelle Angemessenheit*, DALF *Adéquation sociolinguistique*, VALUE *Genre and Disciplinary Conventions*). When the user asks for one of those lenses, or when register is the main weakness, report it as a separate row: does the text follow the conventions of legal scholarship and of the target venue, and hold its intended reader? See `rubric-crosswalk.md`.
+Add this row when register is the main weakness, or when a lens has its own register criterion (`test-lenses.md`). Otherwise register counts under lexical resource.
+
+Does the text follow the conventions of legal scholarship and of its venue, and hold its intended reader?
+
+| Band | Descriptor |
+|---|---|
+| 9 | Fully in the register of the venue and discipline. Conventions such as citation, attribution and the tone towards opposing views are followed without effort. |
+| 7 | Register right throughout, with occasional lapses into informality, inflation or the conventions of another genre. |
+| 5 | Register uneven: journalistic, exam-like or advocacy phrasing in places; opposing views treated dismissively; conventions followed only in part. |
+| 3 | Register wrong for scholarship, for example polemic, a blog post or a client letter. |
+
+Use the even bands for texts that fall between two descriptors.
 
 ## Reporting
 
@@ -757,130 +773,191 @@ Use this table, then the findings:
 | Coherence and cohesion | | | |
 | Lexical resource | | | |
 | Grammatical range and accuracy | | | |
+| Register and genre (when needed) | | | |
 
 Rules for scoring:
 - Score what is on the page, not what the writer probably meant.
 - A band needs most of its descriptor, not one feature of it.
 - Errors that change legal meaning count more than errors of form: a wrong modal in a statement of law outweighs several article errors.
-- For a writer in a second language, name recurring patterns (for example, article use, or tense in reporting authority) and give one rule and two corrected examples for each, so the writer can fix the rest unaided.
+- A band reflects the whole text, not its worst sentence. Name the recurring pattern behind the errors, not each instance.
 
-### Reference for argument-and-language-check: `references/rubric-crosswalk.md`
+### Reference for argument-and-language-check: `references/test-lenses.md`
 
-# Other writing rubrics: a crosswalk
+# Test lenses
 
-The kit's own scorecard (`language-rubric.md`) is modelled on IELTS. This file sets out the writing criteria of other widely used tests and frameworks, so that a check can be run through the lens a writer knows, and shows how each maps to the kit's criteria and to the argument model.
+Read this file only when the user names a test or framework, or the text is not in English. Otherwise the check uses `language-rubric.md` alone.
 
-## Rules for using another rubric
+A lens reports the language under the criteria a writer already knows from a test. It never gives that test's score.
 
-- **Lens, not score.** Using a test's criteria never produces that test's score. Say so in the answer. Official scores come only from the test's own examiners and scoring systems, which this check does not reproduce.
-- **Use the official criterion names**, in the original language for French and German tests with an English gloss, so the writer recognises them.
-- **Descriptors here are summaries.** Short quotations are marked; everything else paraphrases the source. Check the source for the full descriptor before relying on a fine distinction.
-- **Rubrics change.** Each entry gives the version read and the date. If the user's version differs, follow theirs.
-- **Exam tasks are not scholarship.** These rubrics judge short timed texts. Apply the criteria, not the genre: a law article is not penalised for lacking an exam essay's conclusion formula.
+## How to apply a lens
+
+1. **Pick the lens.**
+   - If the user names a test, use that test.
+   - If the text is in French or German and no test is named, use DALF C1 or Goethe C1.
+   - For any other language, use the CEFR grid.
+   - IELTS needs no lens, because `language-rubric.md` already uses its four criteria.
+2. **Score the kit's criteria first.** Use `language-rubric.md` as usual. Its bands and quoted phrases are the evidence for the lens.
+3. **Report one row for each lens criterion.** Each row has:
+   - the official name, in the original language with an English gloss for French and German (TOEFL and GRE score holistically, so their rows are features named in the descriptors, not official criteria);
+   - the kit criterion it draws on;
+   - one judgment against the summary of the top level given here: **meets**, **close** or **below**;
+   - one quoted phrase.
+
+   Give no number on the test's own scale. These summaries are not the full descriptors, and a number would read as an official score.
+4. **Add the lens's "Also check" points** to the findings, wherever they find a fault.
+5. **Say in one line** that this is a lens, not that test's score.
+
+Exam rubrics judge short timed texts. Apply their criteria, not their genre: a law article is not marked down for lacking an exam essay's closing formula. The sources, versions and dates are listed in `REFERENCES.md` at the repository root. If the user works from a newer version of a rubric, follow theirs.
 
 ---
 
-## English-language tests and frameworks
-
-### IELTS Writing (British Council, IDP, Cambridge)
-- **Scale:** bands 0–9.
-- **Criteria (Task 2):** Task Response; Coherence and Cohesion; Lexical Resource; Grammatical Range and Accuracy.
-- **Use:** the default lens; the kit's own four criteria follow this structure.
-- **Source:** Writing Task 2 band descriptors (public version), read 16 November 2026.
+## English
 
 ### TOEFL iBT Writing (ETS)
-- **Scale:** each task rubric 0–5. Since January 2026 the section is reported on a 1–6 band scale (half bands), aligned with the CEFR: 6 = C2, 5–5.5 = C1, 4–4.5 = B2. The old 0–30 Writing score maps to the bands (for example 29–30 = 6; 24–26 = 5).
-- **Writing for an Academic Discussion**, top score: "a relevant and very clearly expressed contribution to the online discussion" that "demonstrates consistent facility in the use of language". At score 3, elaboration may be missing, unclear or irrelevant, and lexical and grammatical errors are noticeable.
-- **Also scored:** an Integrated Writing rubric (0–5) in the 2024 rubric document.
-- **Adds:** whether each point is *elaborated* (explanation, example, detail) rather than merely stated; a contribution that moves a discussion on rather than repeating it.
-- **Sources:** ETS, *TOEFL iBT Writing Rubrics* (© 2024); ETS, *Score Scale Update 2026* (April 2026). Read 16 November 2026.
+| Lens criterion | Kit criterion |
+|---|---|
+| Relevance and contribution | Task and position |
+| Elaboration (explanation, example, detail) | Task and position, and the argument |
+| Language use: vocabulary, sentence variety, errors | Lexical resource; Grammatical range and accuracy |
 
-### GRE Analytical Writing (ETS)
-- **Scale:** 0–6 in half points.
-- **Analyze an Issue**, by level: 6 Outstanding, "a cogent, well-articulated analysis of the issue" that "conveys meaning skillfully"; 5 Strong; 4 Adequate, "a competent analysis"; 3 Limited (vague position, weak support, limited focus, errors that can interfere with meaning); 2 Seriously flawed; 1 Fundamentally deficient; 0 off topic or not an answer.
-- **Analyze an Argument:** ETS labels its scoring guide as for tests given before 22 September 2023. The task asked candidates to evaluate someone else's argument rather than make their own.
-- **Adds:** the six Issue instruction types are themselves useful checks on a legal argument: when the claim would and would not hold; the strongest challenge to the writer's view; the consequences of a recommended policy; the reason a claim rests on.
-- **Source:** ETS, Analytical Writing scoring page and Issue task page, read 16 November 2026.
+- **Top level:** the response is a relevant, very clearly expressed contribution, and shows consistent facility with the language.
+- **Also check:** whether every point is elaborated rather than only stated, and whether the text moves the discussion on rather than repeating it.
 
-### Cambridge English: C1 Advanced and C2 Proficiency
-- **Scale:** 0–5 on each of four subscales. For C2 Proficiency, band 3 or above indicates C2 ability.
-- **Subscales:** **Content** (relevance; the target reader fully informed); **Communicative Achievement** (command of the conventions of the task; complex ideas communicated "in an effective and convincing way"); **Organisation** (text "organised impressively and coherently" with a wide range of cohesive devices and organisational patterns); **Language** (range, precision, "sophistication and style"; grammar fully controlled; errors only as slips).
-- **Adds:** *Communicative Achievement* as a separate criterion: does the text follow the conventions of its genre and hold its target reader? For legal scholarship, that means the conventions of the venue and the discipline.
-- **Source:** Cambridge English, *Teacher guide for writing: C2 Proficiency* (600977), read 16 November 2026.
+### GRE Analytical Writing, Analyze an Issue (ETS)
+| Lens criterion | Kit criterion |
+|---|---|
+| Position and analysis | Task and position, and the argument |
+| Reasons and examples | The argument (reasons, evidence) |
+| Focus and organisation | Coherence and cohesion |
+| Language control | Lexical resource; Grammatical range and accuracy |
 
-### PTE Academic (Pearson), Write Essay
-- **Traits (maximum points):** Content (3); Form, 200–300 words (2); Development, structure and coherence (2); Grammar (2); General linguistic range (2); Vocabulary range (2); Spelling (2).
-- **Adds:** *General linguistic range* separate from vocabulary: whether the writer can say exactly what they mean without being restricted by their language.
-- **Source:** Pearson, *PTE Academic Score Guide*, version 4 (November 2012). This is an old version and the scoring may since have changed; treat it as a guide to the traits only.
+- **Top level (6, Outstanding):** a cogent, well-articulated analysis that conveys meaning skilfully.
+- **Also check:** the GRE task instructions, used as questions about the claim:
+  - When would it hold, and when would it not?
+  - What is the strongest challenge to it?
+  - What would the recommended policy lead to?
+  - Which reason does it rest on?
 
-### CEFR written assessment criteria grid (Council of Europe)
-- **Columns:** Overall; Range; Coherence; Accuracy; Description; Argument. Levels A1–C2.
-- **Argument at C1:** clear, well-structured expositions of complex subjects that underline the salient issues and support viewpoints with subsidiary points, reasons and examples. **At C2:** clear, smoothly flowing, complex reports, articles and essays that present a case, with a logical structure that helps the reader find the significant points.
-- **Use:** the common reference for every language; use it when no test-specific rubric exists for the language of the text.
-- **Source:** *Manual for Relating Language Examinations to the CEFR*, Table C4 "Written assessment criteria grid", via an ECML benchmarking document, read 16 November 2026.
+### Cambridge English C1 Advanced and C2 Proficiency
+| Lens criterion | Kit criterion |
+|---|---|
+| Content | Task and position |
+| Communicative Achievement | Register and genre |
+| Organisation | Coherence and cohesion |
+| Language | Lexical resource; Grammatical range and accuracy |
 
-### AP English Language and Composition, Argument essay (College Board)
-- **Rows:** A, Thesis (0–1): "a thesis that presents a defensible position". B, Evidence and Commentary (0–4): "specific evidence to support all claims in a line of reasoning" and commentary that "consistently explains how the evidence supports a line of reasoning". C, Sophistication (0–1): "sophistication of thought and/or a complex understanding of the rhetorical situation".
-- **Adds:** *commentary* as a separate demand: evidence is not enough; the text must say how it supports the claim. This is the warrant, in plainer words.
-- **Source:** College Board, *2026 AP English Language and Composition Scoring Guidelines*, read 16 November 2026.
+- **Top level:** the target reader is fully informed. Complex ideas come across effectively and convincingly. The text is organised impressively, with a wide range of cohesive devices. The language shows range, precision and style, and its only errors are slips.
+- **Also check:** whether the text follows the conventions of its venue and discipline, and holds its intended reader.
+
+### PTE Academic, Write Essay (Pearson)
+| Lens criterion | Kit criterion |
+|---|---|
+| Content | Task and position |
+| Form (200–300 words) | Not applied: an exam length |
+| Development, structure and coherence | Coherence and cohesion |
+| General linguistic range | Lexical resource |
+| Vocabulary range | Lexical resource |
+| Grammar; Spelling | Grammatical range and accuracy |
+
+- **Top level:** the writer can say exactly what they mean without being held back by the language.
+- **Also check:** whether the writer avoids what they cannot say. Signs are simplified claims, or a vague word where a precise one is needed.
+- **Caveat:** the guide read for this entry dates from 2012. Treat the trait names as a guide only.
+
+### CEFR written assessment grid (Council of Europe)
+| Lens criterion | Kit criterion |
+|---|---|
+| Overall | All four |
+| Range | Lexical resource |
+| Coherence | Coherence and cohesion |
+| Accuracy | Grammatical range and accuracy |
+| Argument | Task and position, and the argument |
+
+- **Top level (C2 Argument):** clear, smoothly flowing, complex reports and essays that present a case, with a logical structure that helps the reader find the significant points.
+- **C1 Argument:** clear, well-structured expositions of complex subjects that bring out the main issues. Viewpoints are supported with subsidiary points, reasons and examples.
+- **Use:** report the level (C1, C2 and so on) that the text's features match, as a lens and not as a certified level. This is the default lens for any language without a test of its own here.
+
+### AP English Language, Argument essay (College Board)
+| Lens criterion | Kit criterion |
+|---|---|
+| Thesis | Task and position |
+| Evidence and Commentary | The argument (evidence, warrant) |
+| Sophistication | Register and genre, and the argument |
+
+- **Top level:** a defensible thesis, and specific evidence for every claim in the line of reasoning. Commentary consistently explains how the evidence supports that reasoning, and the thinking is sophisticated or shows a complex understanding of the rhetorical situation.
+- **Also check:** every piece of evidence has a sentence saying how it supports the claim. That sentence is the warrant, in plainer words.
 
 ### AAC&U Written Communication VALUE rubric
-- **Levels:** Capstone 4; Milestones 3 and 2; Benchmark 1.
-- **Criteria:** Context of and Purpose for Writing; Content Development; Genre and Disciplinary Conventions; Sources and Evidence ("skillful use of high-quality, credible, relevant sources"); Control of Syntax and Mechanics.
-- **Adds:** *Genre and Disciplinary Conventions* and *Sources and Evidence* as criteria of writing quality, which suits academic work better than an exam rubric does.
-- **Source:** AAC&U Written Communication VALUE rubric (copy hosted by UC Davis), read 16 November 2026.
+| Lens criterion | Kit criterion |
+|---|---|
+| Context of and Purpose for Writing | Task and position |
+| Content Development | The argument |
+| Genre and Disciplinary Conventions | Register and genre |
+| Sources and Evidence | The argument (evidence) |
+| Control of Syntax and Mechanics | Lexical resource; Grammatical range and accuracy |
+
+- **Top level (Capstone 4):** skilful use of high-quality, credible, relevant sources, and command of the conventions of the discipline.
+- **Also check:** whether the sources are of the right kind and quality for each claim (`argument-model.md` §3).
 
 ---
 
 ## German
 
-### Goethe-Zertifikat C1 (Goethe-Institut), Schreiben
-- **Levels:** A–E per criterion; E on *Aufgabenerfüllung* scores the task 0.
-- **Criteria:** **Aufgabenerfüllung** (task fulfilment: every required language function covered, in appropriate content and length); **Register, soziokulturelle Angemessenheit** (register and sociocultural appropriateness: suited to the situation and reader); **Kohärenz** (coherence: structure and logic consistently effective, parts flexibly linked); **Wortschatz** (vocabulary: broad, differentiated range; isolated slips do not disturb reading); **Strukturen** (structures: morphology, syntax and spelling, same standard).
-- **Earlier edition:** the 2014 Modellsatz used four criteria: Inhaltliche Vollständigkeit, Textaufbau und Kohärenz, Ausdrucksfähigkeit, Korrektheit.
-- **Source:** Goethe-Institut, *Goethe-Zertifikat C1 Modular, Modellsatz*, 2nd ed. (February 2024); *Goethe-Zertifikat C1 Modellsatz* (October 2014). Read 16 November 2026.
+### Goethe-Zertifikat C1, Schreiben (Goethe-Institut)
+| Lens criterion | Kit criterion |
+|---|---|
+| Aufgabenerfüllung (task fulfilment) | Task and position |
+| Register, soziokulturelle Angemessenheit (register and sociocultural appropriateness) | Register and genre |
+| Kohärenz (coherence) | Coherence and cohesion |
+| Wortschatz (vocabulary) | Lexical resource |
+| Strukturen (structures: morphology, syntax, spelling) | Grammatical range and accuracy |
 
-### TestDaF (Gesellschaft für Akademische Studienvorbereitung und Testentwicklung), Schriftlicher Ausdruck
-- **Guiding questions:** *Wie wirkt der Text beim Lesen?* (readability; whether ideas can be followed without contradictions or jumps; introduction, transitions, conclusion); *Wie wurde die Aufgabe inhaltlich bearbeitet?* (all points covered; information summarised accurately; given opinions restated in the writer's own words; arguments justified, pros and cons *reasoned rather than merely listed*; objectivity); *Mit welchen sprachlichen Mitteln wurde der Text geschrieben?* (cohesion, syntax, vocabulary, accuracy).
-- **Adds:** restating others' positions in one's own words, and weighing rather than listing arguments: both central to fair treatment of opposing scholarship.
-- **Source:** TestDaF, "Testauswertung" page, read 16 November 2026. The page does not give the level descriptors for writing.
+- **Top level:** every required function is covered, in appropriate content and length. The register suits the reader. The structure and logic are consistently effective. Vocabulary is broad and differentiated, and isolated slips do not disturb reading.
+
+### TestDaF, Schriftlicher Ausdruck
+| Lens criterion | Kit criterion |
+|---|---|
+| Wie wirkt der Text beim Lesen? (how the text reads) | Coherence and cohesion |
+| Wie wurde die Aufgabe inhaltlich bearbeitet? (how the task was handled) | Task and position, and the argument |
+| Mit welchen sprachlichen Mitteln? (language used) | Lexical resource; Grammatical range and accuracy |
+
+- **Top level:** the reader can follow the ideas without contradictions or jumps. Every point is covered. Given opinions are restated in the writer's own words. Arguments are weighed, not merely listed.
+- **Also check:**
+  - whether opposing positions are restated fairly and in the writer's own words;
+  - whether pros and cons are weighed against each other.
+- **Caveat:** TestDaF does not publish level descriptors for writing, so judge only against the questions above.
 
 ## French
 
-### DALF C1 (France Éducation international), Production écrite
-Two tasks, each out of 12.5 points.
-- **Essai argumenté:** *Réalisation de la tâche : essai* (2.5: clear, fluent argument with developed arguments and concrete examples; point of view presented convincingly); *Cohérence et cohésion* (2.5); *Adéquation sociolinguistique* (2.5: level of formality adjusted and maintained; strategies to engage the reader); *Lexique* (2.5); *Morphosyntaxe* (2.5).
-- **Synthèse:** *Respect de la consigne de longueur* (0.5); *Respect de la règle d'objectivité* (1.5: nothing added to or altered in the source texts); *Réalisation de la tâche : synthèse* (2.5); *Cohérence et cohésion* (2.5); *Lexique* (3); *Morphosyntaxe* (2.5).
-- **Adds:** the *règle d'objectivité*: a synthesis of sources must not add to or change them. This is the language-test form of the kit's "interpolated" support label.
-- **Source:** DALF C1 *grilles de production écrite* (copy published by delfdalf.ch; undated), read 16 November 2026. France Éducation international announced revised DELF and DALF grids in October 2022; check which grid applies.
+### DALF C1, Production écrite (France Éducation international)
+Use the *essai* grid for an argued text, and the *synthèse* grid for a summary of sources.
+
+| Lens criterion (essai) | Kit criterion |
+|---|---|
+| Réalisation de la tâche (task achievement) | Task and position, and the argument |
+| Cohérence et cohésion (coherence and cohesion) | Coherence and cohesion |
+| Adéquation sociolinguistique (sociolinguistic appropriateness) | Register and genre |
+| Lexique (vocabulary) | Lexical resource |
+| Morphosyntaxe (grammar) | Grammatical range and accuracy |
+
+The *synthèse* grid adds two criteria:
+- **Respect de la consigne de longueur** (length): the required length is kept.
+- **Respect de la règle d'objectivité** (objectivity): nothing is added to the source texts or changed in them.
+
+- **Top level (essai):** a clear, fluent argument with developed arguments and concrete examples. The point of view is presented convincingly. The level of formality is set and held.
+- **Also check:** in a synthesis, any sentence that goes beyond its sources. This is the kit's *Interpolated* finding.
+- **Caveat:** France Éducation international announced revised grids in October 2022. The grid read for this entry is undated.
 
 ---
 
-## Crosswalk
-
-How the criteria line up. Read across a row to find what each rubric calls the same quality. Capitalised entries are the rubric's own criterion names; lower-case entries are features its descriptors mention where it has no named criterion; a dash means the rubric does not address the quality in the material read.
-
-| Kit criterion | IELTS | TOEFL | GRE | Cambridge | PTE | CEFR grid | AP Lang | VALUE | Goethe C1 | TestDaF | DALF C1 |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Argument (claim, reasons, evidence, warrant) | Task Response (position, support) | elaboration: explanation, example, detail | analysis; reasons and examples | Content | Content; Development, structure and coherence | Argument | Thesis; Evidence and Commentary | Content Development; Sources and Evidence | Aufgabenerfüllung | argumentation (task treatment) | Réalisation de la tâche |
-| Task and position | Task Response | relevant contribution | position; task directions | Content | Content; Form | Overall | Thesis | Context of and Purpose for Writing | Aufgabenerfüllung | all points covered | Réalisation de la tâche; Respect de la consigne |
-| Coherence and cohesion | Coherence and Cohesion | — | focus and organisation | Organisation | Development, structure and coherence | Coherence | line of reasoning | — | Kohärenz | readability; structure | Cohérence et cohésion |
-| Lexical resource | Lexical Resource | range of vocabulary | language control | Language | Vocabulary range; General linguistic range | Range | — | Control of Syntax and Mechanics | Wortschatz | vocabulary | Lexique |
-| Grammatical range and accuracy | Grammatical Range and Accuracy | variety of sentence structures; errors | grammar errors | Language | Grammar; Spelling | Accuracy | — | Control of Syntax and Mechanics | Strukturen | syntax; accuracy | Morphosyntaxe |
-| Register and genre | — | — | — | Communicative Achievement | — | style (in Overall) | Sophistication | Genre and Disciplinary Conventions | Register, soziokulturelle Angemessenheit | objectivity | Adéquation sociolinguistique |
-| Fidelity to sources | — | — | — | — | — | — | — | Sources and Evidence | — | given opinions restated in own words | Respect de la règle d'objectivité |
-
-## What the other rubrics add to the kit's check
-
-- **Register and genre** (Cambridge, Goethe, DALF, VALUE): when the user uses one of these lenses, report register separately. Otherwise treat it under lexical resource.
-- **Elaboration and commentary** (TOEFL, AP): every reason needs its explanation; evidence needs a sentence saying how it supports the claim.
-- **Weighing, not listing** (TestDaF, GRE): pros and cons must be reasoned against each other.
-- **Fidelity to sources** (DALF synthèse, TestDaF, VALUE): a summary of sources adds nothing and changes nothing.
-- **Conditions and challenges** (GRE Issue instructions): say when the claim would not hold, and meet the strongest challenge.
-
 ## Not yet covered
 
-The Spanish DELE (Instituto Cervantes), Italian (CILS, CELI), Chinese (HSK), Duolingo English Test and others are not included, because their current writing criteria could not be read from a primary source when this file was written. To add one, record the owner, task, scale, official criterion names, a short summary of the top descriptor, what it adds, and the source with its version and the date read.
+The following are not included, because their current writing criteria could not be read from a primary source:
+- Spanish: DELE;
+- Italian: CILS, CELI;
+- Chinese: HSK;
+- the Duolingo English Test.
+
+For these, use the CEFR grid. To add a lens, give its official criteria and the kit criterion each draws on, a summary of the top level, the "Also check" points, and the source's version and date in `REFERENCES.md`.
 
 ---
 
@@ -1517,6 +1594,7 @@ Use only the files the project needs.
 | `source-ledger.md` | Each source, whether it was read, and what it supports | a source is checked |
 | `glossary.md` | Terms used in a settled sense | a term is defined or changed |
 | `documents-wanted.md` | Material still to obtain, by priority | a gap is found or filled |
+| `search-log.md` | What was searched, where, when, and what was left out | a search is run |
 | `adversarial-cycle-log.md` | Objections and responses in a review cycle | a cycle runs |
 
 Each decision, correction, claim and source has one home; other files point to it by ID. Draft prose goes in `draft.md` and topic research in `findings-*.md`. If the assistant cannot open a file, it says so rather than assuming what is in it.
@@ -1638,6 +1716,28 @@ Use stable IDs `D-001`, `D-002`, etc. This register is the canonical home of eac
 - Main source gaps: [GAPS]
 - Authorial decisions required: [QUESTIONS]
 - Last updated: [DATE]
+
+---
+
+# Reference template: search-log
+
+# Search Log
+
+Record each search, so that a claim about the state of the field, or that nothing was found, can be checked against what was actually searched. Sources found go in `source-ledger.md`, not here.
+
+## Scope
+- Question searched for:
+- Jurisdiction(s) and period:
+- Languages searched:
+- Exclusions:
+
+## Searches
+| Date | Database or source | Query or method | Filters and period | Screened | Kept (source IDs) | Limits |
+|---|---|---|---|---:|---|---|
+| [YYYY-MM-DD] | [DATABASE] | [QUERY] | [FILTERS] | [NUMBER] | [SRC-IDS] | [ACCESS OR COVERAGE GAP] |
+
+## Not searched
+- [Databases, languages or periods left out, and why]
 
 ---
 

@@ -38,6 +38,6 @@ Use this mode when the author already has a thesis, article idea, or several com
 5. **Run the claim-type tests** in `references/claim-type-tests.md`, choosing the smallest set that can expose the thesis's real weaknesses.
 6. **Give a verdict**: `green` (proceed, with remaining work), `yellow` (viable core; a specified change in scope, warrant, or framing is needed, with a revised thesis), or `red` (novelty or soundness fails materially; propose pivots). Do not average the ratings: novelty and soundness can each be decisive.
 
-Report: claim as assessed; bottom line; preemption map (closest work, overlap, remaining difference); the four ratings; surviving objections; best revised thesis; next research moves; and a research record (date, databases and tools used, representative queries, access limits).
+Report: claim as assessed; bottom line; preemption map (closest work, overlap, remaining difference); the four ratings; surviving objections; best revised thesis; next research moves; and a research record (date, databases and tools used, representative queries, access limits), kept in the project's `search-log.md` where the project has files.
 
 Never call a thesis novel because a search found nothing. Write "no preemption located in the sources searched as of [date]" and state the search's limits.

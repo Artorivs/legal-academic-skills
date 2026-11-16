@@ -29,9 +29,7 @@ Read the project brief and handover if available. Identify the deliverable, rese
 
 For pairs that are easily confused, use the "Telling similar skills apart" table in `SKILL_INDEX.md` at the repository root. Use at most the few skills materially required. When one skill explicitly calls for another, follow that dependency; otherwise avoid redundant audits.
 
-## Project records
-
-Where working files exist, read the handover and the relevant canonical records before changing them. Keep each substantive decision, correction, claim, and source in one authoritative register. Update dependent records after material changes. Do not claim to have modified a file unless the environment actually permits file editing and the change was made.
+Where the project keeps records, `project-continuity` governs how they are read and updated.
 
 ## Response discipline
 

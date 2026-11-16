@@ -1,8 +1,10 @@
 # The language rubric
 
-A scorecard for the quality of written scholarly English (or, with the relevant language pack, another language). Its four criteria follow the structure of the IELTS Writing band descriptors (public version): Task Response, Coherence and Cohesion, Lexical Resource, and Grammatical Range and Accuracy. The descriptors below are rewritten for academic legal writing and are this kit's own. **A score here is not an IELTS score, does not convert to one,** and must never be reported as one.
+The scorecard every check uses. It has four criteria on a nine-band scale, plus a fifth row for register when it is needed. The criteria follow the structure of the IELTS Writing band descriptors (public version): Task Response, Coherence and Cohesion, Lexical Resource, and Grammatical Range and Accuracy. The descriptors are this kit's own, rewritten for academic legal writing. **A band here is not an IELTS score, does not convert to one,** and is never reported as one.
 
-Score each criterion on the nine-point scale. Report the score with the observation that decided it, tied to a short quoted phrase from the text. Do not average the criteria into one number unless the user asks; when you do, round down to the nearest half point and say that the average hides which criterion is weakest.
+The scorecard works for any language. For a text not in British English, read the criteria with the language pack in `multilingual-legal-writing`. To report the result under another test's criteria, use `test-lenses.md`.
+
+Report each band with the observation that decided it and a short quoted phrase. Do not average the criteria into one number unless the user asks. If they do, round down to the nearest half band, and say that an average hides the weakest criterion.
 
 ---
 
@@ -76,9 +78,20 @@ In legal scholarship, check particularly: scope of negation and of qualifiers ("
 
 ---
 
-## Register and genre
+## Register and genre (when needed)
 
-The four criteria above treat register under lexical resource. Several other rubrics give it a criterion of its own (Cambridge *Communicative Achievement*, Goethe *Register, soziokulturelle Angemessenheit*, DALF *Adéquation sociolinguistique*, VALUE *Genre and Disciplinary Conventions*). When the user asks for one of those lenses, or when register is the main weakness, report it as a separate row: does the text follow the conventions of legal scholarship and of the target venue, and hold its intended reader? See `rubric-crosswalk.md`.
+Add this row when register is the main weakness, or when a lens has its own register criterion (`test-lenses.md`). Otherwise register counts under lexical resource.
+
+Does the text follow the conventions of legal scholarship and of its venue, and hold its intended reader?
+
+| Band | Descriptor |
+|---|---|
+| 9 | Fully in the register of the venue and discipline. Conventions such as citation, attribution and the tone towards opposing views are followed without effort. |
+| 7 | Register right throughout, with occasional lapses into informality, inflation or the conventions of another genre. |
+| 5 | Register uneven: journalistic, exam-like or advocacy phrasing in places; opposing views treated dismissively; conventions followed only in part. |
+| 3 | Register wrong for scholarship, for example polemic, a blog post or a client letter. |
+
+Use the even bands for texts that fall between two descriptors.
 
 ## Reporting
 
@@ -90,9 +103,10 @@ Use this table, then the findings:
 | Coherence and cohesion | | | |
 | Lexical resource | | | |
 | Grammatical range and accuracy | | | |
+| Register and genre (when needed) | | | |
 
 Rules for scoring:
 - Score what is on the page, not what the writer probably meant.
 - A band needs most of its descriptor, not one feature of it.
 - Errors that change legal meaning count more than errors of form: a wrong modal in a statement of law outweighs several article errors.
-- For a writer in a second language, name recurring patterns (for example, article use, or tense in reporting authority) and give one rule and two corrected examples for each, so the writer can fix the rest unaided.
+- A band reflects the whole text, not its worst sentence. Name the recurring pattern behind the errors, not each instance.
