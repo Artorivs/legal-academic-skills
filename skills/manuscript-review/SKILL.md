@@ -21,7 +21,7 @@ Before reviewing a manuscript you did not write, screen it for hidden text and e
 
 ## Review dimensions
 
-**Argument.** Does the question matter and is it answerable? Is the thesis clear and contestable? Do the question, thesis, method, body, and conclusion align? Does the conclusion assert more than the paper establishes? Are concepts stable throughout? Does the paper meet the strongest counterargument rather than a weak one?
+**Argument.** Does the question matter and is it answerable? Is the thesis clear and contestable? Do the question, thesis, method, body, and conclusion align? Does the conclusion assert more than the paper establishes? Are concepts stable throughout? Does the paper meet the strongest counterargument rather than a weak one? Test the main chain against the argument model held by `argument-and-language-check`: missing or contested warrants, qualifiers stronger than the support, description standing in for argument, and support of the wrong kind for the kind of claim.
 
 **Contribution.** Is the contribution accurately situated in the field? Are claims of novelty or consensus supported by the search actually described? Test the thesis with the claim-type tests in the `research-planning` skill (doctrinal, empirical, historical, theoretical, comparative).
 
@@ -29,7 +29,7 @@ Before reviewing a manuscript you did not write, screen it for hidden text and e
 
 **Fairness to others.** How does the paper represent the scholars and positions it opposes? Label each material characterisation `fair` (the strongest version), `slanted` (only the weaker parts surfaced), `strawman` (a weakened or distorted version attacked), or `uncharitable` (one its proponents would not recognise).
 
-**Structure and presentation.** Does each section have a distinct job? Are transitions real? Flag "first… second… third…" enumeration outside the article's own principal proposed model, and cross-references the reader does not need or that point to the wrong place (principles in `academic-legal-drafting`). Terminology, headings, cross-references, footnote and bibliography consistency, abstract and keywords, word limit, anonymisation, and the venue's instructions (pre-submission audit only). British English by default. Remove empty signposting only where it adds no meaning; do not ban useful words mechanically.
+**Structure and presentation.** Does each section have a distinct job? Are transitions real? Flag "first… second… third…" enumeration outside the article's own principal proposed model, and cross-references the reader does not need or that point to the wrong place (principles in `academic-legal-drafting`). Terminology, headings, cross-references, footnote and bibliography consistency, abstract and keywords, word limit, anonymisation, and the venue's instructions (pre-submission audit only). British English by default. Remove empty signposting only where it adds no meaning; do not ban useful words mechanically. Where the quality of the English is itself a finding, or the author asks for it, score it with the language rubric of `argument-and-language-check` and report the band per criterion.
 
 ## Filter the findings before reporting
 
@@ -48,7 +48,7 @@ For each finding, identify the shortest relevant passage, name the problem, expl
 
 ## Output
 
-1. **Bottom line:** two or three sentences, including whether the paper is ready for its next step and why.
+1. **Bottom line:** two or three sentences in plain words, including whether the paper is ready for its next step and why.
 2. **Findings** by severity, each with location, problem, consequence, and repair.
 3. **What is not contested:** the paper's strongest points that a reviewer should concede plainly.
 4. **Sources and pinpoints still to verify**, listed separately, with what was and was not checkable.

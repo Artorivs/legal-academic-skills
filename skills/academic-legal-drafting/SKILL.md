@@ -31,6 +31,10 @@ The only exception is the article's own principal proposed model: a test, framew
 
 **Keep cross-references to those the reader needs.** Phrases such as "as discussed in Part II", "see below", "as noted above", "as will be shown", and "see text to n 45" are justified only when the reader must locate where a defined term or a load-bearing step was established, or when the alternative is repeating a long analysis. Before adding one, ask whether moving the material to where it is needed, or restating the point in a clause, would serve the reader better. A cross-reference never substitutes for the argument itself; do not promise later discussion the article does not deliver; and every cross-reference that remains must point to a location that exists in the current draft.
 
+## Check before delivering
+
+Before handing over a drafted or rewritten passage, run the quick depth of `argument-and-language-check` on it yourself: does each paragraph make a claim, do its reasons pass the because test, is the warrant stated where a reader would dispute it, does the qualifier match the support, and is the strongest objection met? Fix what you can within the materials; report what you cannot as a gap.
+
 ## Revision output
 
 When asked for a rewrite, supply the complete revised passage, not only sentence-level observations. After it, briefly identify significant changes to structure or meaning, retained unresolved points, and source/pinpoint checks still required. Do not silently strengthen the author's claim or change the thesis to make the paragraph easier to write. When revising existing text, quotations, numbers, dates, citations, and pinpoints must come through unchanged unless the change is deliberate and reported.

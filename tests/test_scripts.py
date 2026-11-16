@@ -108,6 +108,25 @@ class ScriptTests(unittest.TestCase):
         result = run("build_bundle.py", "--check")
         self.assertEqual(result.returncode, 0, result.stderr)
 
+    def test_installer_copies_to_target(self):
+        target = self.dir / "agent-skills"
+        result = subprocess.run(["bash", str(SCRIPTS / "install-agent-skills.sh"), str(target)],
+                                capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        for skill in (ROOT / "skills").iterdir():
+            if skill.is_dir():
+                self.assertTrue((target / skill.name / "SKILL.md").is_file(), skill.name)
+
+    def test_installer_refuses_canonical_skills(self):
+        before = sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "skills").rglob("*"))
+        for target in (ROOT / "skills", ROOT / ".agents" / "skills"):
+            result = subprocess.run(["bash", str(SCRIPTS / "install-agent-skills.sh"), str(target)],
+                                    capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertIn("canonical", result.stderr)
+        after = sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "skills").rglob("*"))
+        self.assertEqual(before, after)
+
 
 if __name__ == "__main__":
     unittest.main()

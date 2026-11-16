@@ -1,6 +1,8 @@
 # Skill Index
 
-Thirteen skills, each for one kind of work. Use the smallest set that does the job; if it is unclear which applies, start with `academic-project-router`.
+Fourteen skills, each for one kind of work. You do not need to name them: describe the task and the assistant picks one. Use the smallest set that does the job; if it is unclear which applies, start with `academic-project-router`.
+
+The five most used are `argument-and-language-check`, `academic-legal-drafting`, `source-verification`, `legal-authority-analysis` and `manuscript-review`.
 
 ## By stage of a project
 
@@ -12,6 +14,7 @@ Thirteen skills, each for one kind of work. Use the smallest set that does the j
 | Checking sources | `source-verification` | Per-source record, or a manuscript-wide citation audit table |
 | Structuring the argument | `argument-mapping` | Argument tree, vulnerability table, claim register |
 | Writing | `academic-legal-drafting` | New or rewritten passages |
+| Checking and improving a passage | `argument-and-language-check` | Argument in standard form, language scorecard, corrected text, what to practise |
 | Writing in or across other languages | `multilingual-legal-writing` | Text or translation with a glossary and translator's notes |
 | Getting a critical read | `manuscript-review` | Severity-ranked report (desk, referee, or pre-submission) |
 | Revising under challenge | `adversarial-writing-cycle` | Revised text, response matrix, response letter to referees |
@@ -29,6 +32,8 @@ Thirteen skills, each for one kind of work. Use the smallest set that does the j
 | What has the field said, and where do I fit? | `literature-synthesis` | `research-planning` |
 | How does my own argument fit together, and where is it weakest? | `argument-mapping` | `manuscript-review` |
 | How would an editor or referee judge this manuscript? | `manuscript-review` | `argument-mapping` |
+| Is this paragraph's argument sound and its English good, and how do I fix it? | `argument-and-language-check` | `manuscript-review` |
+| Map my whole thesis and keep the claim register. | `argument-mapping` | `argument-and-language-check` |
 | I want one critical report. | `manuscript-review` | `adversarial-writing-cycle` |
 | I want critique, revision, and a retest, or I must answer real referees. | `adversarial-writing-cycle` | `manuscript-review` |
 | Write or rewrite this paragraph or section. | `academic-legal-drafting` | `manuscript-consolidation` |
@@ -36,7 +41,7 @@ Thirteen skills, each for one kind of work. Use the smallest set that does the j
 | The text, a source, or the readership is in another language or legal system. | `multilingual-legal-writing`, alongside the main skill | — |
 | Which skill should I use? | `academic-project-router` | — |
 
-The prose rules (British English default, no "first… second… third…" except for the article's own principal proposed model, cross-references only where needed) live in `academic-legal-drafting` and apply to every skill that produces prose.
+The prose rules (British English default, no "first… second… third…" except for the article's own principal proposed model, cross-references only where needed) live in `academic-legal-drafting` and apply to every skill that produces prose. The argument model and the language rubric live in `argument-and-language-check` and are shared by `argument-mapping`, `academic-legal-drafting`, `manuscript-review` and `adversarial-writing-cycle`.
 
 ## All skills
 
@@ -46,6 +51,7 @@ The prose rules (British English default, no "first… second… third…" excep
 - [`source-verification`](skills/source-verification/SKILL.md) — Check that a source exists, is the right document and version, and supports the exact sentence it is cited for: one source before relying on it, or every footnote, quotation, pinpoint, and bibliography entry in a manuscript. For what an authority means or how far it reaches, use legal-authority-analysis.
 - [`legal-authority-analysis`](skills/legal-authority-analysis/SKILL.md) — Interpret a case, statute, treaty, or administrative or international decision: what it holds, how it reasons, its binding force, limits, ambiguities, and competing readings. For whether a citation exists and supports a sentence, use source-verification.
 - [`argument-mapping`](skills/argument-mapping/SKILL.md) — Lay out the author's own thesis as linked claims, evidence, warrants, assumptions, and weakest links, before drafting or when restructuring, and keep the claim register. For a reader's judgment of a finished manuscript, use manuscript-review.
+- [`argument-and-language-check`](skills/argument-and-language-check/SKILL.md) — Check a passage, abstract, or short section for the quality of its argument (claim, reasons, evidence, warrant, objections) and its language (task, coherence, vocabulary, grammar): find the problems, score them, correct the text, and show how to improve. For a full referee-style report on a whole manuscript, use manuscript-review.
 - [`academic-legal-drafting`](skills/academic-legal-drafting/SKILL.md) — Write or rewrite passages: turn notes, sources, and outlines into connected academic legal prose, or revise a paragraph or section. Holds the kit's prose rules on style, enumeration, and cross-references. For restructuring or cutting a whole manuscript, use manuscript-consolidation.
 - [`multilingual-legal-writing`](skills/multilingual-legal-writing/SKILL.md) — Write, revise, or translate scholarship in any language other than British English or between languages, and use foreign-language sources, keeping legal meaning and the terminology of the right legal system, not just the right language.
 - [`manuscript-review`](skills/manuscript-review/SKILL.md) — Give a one-off critical assessment of a manuscript as a desk editor, referee, examiner, or pre-submission auditor, with findings ranked by severity. Produces a report, not revised text. For repeated critique-and-revision rounds, or answering real referee reports, use adversarial-writing-cycle.

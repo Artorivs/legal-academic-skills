@@ -1,25 +1,17 @@
-# Platform compatibility and packaging
+# Platform compatibility
 
-## Canonical source
+What is checked, and what is not. Platforms change their skill and plugin formats, so check a platform's current documentation before relying on a route marked "not tested".
 
-Keep one canonical copy of each reusable skill under `skills/<skill-name>/SKILL.md` unless the repository has deliberately chosen another canonical layout. A skill is a directory package: keep its `references/`, `scripts/`, and `assets/` alongside the `SKILL.md` when the skill depends on them.
+| Platform | How to install | What is checked |
+|---|---|---|
+| Claude Code | Plugin, from the marketplace or a local clone (README) | `claude plugin validate ./` passes. The skill files' metadata and links are checked in CI on every push. |
+| Claude, ChatGPT or Gemini projects | Paste `project-import/PROJECT_INSTRUCTIONS.md` and upload `PROJECT_UPLOAD_BUNDLE.md` | CI checks that the bundle matches the skills. Whether a platform follows a workflow from an uploaded file is **not tested**. Ask for a workflow by name if it is not used. |
+| Other agents that read Agent Skills | `bash scripts/install-agent-skills.sh TARGET_DIR` | The installer is tested to copy whole skill folders and to refuse the canonical `skills/` directory. Discovery in any particular agent is **not tested**. |
 
-## Agent Skills
+## Layout rules
 
-A minimal skill folder contains `SKILL.md` with YAML frontmatter including `name` and `description`. Optional files may include references, scripts, and assets. Follow the target host's current documentation for where it discovers skills; do not assume every host scans the same directory.
+- `skills/<name>/SKILL.md` is the one canonical copy of each skill. Its `references/` folder travels with it.
+- `.agents/skills` is a symbolic link to `skills/` for agents that look there. On Windows, Git may check it out as a plain file unless symlinks are enabled. In that case, copy the skills from `skills/`.
+- `.claude-plugin/plugin.json` is the plugin manifest. `.claude-plugin/marketplace.json` is the marketplace catalogue. Keep the two `version` fields identical.
 
-## Claude Code plugin
-
-The plugin manifest belongs at `.claude-plugin/plugin.json`. A plugin can bundle skills in `skills/` and specialist agents in `agents/`. The root `commands/` and `hooks/` directories are optional and should only be added when they contain working, documented functionality. Validate the manifest and test installation using the current Claude Code documentation before release.
-
-## Workspace-local skills
-
-`.agents/skills/` is used by some agent tools and workflows, but is not a universal discovery path. Treat it as a compatibility target, not as proof of cross-platform compatibility. The project installer should copy complete skill directories, not only `SKILL.md`, and should explain whether it overwrites existing folders.
-
-## Marketplace distribution
-
-A marketplace catalog is separate from the plugin manifest. Add a marketplace manifest only if you intend to maintain and publish a marketplace repository in the format currently required by Claude Code. Do not put a custom `.plugin` file forward as a native manifest unless a specific installer consumes it.
-
-## Compatibility claims
-
-Only claim support for platforms that have been tested. Maintain a table with platform/version, install route, discovery path, test date, and known limitations. Platform paths and packaging formats change; check upstream documentation during releases.
+Add a row to the table above only after testing the route, and say what was tested.

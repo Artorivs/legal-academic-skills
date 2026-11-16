@@ -1,93 +1,125 @@
 # Legal Academic Skills
 
-A skill kit for academic legal research and writing. It ships as a **Claude Code plugin**, as portable **Agent Skills** (`SKILL.md` workflows) for other runtimes, and as a consolidated **upload bundle** for AI Projects that do not natively load skills.
+Workflows that help an AI assistant do academic legal research and writing carefully: plan a project, read authorities, check citations, build and test an argument, draft, check argument and English, review, and hand a long project over between sessions.
 
-The kit is designed for administrative law, human rights, law and society, and public international law. It also supports doctrinal, comparative, theoretical, historical, empirical, socio-legal, and interdisciplinary work.
+Designed for administrative law, human rights, law and society, and public international law, and usable for doctrinal, comparative, theoretical, historical, empirical, socio-legal, and interdisciplinary work.
 
-> **Human responsibility.** These workflows help structure research, drafting, and checking. They do not certify that any output is legally or academically correct. Verify every authority, quotation, and proposition yourself before relying on it.
+> **You stay responsible.** These workflows structure the work; they do not certify that anything is legally or academically correct. Check every authority, quotation, and proposition yourself before relying on it.
 
-## Choose your install route
+---
 
-### A. Claude Code plugin (recommended)
+## Start here
 
-In Claude Code, add this repository as a marketplace and install the plugin:
+**1. Install** (pick one):
 
-```zsh
-/plugin marketplace add Artorivs/legal-academic-skills
-/plugin install legal-academic-skills@legal-academic-skills
-```
+- **Claude Code:** run these two commands.
+  ```zsh
+  /plugin marketplace add Artorivs/legal-academic-skills
+  /plugin install legal-academic-skills@legal-academic-skills
+  ```
+- **Claude, ChatGPT or Gemini Projects:** paste [`project-import/PROJECT_INSTRUCTIONS.md`](project-import/PROJECT_INSTRUCTIONS.md) into the project's instructions and upload [`project-import/PROJECT_UPLOAD_BUNDLE.md`](project-import/PROJECT_UPLOAD_BUNDLE.md).
 
-Skills are namespaced by the plugin, for example `legal-academic-skills:source-verification`. The plugin also provides two agents, `legal-manuscript-editor` and `legal-research-reviewer`.
+Other routes are under [More ways to install](#more-ways-to-install).
 
-To try it from a local clone without installing:
+**2. Say what you want in plain words.** You do not need to know the skill names: the assistant picks the right workflow. If it does not, name the workflow from the table below.
+
+**3. Paste or upload your text and sources.** The assistant checks only what it can actually see, and says so when it cannot see something.
+
+## What do you want to do?
+
+| I want to… | Say something like | You get back | Workflow |
+|---|---|---|---|
+| Check my paragraph's argument and English | "Check the argument and the English in this paragraph." | What is wrong and why, a scorecard, the corrected paragraph, and what to practise | `argument-and-language-check` |
+| Turn notes into prose | "Turn these notes and sources into a section on X." | A drafted passage with gaps marked | `academic-legal-drafting` |
+| Check my citations | "Check that every footnote in this section supports its sentence." | A table of each citation with what is wrong and the fix | `source-verification` |
+| Understand a judgment, statute or treaty | "What does this judgment hold, and how far does it reach?" | Holding, reasoning, limits, rival readings | `legal-authority-analysis` |
+| Plan a new project or test an idea | "Is this thesis new and worth writing?" | A project brief, or a green, yellow or red verdict with fixes | `research-planning` |
+| See where my argument is weakest | "Map my argument and show me the weakest link." | An argument tree and a table of weak points with repairs | `argument-mapping` |
+| Get a referee's view | "Review this as a referee for journal X." | Findings ranked by severity, and what is not in doubt | `manuscript-review` |
+| Revise under challenge, or answer referees | "Here are the referee reports; help me respond." | A response matrix, revised text, and a response letter | `adversarial-writing-cycle` |
+| Shorten or restructure | "Cut this to 10,000 words without losing the argument." | Restructured text and a log of every move | `manuscript-consolidation` |
+| Map the literature | "What has the field said about X, and where do I fit?" | A map of positions and gaps | `literature-synthesis` |
+| Write or translate in another language | "Translate this into Chinese for a Hong Kong readership." | Text plus a glossary and translator's notes | `multilingual-legal-writing` |
+| Pick up a long project | "Read the handover and tell me where we are." | Current state, next three actions, updated records | `project-continuity` |
+| Fix my method before evidence arrives | "Write a protocol for reading the inquiry report when it is published." | A dated protocol or codebook | `anticipatory-analysis` |
+| Not sure | "What should I do next with this draft?" | The workflows to use, in order | `academic-project-router` |
+
+More ready-to-use prompts: [`project-import/QUICK_PROMPTS.md`](project-import/QUICK_PROMPTS.md).
+
+## Reading the results
+
+Every result opens with a short **bottom line** in plain words. Tables and labels follow for those who want the detail. The labels you will see most often:
+
+| Label | Plain meaning |
+|---|---|
+| `critical` / `major` / `moderate` / `minor` | How much a problem matters: from "the argument fails" to "polish" |
+| `load-bearing` / `supporting` / `illustrative` | How much of the argument rests on a sentence or source |
+| `Direct support` / `Partial support` / `Interpolated` | Whether a source says what it is cited for. *Interpolated* means the draft added a detail the source does not contain |
+| `Inspected` / `Lead only` | Whether the assistant actually read the source, or only found a reference to it |
+| `[SOURCE TO VERIFY]`, `[PINPOINT TO VERIFY]`, `[SUPPORT NEEDED]` | A gap left visible on purpose instead of being filled with a guess |
+| Band 1–9 | Language scorecard level on one criterion. It is modelled on the IELTS band structure but is **not** an IELTS score |
+| Meets / close / below | How a text compares with the top level of a test you named (TOEFL, GRE, Cambridge, PTE, CEFR, AP, VALUE, Goethe, TestDaF, DALF). A lens, never that test's score |
+
+Every label, with where it is defined, is in [`docs/labels.md`](docs/labels.md).
+
+To see how the workflows, agents and records fit together, and why, read [`docs/how-it-works.md`](docs/how-it-works.md) (diagrams).
+
+## How much of the kit do you need?
+
+- **One task:** install, then ask. Nothing else is needed.
+- **An article over several sessions:** add [`templates/project-brief.md`](templates/project-brief.md) and [`templates/HANDOVER.md`](templates/HANDOVER.md), and ask the assistant to keep them up to date.
+- **A thesis or book:** use the full set in [`templates/`](templates/), which keeps one record each for decisions, corrections, claims and sources. See [`templates/README-project.md`](templates/README-project.md).
+
+---
+
+## All workflows
+
+The table above lists all fourteen. [`SKILL_INDEX.md`](SKILL_INDEX.md) arranges them by stage of a project and shows how to tell similar ones apart. The plugin also has two agents that review from a fresh context: `legal-manuscript-editor` and `legal-research-reviewer`.
+
+---
+
+## More ways to install
+
+### Claude Code from a local clone
 
 ```zsh
 git clone https://github.com/Artorivs/legal-academic-skills.git
 claude --plugin-dir ./legal-academic-skills
 ```
 
-Claude Cowork and the Claude desktop app also support plugins; check Anthropic's current documentation for how to add a GitHub marketplace or upload a zip of this repository.
+Skills are namespaced by the plugin, for example `legal-academic-skills:source-verification`. Claude Cowork and the Claude desktop app also support plugins; check Anthropic's current documentation for how to add a GitHub marketplace or upload a zip of this repository.
 
-### B. Native Agent Skills (other runtimes)
+### Other agents that read Agent Skills
 
-Each skill is a directory whose entry point is `SKILL.md`, following the open [Agent Skills format](https://agentskills.io/specification). For an agent or runtime that follows this convention, copy the chosen skill directories from `skills/` into that runtime's documented skill directory (for example a project-local `.agents/skills/` or `.claude/skills/` location). Keep each skill directory intact.
+Each skill is a directory whose entry point is `SKILL.md`, in the open [Agent Skills format](https://agentskills.io/specification). Copy the skill directories you want from `skills/` into your agent's skill directory, keeping each directory whole, or run:
 
-- `skills/` is the canonical source.
-- `.agents/skills` is a symbolic link to `../skills`, provided for tools that discover skills there. On Windows, Git may check it out as a plain text file unless symlink support is enabled; copy from `skills/` instead if that happens.
-- `scripts/install-agent-skills.sh` is a helper for copying skills. Inspect it before running.
+```bash
+bash scripts/install-agent-skills.sh /path/to/your/agent/skills
+```
 
-Runtime support varies. See `docs/compatibility.md` for notes.
+`skills/` is the canonical source. For the `.agents/skills` link and what has been checked on each platform, see [`docs/compatibility.md`](docs/compatibility.md).
 
-### C. AI Project upload (ChatGPT Projects, Claude Projects, Gemini, or similar)
+### AI Projects in detail
 
-1. Add `project-import/PROJECT_INSTRUCTIONS.md` to the project's instruction field, if the platform offers one.
-2. Upload `project-import/PROJECT_UPLOAD_BUNDLE.md` as the central project reference. It contains the project-wide rules, all workflows, templates, and quick prompts in one Markdown file.
-3. For a long project, also upload the relevant working templates from `templates/` and maintain them as project files.
-4. Start with a prompt from `project-import/QUICK_PROMPTS.md`.
+1. Paste `project-import/PROJECT_INSTRUCTIONS.md` into the project's instructions field.
+2. Upload `project-import/PROJECT_UPLOAD_BUNDLE.md`. It holds every workflow, reference, template and quick prompt in one file.
+3. For a long project, also upload the templates you will use from `templates/` and keep them as project files.
+4. If the platform limits file size, upload only the instructions and the workflows you need. A generic Project may not run a workflow just because it is in the bundle; ask for it by name ("use the argument-and-language-check workflow").
 
-If the platform has file limits, upload the instruction file and only the relevant workflow and template documents. A generic AI Project may not execute a workflow just because it is present in the bundle; invoke the workflow explicitly by name.
-
-## What's included
+## What's in the repository
 
 | Path | Contents |
 | --- | --- |
-| `skills/` | 13 independently loadable workflows (full index: [`SKILL_INDEX.md`](SKILL_INDEX.md)) |
+| `skills/` | The 14 workflows, each with its own `references/` where needed |
 | `agents/` | `legal-manuscript-editor`, `legal-research-reviewer` |
-| `templates/` | Registers, argument map, source ledger, project brief, handover |
-| `examples/` | Illustrative claim-evidence matrix and research log |
-| `evals/` | Human-review cases (citation fidelity, adverse authority, manuscript integrity, seeded errors) and machine-checkable regression cases |
-| `references/` | Legal research quality standards |
+| `templates/` | Project brief, handover, registers, argument map, source ledger, search log |
+| `evals/` | Human-review cases and machine-checkable regression cases |
 | `project-import/` | Instructions, upload bundle, and quick prompts for AI Projects |
-| `docs/compatibility.md` | Platform and packaging notes |
-| `scripts/` | Validator, installer, bundle builder, and standard-library helpers: `extract_docx.py` (body and footnotes, chunking), `integrity_manifest.py` (fixed-fact diff), `check_register_refs.py` (record IDs), `hidden_text_check.py` (hidden text in manuscripts) |
+| `docs/how-it-works.md` | Diagrams of routing, workflows, shared standards, the check, the adversarial cycle and project records, with the reasons for each design choice |
+| `docs/labels.md` | Every label the answers use, in plain words |
+| `docs/compatibility.md` | What has been checked on each platform |
+| `scripts/` | Validator, installer, bundle builder, and helpers: `extract_docx.py` (body and footnotes), `integrity_manifest.py` (fixed-fact diff), `check_register_refs.py` (record IDs), `hidden_text_check.py` (hidden text in manuscripts) |
 | `tests/` | Structure tests and script tests |
-
-## Included workflows
-
-Not sure which skill fits? See the stage table and "Telling similar skills apart" in [`SKILL_INDEX.md`](SKILL_INDEX.md).
-
-- `academic-project-router` — Pick and sequence the right skills when a request spans several kinds of work or the next step is unclear. Not needed when one skill obviously fits.
-- `research-planning` — Plan a new project (question, provisional thesis, scope, method, sources, stages), or judge whether an existing thesis or article idea is novel, useful, sound, and worth pursuing. Use before research or drafting starts. For the step-by-step logic of a thesis already chosen, use argument-mapping.
-- `literature-synthesis` — Map the scholarship on a question into positions, disagreements, methods, and gaps, and place the paper's contribution among them. For whether one specific thesis is already preempted, use research-planning.
-- `source-verification` — Check that a source exists, is the right document and version, and supports the exact sentence it is cited for: one source before relying on it, or every footnote, quotation, pinpoint, and bibliography entry in a manuscript. For what an authority means or how far it reaches, use legal-authority-analysis.
-- `legal-authority-analysis` — Interpret a case, statute, treaty, or administrative or international decision: what it holds, how it reasons, its binding force, limits, ambiguities, and competing readings. For whether a citation exists and supports a sentence, use source-verification.
-- `argument-mapping` — Lay out the author's own thesis as linked claims, evidence, warrants, assumptions, and weakest links, before drafting or when restructuring, and keep the claim register. For a reader's judgment of a finished manuscript, use manuscript-review.
-- `academic-legal-drafting` — Write or rewrite passages: turn notes, sources, and outlines into connected academic legal prose, or revise a paragraph or section. Holds the kit's prose rules on style, enumeration, and cross-references. For restructuring or cutting a whole manuscript, use manuscript-consolidation.
-- `multilingual-legal-writing` — Write, revise, or translate scholarship in any language other than British English or between languages, and use foreign-language sources, keeping legal meaning and the terminology of the right legal system, not just the right language.
-- `manuscript-review` — Give a one-off critical assessment of a manuscript as a desk editor, referee, examiner, or pre-submission auditor, with findings ranked by severity. Produces a report, not revised text. For repeated critique-and-revision rounds, or answering real referee reports, use adversarial-writing-cycle.
-- `adversarial-writing-cycle` — Run rounds of critique, author response, revision, and retest until the argument holds, or work through real referee reports and draft the response letter. Produces revised text and a response matrix. For a single critical report, use manuscript-review.
-- `manuscript-consolidation` — Restructure a whole manuscript or long section: remove repetition, reorder sections, standardise terms, fix transitions and cross-references, or meet a word limit by moving material to footnotes. For drafting or rewriting individual passages, use academic-legal-drafting.
-- `project-continuity` — Resume or hand over a long project across sessions or models: read and update the handover and registers, check them against the files, and write a cold-start handover.
-- `anticipatory-analysis` — Fix an analytical method before seeing the evidence, as a protocol for interpreting a future event or a codebook for coding many judgments, decisions, or statutes, then apply it without retrofitting.
-
-## Suggested use
-
-- **Small task:** project instructions plus one relevant workflow.
-- **Article drafting:** project instructions, project brief, argument map, claim/source ledger, and `academic-legal-drafting`.
-- **Critical revision:** add `adversarial-writing-cycle` and its log; use a separate reviewer conversation or model where practical.
-- **Long project:** keep a `HANDOVER.md`, stable IDs, decision/correction/claim/source registers, and refresh the handover at the end of each substantial session.
-- **Responding to referees:** use `adversarial-writing-cycle` in its external-reviews mode.
-- **Submission:** use `source-verification` in manuscript mode and `manuscript-review` in pre-submission mode, but retain human responsibility for legal correctness and final judgment.
 
 ## Validation
 
@@ -100,16 +132,16 @@ python3 scripts/build_bundle.py --check
 python3 -m unittest discover -s tests -v
 ```
 
-`claude plugin validate` checks the plugin and marketplace manifests. The Python validator checks skill folder names against frontmatter and confirms every skill has a description. These are structural checks, not proof of academic or legal correctness.
+These are structural checks, not proof of academic or legal correctness.
 
 ## Design reference
 
-The kit takes inspiration from the composable, task-specific skill approach in [mattpocock/skills](https://github.com/mattpocock/skills/tree/main): use a small skill for a clearly defined task instead of loading one giant procedure for every request. This repository is independently authored for academic legal work. It is not affiliated with Matt Pocock or his repository, and it does not copy their individual skill texts. See [`REFERENCES.md`](REFERENCES.md).
+The kit follows the composable, task-specific skill approach of [mattpocock/skills](https://github.com/mattpocock/skills/tree/main): a small skill for a clearly defined task instead of one giant procedure for every request. It is independently authored for academic legal work, is not affiliated with Matt Pocock or his repository, and does not copy their skill texts. The argument model and language rubric draw on the sources listed in [`REFERENCES.md`](REFERENCES.md).
 
 ## Licence
 
-Released under the GNU General Public License v3.0 only (`GPL-3.0-only`). See [`LICENSE`](LICENSE). Cite the upstream design reference in attribution and documentation, and do not imply endorsement or affiliation.
+GNU General Public License v3.0 only (`GPL-3.0-only`). See [`LICENSE`](LICENSE). Cite the upstream design reference in attribution and documentation, and do not imply endorsement or affiliation.
 
 ## Contributing and security
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for contribution guidelines and [`SECURITY.md`](SECURITY.md) for how to report a concern.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`SECURITY.md`](SECURITY.md).

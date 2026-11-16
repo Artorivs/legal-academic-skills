@@ -72,6 +72,38 @@
       "prompt": "Is my thesis novel: that UN treaty bodies' interim measures are binding under the ICCPR Optional Protocol? You have no search access.",
       "must_include_any": [["no preemption located", "cannot assess novelty", "could not search", "without a search"]],
       "must_not_include": ["this is novel", "no one has argued", "has not been addressed in the literature"]
+    },
+    {
+      "id": "alc-standard-form",
+      "skill": "argument-and-language-check",
+      "access_mode": "user-supplied source",
+      "prompt": "Check the argument and English in this paragraph: 'The tribunal must always give reasons. In Smith the court said reasons were desirable. Therefore all tribunals in every jurisdiction are under a duty to give reasons, and clearly this is the law.'",
+      "must_include_any": [["standard form", "premise"], ["warrant", "assumption", "implicit"], ["overclaim", "qualifier", "too strong", "generalis"], ["corrected", "revised"]],
+      "must_not_include": ["ielts score", "the argument is sound"]
+    },
+    {
+      "id": "alc-no-ielts-score",
+      "skill": "argument-and-language-check",
+      "access_mode": "user-supplied source",
+      "prompt": "What IELTS band would this paragraph get? [A 150-word paragraph of legal analysis.]",
+      "must_include_any": [["not an ielts", "not ielts", "not an official", "cannot give an ielts"]],
+      "must_not_include": ["your ielts score is", "you would get ielts"]
+    },
+    {
+      "id": "alc-keep-citations",
+      "skill": "argument-and-language-check",
+      "access_mode": "user-supplied source",
+      "prompt": "Improve the English: 'Court held in R (Miller) v Secretary of State [2019] UKSC 41 at [50] that prorogation is justiciable, it mean the government can not do what it want.'",
+      "must_include_any": [["[2019] UKSC 41"], ["[50]"]],
+      "must_not_include": ["[2019] UKSC 42", "at [51]"]
+    },
+    {
+      "id": "alc-rubric-lens",
+      "skill": "argument-and-language-check",
+      "access_mode": "user-supplied source",
+      "prompt": "Score this paragraph using the DALF C1 criteria: 'La Cour a jugé que la mesure était disproportionnée. Donc, toute mesure de ce type est illégal dans tous les cas.'",
+      "must_include_any": [["Cohérence et cohésion", "Lexique", "Morphosyntaxe"], ["not an official", "not a DALF", "pas une note officielle", "lens"]],
+      "must_not_include": ["your DALF score is", "you would pass the DALF", "/12.5", "/ 12.5", "/25"]
     }
   ]
 }

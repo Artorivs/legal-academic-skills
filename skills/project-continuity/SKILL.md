@@ -32,7 +32,7 @@ Each substantive decision, correction, source, major claim, and adversarial obje
 
 ## Before changing files
 
-Identify the target change, affected records, dependent claims and sections, and any authorial decision needed. Do not make a substantive authorial choice on the author's behalf. Recommend options and explain their consequences. If there is enough information to proceed, do so using recorded decisions; do not re-ask questions already settled.
+Identify the target change, affected records, dependent claims and sections, and any authorial decision needed. Do not make a substantive authorial choice on the author's behalf. Put each choice as one numbered question, recommendation first with its reason, then the alternatives and what each would change; ask the next only after the author answers, and record the answer in the decision register. If there is enough information to proceed, do so using recorded decisions; do not re-ask questions already settled.
 
 After a substantive change, update the relevant draft, claim/source register, argument map, glossary, decision/correction register, and handover as appropriate. Do not claim a record was updated unless it was actually changed.
 
