@@ -36,6 +36,28 @@ Notable changes to this project are recorded here. Follow a consistent release f
 - Root `.plugin` stub (unrecognised by Claude Code and out of date).
 - README-SUPPLEMENTAL.md.
 
+## 0.3.0 — 2026-11-16
+
+Easier to start with, and a new workflow for checking and improving argument and language.
+
+### Added
+
+- `argument-and-language-check`: finds, scores, corrects and teaches. Argument checked in standard form against a shared argument model (claim, reason, evidence, warrant, backing, qualifier, rebuttal; kinds of claim and evidence; validity and strength; a symptom-to-repair table). Language scored on four criteria in nine bands, modelled on the structure of the IELTS Writing band descriptors and rewritten for legal scholarship. Quick, standard and teaching depths.
+- Evaluation case 05 and automated cases for the new workflow.
+- Test that the installer refuses to overwrite the canonical skills.
+
+### Changed
+
+- README leads with a three-step start, a "What do you want to do?" table in plain words, a guide to reading the labels, and how much of the kit each size of project needs. Install detail moved lower.
+- Quick prompts regrouped by goal, each naming its workflow so it works in Projects that do not load skills.
+- Project instructions, router and `project-continuity`: the author need not name workflows; every answer opens with a plain bottom line; author decisions are asked one at a time with a recommendation first.
+- `argument-mapping`, `academic-legal-drafting`, `manuscript-review` and `adversarial-writing-cycle` use the shared argument model; drafting self-checks before delivering; review can score language with the rubric.
+- `SKILL_INDEX.md` names the five most-used workflows; `templates/README-project.md` says which templates each size of project needs.
+
+### Fixed
+
+- `scripts/install-agent-skills.sh` no longer deletes the canonical skills when run with its old default target, `.agents/skills`, which is a symlink to `skills/`. It now takes a target directory and refuses the canonical one.
+
 ## 0.2.0 — 2026-11-03
 
 Consolidates overlapping skills (15 → 13) and adds new methods. Invocations of removed skill names must be updated; see "Renamed and merged".

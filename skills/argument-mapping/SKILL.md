@@ -5,7 +5,7 @@ description: "Lay out the author's own thesis as linked claims, evidence, warran
 
 # Argument Mapping
 
-Make the structure of the reasoning visible before polishing its language.
+Make the structure of the reasoning visible before polishing its language. Use the shared argument model held by the `argument-and-language-check` skill (claim, reason, evidence, warrant, backing, qualifier, rebuttal; standard form; validity and strength) so that maps, reviews and checks use one vocabulary.
 
 ## Map each major step
 
@@ -15,7 +15,7 @@ Distinguish the central conclusion from descriptive subclaims, interpretive subc
 
 ## Test the chain
 
-Ask whether each conclusion follows from the preceding reasons, whether a hidden premise does too much work, whether a key term shifts meaning, whether the evidence is representative, whether the argument relies on an authority cited only at second hand, whether the counterargument attacks the actual thesis, and whether any inference confuses what law says with how institutions behave.
+Write each step in standard form, with implicit premises supplied and marked. Ask whether each reason passes the challenge test (does it answer "why should I accept that?") and the because test (does "claim, because reason" make sense), whether a deductive step has a counterexample and how strong an inductive step is, whether each conclusion follows from the preceding reasons, whether a hidden premise does too much work, whether a key term shifts meaning, whether the evidence is representative, whether the argument relies on an authority cited only at second hand, whether the counterargument attacks the actual thesis, and whether any inference confuses what law says with how institutions behave.
 
 Identify the weakest essential link and test whether the thesis survives if that link is narrowed or removed. Consider rival explanations and the strongest version of the opposing position. Trace dependencies: if one claim changes, which later claims, sections, and conclusions need revision?
 

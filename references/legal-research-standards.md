@@ -47,7 +47,7 @@ Do not infer that a case remains good law from its age, citation, or appearance 
 
 ## 6. Academic integrity and argument quality
 
-- Keep a visible chain from research question to method, evidence, analysis, and conclusion.
+- Keep a visible chain from research question to method, evidence, analysis, and conclusion. Each step should state a claim, give reasons that pass the because test, rest on evidence of the right kind for the claim, and carry a qualifier no stronger than its support (the argument model in the `argument-and-language-check` skill).
 - Distinguish original analysis from paraphrase, quotation, and synthesis of other scholars.
 - Do not fabricate sources, datasets, interviews, methods, results, or peer-review claims.
 - Preserve the author's intended position during editing unless asked to reconsider it; flag substantive changes.

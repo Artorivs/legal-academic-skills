@@ -14,6 +14,7 @@ Read the project brief and handover if available. Identify the deliverable, rese
 ## Route by task
 
 - Research question, scope, method, or source strategy; or whether an existing thesis is novel and worth pursuing → `research-planning`.
+- Whether a passage's argument holds and how good its English is; scoring, correcting, and teaching → `argument-and-language-check`.
 - What a case, treaty, statute, or decision holds and how far it reaches → `legal-authority-analysis`.
 - Whether a source exists and supports the sentence it is cited for, for one source or a whole manuscript's footnotes → `source-verification`.
 - Literature debate or state of scholarship → `literature-synthesis`.
@@ -33,5 +34,7 @@ For pairs that are easily confused, use the "Telling similar skills apart" table
 Where working files exist, read the handover and the relevant canonical records before changing them. Keep each substantive decision, correction, claim, and source in one authoritative register. Update dependent records after material changes. Do not claim to have modified a file unless the environment actually permits file editing and the change was made.
 
 ## Response discipline
+
+The author should not need to know the skill names. Choose the workflow from the request, say in one line which one you are using when it is not obvious, and proceed. Open with a short bottom line in plain words before any table or label. When a choice belongs to the author, ask one question at a time with your recommendation first.
 
 Deliver the requested work first. Separate the proposed text from editorial notes and items requiring verification. Be clear about which sources were inspected and which are only research leads. Do not claim that a task is complete merely because the prose reads well.

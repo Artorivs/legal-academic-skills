@@ -1,7 +1,7 @@
 # `.agents/` compatibility directory
 
-This directory is an installation target for runtimes that discover Agent Skills under `.agents/skills/`.
+`.agents/skills` is a symbolic link to the repository's top-level `skills/` directory, for runtimes that discover Agent Skills under `.agents/skills/`. Edit skills only in `skills/`.
 
-The canonical skill sources remain in the repository's top-level `skills/` directory. Run `bash scripts/install-agent-skills.sh` from the repository root to copy them here. The installer replaces only the corresponding skill folders in `.agents/skills/`; inspect local modifications before rerunning it.
+To install the skills into another project or agent, run `bash scripts/install-agent-skills.sh /path/to/target/skills` from this repository. The installer copies whole skill folders, replaces only folders with the same names, and refuses to run against this repository's own `skills/` directory.
 
-Each installed skill retains its own `SKILL.md` and any supporting files. Runtime discovery conventions vary, so consult the documentation for the agent you use.
+Runtime discovery conventions vary; consult the documentation for the agent you use.
