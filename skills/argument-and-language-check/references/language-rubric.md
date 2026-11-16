@@ -1,8 +1,8 @@
 # The language rubric
 
-A scorecard for the quality of written scholarly English (or, with the relevant language pack, another language). Its four criteria follow the structure of the IELTS Writing band descriptors (public version): Task Response, Coherence and Cohesion, Lexical Resource, and Grammatical Range and Accuracy. The descriptors below are rewritten for academic legal writing and are this kit's own. **A score here is not an IELTS score** and must never be reported as one.
+A scorecard for the quality of written scholarly English (or, with the relevant language pack, another language). Its four criteria follow the structure of the IELTS Writing band descriptors (public version): Task Response, Coherence and Cohesion, Lexical Resource, and Grammatical Range and Accuracy. The descriptors below are rewritten for academic legal writing and are this kit's own. **A score here is not an IELTS score, does not convert to one,** and must never be reported as one.
 
-Score each criterion on the nine-point scale. Report the score with the two or three observations that decided it, each tied to a quoted phrase from the text. Do not average the criteria into one number unless the user asks; when you do, round down to the nearest half point and say that the average hides which criterion is weakest.
+Score each criterion on the nine-point scale. Report the score with the observation that decided it, tied to a short quoted phrase from the text. Do not average the criteria into one number unless the user asks; when you do, round down to the nearest half point and say that the average hides which criterion is weakest.
 
 ---
 
@@ -17,7 +17,8 @@ Does the text do what this piece of writing is for, and hold a clear position th
 | 7 | Position clear throughout; main ideas developed and supported, with some over-generalisation or a supporting point that loses focus. |
 | 6 | Position present, but the conclusion is unclear, repeated, or weaker than the opening; some main ideas under-developed. |
 | 5 | Position stated but not developed; ideas limited; irrelevant detail; may not reach a conclusion. |
-| 4 and below | No clear position, or the text answers a different question from the one set. |
+| 4 | Position unclear or inconsistent; main ideas hard to identify. |
+| 1–3 | No position, or the text answers a different question from the one set. |
 
 In legal scholarship, check particularly: does the passage claim more than its evidence carries (see `argument-model.md` §8), and does it stay within the jurisdiction, period and question set?
 
@@ -32,7 +33,8 @@ Is the text organised so that the reader follows the reasoning, and are its conn
 | 7 | Clear progression; a central idea in each paragraph; connectives mostly appropriate, with some under- or over-use. |
 | 6 | Overall progression clear, but cohesion is mechanical ("Moreover… Furthermore… In addition…"), reference is sometimes unclear ("this", "it" with no clear antecedent), or paragraphing is not always logical. |
 | 5 | Some organisation but no overall progression; connectives inaccurate or over-used; repetition because the writer does not refer back or substitute. |
-| 4 and below | Ideas not arranged coherently; paragraphing absent or arbitrary. |
+| 4 | Ideas present but not arranged coherently; connectives rare or wrong. |
+| 1–3 | The reader cannot follow the sequence of ideas; paragraphing absent or arbitrary. |
 
 In legal scholarship, check particularly: whether the text moves from general to specific and makes its positive-to-critical turn (`argument-model.md` §7); connectives that state a false relation (*therefore* where nothing follows; *however* where nothing contrasts); enumeration ("first… second… third…") used in place of stating how points relate (see `academic-legal-drafting`); cross-references the reader does not need.
 
@@ -47,7 +49,8 @@ Is the vocabulary precise, natural and right for the legal system and register?
 | 7 | Enough range for precision; less common terms used with awareness of style and collocation; occasional errors in word choice. |
 | 6 | Adequate range; attempts at less common or technical vocabulary are sometimes inaccurate, but meaning is clear. |
 | 5 | Limited range; noticeable errors in word choice or word formation that cause the reader some difficulty. |
-| 4 and below | Vocabulary too limited or inaccurate to express the argument. |
+| 4 | Vocabulary limited and often inaccurate; meaning sometimes lost. |
+| 1–3 | Vocabulary too limited or inaccurate to express the argument. |
 
 In legal scholarship, check particularly:
 - **Terms of art:** a term used in a sense other than its settled legal sense (*jurisdiction*, *standing*, *ratio*, *proportionality*, *discretion*), or a term drawn from the wrong legal system.
@@ -66,7 +69,8 @@ Is the grammar accurate and varied enough to carry complex legal reasoning?
 | 7 | Variety of complex structures; frequent error-free sentences; good control of grammar and punctuation with a few errors. |
 | 6 | Mix of simple and complex sentences; some errors in grammar and punctuation that rarely obscure meaning. |
 | 5 | Limited range; complex sentences attempted but less accurate than simple ones; frequent errors that cause some difficulty. |
-| 4 and below | Errors predominate and obscure meaning. |
+| 4 | Very limited range; frequent errors that often obscure meaning. |
+| 1–3 | Errors predominate; meaning is mostly lost. |
 
 In legal scholarship, check particularly: scope of negation and of qualifiers ("not all decisions are reviewable" against "all decisions are not reviewable"); attachment of relative clauses in long sentences; tense when reporting authority (a court *held*; a statute *provides*); agreement across long subjects; punctuation that changes legal meaning (lists of conditions, *and* against *or*).
 
@@ -76,7 +80,7 @@ In legal scholarship, check particularly: scope of negation and of qualifiers ("
 
 Use this table, then the findings:
 
-| Criterion | Band | Deciding observations (quoted) | Most useful fix |
+| Criterion | Band | Deciding observation (quoted) | Most useful fix |
 |---|---|---|---|
 | Task and position | | | |
 | Coherence and cohesion | | | |

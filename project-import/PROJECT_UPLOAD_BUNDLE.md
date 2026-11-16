@@ -460,31 +460,39 @@ The two references hold the standards:
 - `references/argument-model.md`: the parts of an argument, kinds and functions of claim, kinds of evidence, standard form, validity and strength, organising claims across paragraphs, and a symptom-to-repair table.
 - `references/language-rubric.md`: a nine-band scorecard on four criteria (task and position; coherence and cohesion; lexical resource; grammatical range and accuracy), modelled on the structure of the IELTS Writing band descriptors and rewritten for legal scholarship.
 
-## Choose the depth
+## Before starting
 
-Ask nothing if the request makes it clear; otherwise default to **standard**.
+If no text was supplied (only a placeholder or a description), ask for the passage in one line and stop, answering in the same line any direct question the user asked (for example, about exam scores; see *Output*).
 
-- **Quick:** the three problems that matter most, and the corrected passage.
-- **Standard:** argument check and language scorecard, findings, corrected passage, and what to practise.
-- **Teaching:** standard, plus a short explanation of each pattern with two corrected examples, for a writer who wants to learn rather than only receive a fix.
+## Choose the depth and scope
 
-Use **argument only** or **language only** when the user asks for one.
+Decide from the request and the length of the text; do not ask.
+
+| Depth | Use when | Gives |
+|---|---|---|
+| **Quick** | The text is one paragraph or shorter, or the user says "quick", "just fix", or "improve the English" | Bottom line, up to three findings, corrected passage |
+| **Standard** | The text is several paragraphs, or the user asks to "check", "assess" or "score" it | Everything in *Output* |
+| **Teaching** | The user wants to learn, or says they write in a second language | Standard, plus each recurring pattern with a rule and two corrected examples from the text |
+
+Scope: "the English", "grammar", "language" → **language only**. "The argument", "the reasoning", "the logic" → **argument only**. Otherwise both. Depth sets which parts appear; scope then removes the parts that do not apply. State depth and scope in a few words at the top, so the user can ask for another.
+
+**Keep it in proportion.** Excluding the corrected passage, aim for about 150 words at quick depth and no more than about 600 at standard depth, whatever the length of the text; for a long text, report the most damaging findings and say how many lesser ones were left out. Say each problem once: the scorecard gives the band and the fix, and the findings do not repeat it.
 
 ## 1. Sense: read the passage as argument
 
 1. Say in one sentence what the passage is for (its job in the larger piece, if known).
-2. Rewrite its argument in standard form (`argument-model.md` §4): premises above the line, claim below, implicit premises added and marked *[implicit]*.
+2. Rewrite its argument in standard form (`argument-model.md` §4): premises above the line, claim below, implicit premises added and marked *[implicit]*. Supply only the implicit premises the conclusion actually needs, at most two or three; an implicit premise must be one the writer is plausibly relying on, not a weakness invented to be criticised.
 3. Name the kind of claim (§2) and the kind of each piece of evidence (§3).
 4. Check each part with its test: the claim is arguable; each reason passes the challenge and because tests; evidence is the right kind and passes its tests; the warrant would be accepted by the intended reader or is backed; the qualifier matches the support; the strongest objection is met.
 5. Judge the step: valid or strong, and how strong. Look for a counterexample.
 6. Check whether the passage argues at all, or only describes or explains (§6), and whether it synthesises sources or only summarises them (§7).
-7. For a section or introduction of several paragraphs, make a reverse outline (§7): one sentence per paragraph stating its claim and function, labelled general, narrowing or specific, with the positive-to-critical turn located.
+7. For a section or introduction of several paragraphs, make a reverse outline (§7): one line per paragraph stating its claim and function, labelled general, narrowing or specific, with the positive-to-critical turn located. Where a paragraph makes several distinct claims, or the paragraphs are one or two sentences long, outline sentence by sentence instead. In an introduction, a missing turn means the thesis has no stated gap to fill: report it as a finding and mark the place in the corrected text.
 
 Do not verify sources here. Where a finding depends on what an authority says, mark it `[SUPPORT TO CHECK]` and point to `source-verification`. Do not assess support from memory.
 
 ## 2. Sense: read the passage as language
 
-Score each criterion in `language-rubric.md` on its nine bands, with the quoted phrases that decided the score. Errors that change legal meaning (a wrong modal, the scope of a negation, *and* for *or*) weigh more than errors of form.
+Score each criterion in `language-rubric.md` on its nine bands, with one short quoted phrase that decided the score. Errors that change legal meaning (a wrong modal, the scope of a negation, *and* for *or*) weigh more than errors of form.
 
 For a language other than British English, apply the same criteria with the relevant pack in the `multilingual-legal-writing` skill.
 
@@ -492,16 +500,16 @@ For a language other than British English, apply the same criteria with the rele
 
 List findings in order of what most damages the passage. For each: the quoted words, the problem in plain terms, its effect on the reader, and the repair. Use the symptom table in `argument-model.md` §8 for argument faults. Keep each finding to two or three lines.
 
-Apply the sustainability test from `manuscript-review` before reporting: cut any finding the author could dismiss in one sentence.
+Before reporting, cut any finding the author could dismiss in one sentence, and any that a serious scholar would be embarrassed to press (the sustainability test of `manuscript-review`).
 
 ## 4. Correct
 
 Give the complete corrected passage, not fragments. Rules:
 
-- Keep the author's position. Repair the reasoning, do not replace the thesis. If the claim cannot be supported as stated, narrow its qualifier and say so; do not invent support.
+- Keep the author's position: its direction and subject stay the same. Where the support is too thin for the claim as stated, narrow the scope or the qualifier ("all tribunals" to "tribunals deciding rights"; "must" to "should") and say so. Never strengthen a claim, and never reverse it. If no honest narrowing is available, keep the claim, mark it, and say what support it needs.
 - Keep quotations, citations, pinpoints, numbers and dates exactly as they were.
-- Supply a missing reason or warrant only where the passage's own material supports it; otherwise insert `[REASON NEEDED: …]` or `[SUPPORT NEEDED: …]`.
-- Follow the prose rules in `academic-legal-drafting` (British English by default; no "first… second… third…" enumeration; cross-references only where needed).
+- Supply a missing reason or warrant only where the passage's own material supports it; otherwise insert `[REASON NEEDED: …]` or `[SUPPORT NEEDED: …]`. When more than two `NEEDED` markers are needed (`[SUPPORT TO CHECK]` markers do not count), the passage is not ready for correction: give the corrected language, keep the markers, and list what the author must supply.
+- Write in the kit's style: British English by default; connectives that state the real relation instead of "Moreover… Furthermore… In addition"; no "first… second… third…" enumeration; cross-references only where the reader needs them (the full rules are in `academic-legal-drafting`).
 
 ## 5. Improve
 
@@ -510,14 +518,16 @@ End with what to practise: the two or three patterns most worth fixing across th
 ## Output
 
 1. **Bottom line** in two sentences: the passage's main strength and the one change that would improve it most.
-2. **Argument** in standard form (and the reverse outline, for a multi-paragraph text), then a table: part | present? | problem | repair.
-3. **Language scorecard** (table from `language-rubric.md`).
-4. **Findings**, most damaging first.
+2. **Argument** in standard form (and the reverse outline, for a multi-paragraph text), with the kind of claim and whether the step is valid or how strong it is. No separate table of parts: each problem goes in the findings.
+3. **Language scorecard**: one row per criterion with the band, one quoted phrase, and the fix.
+4. **Findings**, most damaging first, argument and language together; each two or three lines.
 5. **Corrected passage.**
-6. **What changed**, briefly, and anything left for the author to decide or verify.
-7. **What to practise.**
+6. **For you to decide or check**: only what the author must supply, choose or verify.
+7. **What to practise**: two or three patterns.
 
-In quick depth, give only 1, 4 (three findings) and 5.
+Quick depth: 1, 4 (up to three findings) and 5, plus the claim and its main reason in one line when the argument is in scope. Within any depth, language only drops 2 and 6; argument only drops 3 and 7.
+
+**If asked for an IELTS (or other exam) score:** say plainly that this check cannot give one and its bands do not convert to one, because it uses the rubric's structure with its own descriptors for legal writing, and only an official examiner can award an exam band. Then offer the check itself.
 
 ## Limits
 
@@ -654,9 +664,9 @@ Single arguments have to be arranged into a line of reasoning.
 
 # The language rubric
 
-A scorecard for the quality of written scholarly English (or, with the relevant language pack, another language). Its four criteria follow the structure of the IELTS Writing band descriptors (public version): Task Response, Coherence and Cohesion, Lexical Resource, and Grammatical Range and Accuracy. The descriptors below are rewritten for academic legal writing and are this kit's own. **A score here is not an IELTS score** and must never be reported as one.
+A scorecard for the quality of written scholarly English (or, with the relevant language pack, another language). Its four criteria follow the structure of the IELTS Writing band descriptors (public version): Task Response, Coherence and Cohesion, Lexical Resource, and Grammatical Range and Accuracy. The descriptors below are rewritten for academic legal writing and are this kit's own. **A score here is not an IELTS score, does not convert to one,** and must never be reported as one.
 
-Score each criterion on the nine-point scale. Report the score with the two or three observations that decided it, each tied to a quoted phrase from the text. Do not average the criteria into one number unless the user asks; when you do, round down to the nearest half point and say that the average hides which criterion is weakest.
+Score each criterion on the nine-point scale. Report the score with the observation that decided it, tied to a short quoted phrase from the text. Do not average the criteria into one number unless the user asks; when you do, round down to the nearest half point and say that the average hides which criterion is weakest.
 
 ---
 
@@ -671,7 +681,8 @@ Does the text do what this piece of writing is for, and hold a clear position th
 | 7 | Position clear throughout; main ideas developed and supported, with some over-generalisation or a supporting point that loses focus. |
 | 6 | Position present, but the conclusion is unclear, repeated, or weaker than the opening; some main ideas under-developed. |
 | 5 | Position stated but not developed; ideas limited; irrelevant detail; may not reach a conclusion. |
-| 4 and below | No clear position, or the text answers a different question from the one set. |
+| 4 | Position unclear or inconsistent; main ideas hard to identify. |
+| 1–3 | No position, or the text answers a different question from the one set. |
 
 In legal scholarship, check particularly: does the passage claim more than its evidence carries (see `argument-model.md` §8), and does it stay within the jurisdiction, period and question set?
 
@@ -686,7 +697,8 @@ Is the text organised so that the reader follows the reasoning, and are its conn
 | 7 | Clear progression; a central idea in each paragraph; connectives mostly appropriate, with some under- or over-use. |
 | 6 | Overall progression clear, but cohesion is mechanical ("Moreover… Furthermore… In addition…"), reference is sometimes unclear ("this", "it" with no clear antecedent), or paragraphing is not always logical. |
 | 5 | Some organisation but no overall progression; connectives inaccurate or over-used; repetition because the writer does not refer back or substitute. |
-| 4 and below | Ideas not arranged coherently; paragraphing absent or arbitrary. |
+| 4 | Ideas present but not arranged coherently; connectives rare or wrong. |
+| 1–3 | The reader cannot follow the sequence of ideas; paragraphing absent or arbitrary. |
 
 In legal scholarship, check particularly: whether the text moves from general to specific and makes its positive-to-critical turn (`argument-model.md` §7); connectives that state a false relation (*therefore* where nothing follows; *however* where nothing contrasts); enumeration ("first… second… third…") used in place of stating how points relate (see `academic-legal-drafting`); cross-references the reader does not need.
 
@@ -701,7 +713,8 @@ Is the vocabulary precise, natural and right for the legal system and register?
 | 7 | Enough range for precision; less common terms used with awareness of style and collocation; occasional errors in word choice. |
 | 6 | Adequate range; attempts at less common or technical vocabulary are sometimes inaccurate, but meaning is clear. |
 | 5 | Limited range; noticeable errors in word choice or word formation that cause the reader some difficulty. |
-| 4 and below | Vocabulary too limited or inaccurate to express the argument. |
+| 4 | Vocabulary limited and often inaccurate; meaning sometimes lost. |
+| 1–3 | Vocabulary too limited or inaccurate to express the argument. |
 
 In legal scholarship, check particularly:
 - **Terms of art:** a term used in a sense other than its settled legal sense (*jurisdiction*, *standing*, *ratio*, *proportionality*, *discretion*), or a term drawn from the wrong legal system.
@@ -720,7 +733,8 @@ Is the grammar accurate and varied enough to carry complex legal reasoning?
 | 7 | Variety of complex structures; frequent error-free sentences; good control of grammar and punctuation with a few errors. |
 | 6 | Mix of simple and complex sentences; some errors in grammar and punctuation that rarely obscure meaning. |
 | 5 | Limited range; complex sentences attempted but less accurate than simple ones; frequent errors that cause some difficulty. |
-| 4 and below | Errors predominate and obscure meaning. |
+| 4 | Very limited range; frequent errors that often obscure meaning. |
+| 1–3 | Errors predominate; meaning is mostly lost. |
 
 In legal scholarship, check particularly: scope of negation and of qualifiers ("not all decisions are reviewable" against "all decisions are not reviewable"); attachment of relative clauses in long sentences; tense when reporting authority (a court *held*; a statute *provides*); agreement across long subjects; punctuation that changes legal meaning (lists of conditions, *and* against *or*).
 
@@ -730,7 +744,7 @@ In legal scholarship, check particularly: scope of negation and of qualifiers ("
 
 Use this table, then the findings:
 
-| Criterion | Band | Deciding observations (quoted) | Most useful fix |
+| Criterion | Band | Deciding observation (quoted) | Most useful fix |
 |---|---|---|---|
 | Task and position | | | |
 | Coherence and cohesion | | | |
