@@ -44,6 +44,7 @@ Easier to start with, and a new workflow for checking and improving argument and
 
 - `argument-and-language-check`: finds, scores, corrects and teaches. Argument checked in standard form against a shared argument model (claim, reason, evidence, warrant, backing, qualifier, rebuttal; kinds of claim and evidence; validity and strength; a symptom-to-repair table). Language scored on four criteria in nine bands, modelled on the structure of the IELTS Writing band descriptors and rewritten for legal scholarship. Functional claims, general-to-specific organisation, synthesis over summary and the positive-to-critical turn, from Link's *Scientific Writing for Publication*. Quick, standard and teaching depths.
 - `docs/how-it-works.md`: Mermaid diagrams of routing, the workflows across a project, shared standards, the argument-and-language check, the adversarial cycle and project records, each with its design rationale.
+- `argument-and-language-check`: a rubric crosswalk to TOEFL, GRE, Cambridge C1/C2, PTE, the CEFR written assessment grid, AP English Language, the AAC&U VALUE rubric, Goethe-Zertifikat C1, TestDaF and DALF C1, usable as scoring lenses (never as official scores), with a separate register-and-genre row where those rubrics have one.
 - Evaluation case 05 and automated cases for the new workflow.
 - Test that the installer refuses to overwrite the canonical skills.
 

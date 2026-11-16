@@ -13,6 +13,9 @@ Copy a prompt, replace the words in [BRACKETS], and paste your text or sources a
 **Teach me.**
 > Use argument-and-language-check in teaching depth. I am writing in English as a second language; explain each recurring pattern with a rule and two corrected examples from my text.
 
+**Through a test's rubric.**
+> Use argument-and-language-check with the [TOEFL / GRE / Cambridge C2 / CEFR / DALF C1 / Goethe C1 / TestDaF] criteria as the lens. I know this is not an official score.
+
 **Argument only.**
 > Use argument-and-language-check, argument only. Is there a claim, do the reasons support it, what is the unstated assumption, and does it answer the strongest objection?
 

@@ -76,6 +76,10 @@ In legal scholarship, check particularly: scope of negation and of qualifiers ("
 
 ---
 
+## Register and genre
+
+The four criteria above treat register under lexical resource. Several other rubrics give it a criterion of its own (Cambridge *Communicative Achievement*, Goethe *Register, soziokulturelle Angemessenheit*, DALF *Adéquation sociolinguistique*, VALUE *Genre and Disciplinary Conventions*). When the user asks for one of those lenses, or when register is the main weakness, report it as a separate row: does the text follow the conventions of legal scholarship and of the target venue, and hold its intended reader? See `rubric-crosswalk.md`.
+
 ## Reporting
 
 Use this table, then the findings:

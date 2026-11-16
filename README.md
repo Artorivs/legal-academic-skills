@@ -57,7 +57,7 @@ Every result opens with a short **bottom line** in plain words. Tables and label
 | `Direct support` / `Partial support` / `Interpolated` | Whether a source says what it is cited for. *Interpolated* means the draft added a detail the source does not contain |
 | `Inspected` / `Lead only` | Whether the assistant actually read the source, or only found a reference to it |
 | `[SOURCE TO VERIFY]`, `[PINPOINT TO VERIFY]`, `[SUPPORT NEEDED]` | A gap left visible on purpose instead of being filled with a guess |
-| Band 1–9 | Language scorecard level on one criterion. It is modelled on the IELTS band structure but is **not** an IELTS score |
+| Band 1–9 | Language scorecard level on one criterion. It is modelled on the IELTS band structure but is **not** an IELTS score. You can also ask for TOEFL, GRE, Cambridge, CEFR, AP, Goethe, TestDaF or DALF criteria as the lens; the result is never that test's official score |
 
 The full vocabulary is in [`references/legal-research-standards.md`](references/legal-research-standards.md).
 

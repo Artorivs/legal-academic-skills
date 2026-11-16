@@ -11,6 +11,7 @@ The two references hold the standards:
 
 - `references/argument-model.md`: the parts of an argument, kinds and functions of claim, kinds of evidence, standard form, validity and strength, organising claims across paragraphs, and a symptom-to-repair table.
 - `references/language-rubric.md`: a nine-band scorecard on four criteria (task and position; coherence and cohesion; lexical resource; grammatical range and accuracy), modelled on the structure of the IELTS Writing band descriptors and rewritten for legal scholarship.
+- `references/rubric-crosswalk.md`: the writing criteria of TOEFL, GRE, Cambridge, PTE, the CEFR grid, AP English Language, the AAC&U VALUE rubric, Goethe-Zertifikat, TestDaF and DALF, mapped to the kit's criteria.
 
 ## Before starting
 
@@ -25,6 +26,8 @@ Decide from the request and the length of the text; do not ask.
 | **Quick** | The text is one paragraph or shorter, or the user says "quick", "just fix", or "improve the English" | Bottom line, up to three findings, corrected passage |
 | **Standard** | The text is several paragraphs, or the user asks to "check", "assess" or "score" it | Everything in *Output* |
 | **Teaching** | The user wants to learn, or says they write in a second language | Standard, plus each recurring pattern with a rule and two corrected examples from the text |
+
+Lens: if the user names a test or framework (TOEFL, GRE, Cambridge, PTE, CEFR, AP, VALUE, Goethe, TestDaF, DALF), score the language with that rubric's own criterion names and scale from `rubric-crosswalk.md` instead of the default four, and say that the result is a lens, not that test's score. For a text in French or German with no lens named, use the DALF C1 or Goethe-Zertifikat C1 criteria; for another language with no test listed, use the CEFR grid.
 
 Scope: "the English", "grammar", "language" → **language only**. "The argument", "the reasoning", "the logic" → **argument only**. Otherwise both. Depth sets which parts appear; scope then removes the parts that do not apply. State depth and scope in a few words at the top, so the user can ask for another.
 
@@ -79,7 +82,7 @@ End with what to practise: the two or three patterns most worth fixing across th
 
 Quick depth: 1, 4 (up to three findings) and 5, plus the claim and its main reason in one line when the argument is in scope. Within any depth, language only drops 2 and 6; argument only drops 3 and 7.
 
-**If asked for an IELTS (or other exam) score:** say plainly that this check cannot give one and its bands do not convert to one, because it uses the rubric's structure with its own descriptors for legal writing, and only an official examiner can award an exam band. Then offer the check itself.
+**If asked for an IELTS, TOEFL, GRE or other exam score:** say plainly that this check cannot give one and its bands do not convert to one, because it uses the rubric's structure with its own descriptors for legal writing, and only an official examiner can award an exam band. Then offer the check itself.
 
 ## Limits
 
