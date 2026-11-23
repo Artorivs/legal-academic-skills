@@ -121,3 +121,7 @@ Single arguments have to be arranged into a line of reasoning.
 | Introduction states the topic's importance, then the thesis, with nothing between | No niche; missing positive-to-critical turn | Add the limitation in existing work that the thesis answers |
 | Paragraph's claim is "X is important" or "X raises issues" | No functional claim | Say what X causes, why it matters, what should be done, or where existing work stops |
 | "What the law says" used to prove "what institutions do" | Text-to-practice inference | Add evidence of practice, or restate as a claim about design |
+| "A landmark ruling", "a deeply flawed regime", with no source or criterion | Unsupported value judgement | Cite who makes the judgement, or state the criterion and argue for it; otherwise state the fact |
+| A key step rests on "a significant impact" or "various problems" | Vague support | Give the provision, case, figure or institution, or mark `[SUPPORT NEEDED]` |
+| Several theories named, none applied to the step | Theory used for decoration | Keep the one that explains the step and apply it |
+| *However*, *but* and *yet* in one paragraph | The paragraph turns several times and its claim is lost | Split it, with one turn at most in each paragraph |

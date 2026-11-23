@@ -22,7 +22,11 @@ Does the text do what this piece of writing is for, and hold a clear position th
 | 4 | Position unclear or inconsistent; main ideas hard to identify. |
 | 1–3 | No position, or the text answers a different question from the one set. |
 
-In legal scholarship, check particularly: does the passage claim more than its evidence carries (see `argument-model.md` §8), and does it stay within the jurisdiction, period and question set?
+In legal scholarship, check particularly:
+- whether the passage claims more than its evidence carries (`argument-model.md` §8), and stays within the jurisdiction, period and question set;
+- whether key arguments are developed with concrete, credible evidence or left vague;
+- value judgements that no cited source or argued criterion supports;
+- theories brought in that explain nothing the argument needs.
 
 ## Criterion 2. Coherence and cohesion
 
@@ -38,7 +42,15 @@ Is the text organised so that the reader follows the reasoning, and are its conn
 | 4 | Ideas present but not arranged coherently; connectives rare or wrong. |
 | 1–3 | The reader cannot follow the sequence of ideas; paragraphing absent or arbitrary. |
 
-In legal scholarship, check particularly: whether the text moves from general to specific and makes its positive-to-critical turn (`argument-model.md` §7); connectives that state a false relation (*therefore* where nothing follows; *however* where nothing contrasts); enumeration ("first… second… third…") used in place of stating how points relate (see `academic-legal-drafting`); cross-references the reader does not need.
+In legal scholarship, check particularly:
+- whether the text moves from general to specific and makes its positive-to-critical turn (`argument-model.md` §7);
+- connectives that state a false relation (*therefore* where nothing follows; *however* where nothing contrasts);
+- connectives in several consecutive sentences, or more than one turn in a paragraph;
+- route maps, signposting and cross-references the reader does not need;
+- summaries that repeat what the reader has just read;
+- enumeration ("first… second… third…") used in place of stating how points relate.
+
+The rules behind these checks are in `academic-legal-drafting`.
 
 ## Criterion 3. Lexical resource
 
@@ -58,7 +70,9 @@ In legal scholarship, check particularly:
 - **Terms of art:** a term used in a sense other than its settled legal sense (*jurisdiction*, *standing*, *ratio*, *proportionality*, *discretion*), or a term drawn from the wrong legal system.
 - **Modal and hedging precision:** *may / must / shall / should*; *held / observed / suggested*; *arguably / clearly*. The modal must match the source and the strength of the argument.
 - **Consistency:** one concept, one term, as fixed in the project glossary.
-- **Register:** inflated diction, filler, canned openings, and formulaic machine-generated phrasing (the kit's style rules in `academic-legal-drafting`).
+- **Vagueness:** "various issues", "a significant impact", "in many respects", where a specific provision, case, figure or institution is needed.
+- **Undefined and new terms:** a term of art, acronym, foreign term or uncommon proper noun not defined at first use; a coinage where an existing term would do.
+- **Register:** inflated diction, filler, canned openings, unsupported evaluative words, and predictable or formulaic phrasing (the prose rules in `academic-legal-drafting`).
 
 ## Criterion 4. Grammatical range and accuracy
 
@@ -74,7 +88,7 @@ Is the grammar accurate and varied enough to carry complex legal reasoning?
 | 4 | Very limited range; frequent errors that often obscure meaning. |
 | 1–3 | Errors predominate; meaning is mostly lost. |
 
-In legal scholarship, check particularly: scope of negation and of qualifiers ("not all decisions are reviewable" against "all decisions are not reviewable"); attachment of relative clauses in long sentences; tense when reporting authority (a court *held*; a statute *provides*); agreement across long subjects; punctuation that changes legal meaning (lists of conditions, *and* against *or*).
+In legal scholarship, check particularly: scope of negation and of qualifiers ("not all decisions are reviewable" against "all decisions are not reviewable"); attachment of relative clauses in long sentences; tense when reporting authority (a court *held*; a statute *provides*); agreement across long subjects; punctuation that changes legal meaning (lists of conditions, *and* against *or*). Also check for sentences that carry several steps of reasoning, stacked conditions, double negatives or nested qualifications, which should be split or simplified, and for sentences of uniform length and structure.
 
 ---
 

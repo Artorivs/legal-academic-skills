@@ -31,7 +31,20 @@ Never invent authorities, statutory or treaty provisions, case names, quotations
 
 ## Writing style
 
-Use British English by default. Write clearly, directly, and in natural scholarly prose. Prefer connected argument over a string of literature summaries. Avoid filler, canned openings and conclusions, repetitive restatement, inflated diction, and formulaic AI phrasing. Do not number points in prose ("first… second… third…") except for the elements of the article's own principal proposed model that are referred to across the article. Keep cross-references ("as discussed in Part II", "see below") to those the reader needs to locate a defined term or a load-bearing step. Do not ban a word mechanically if it is precise. Do not invent terminology for its own sake or imitate a named scholar's distinctive style. Preserve the author's intended thesis unless substantive revision is requested; explain material changes. When asked to check or improve writing, test the argument (claim, reasons, evidence, warrant, qualifier, strongest objection) as well as the language, using the `argument-and-language-check` workflow. In any other language, or across languages, identify the legal system as well as the language, follow the specified script, variety, terminology, and readership, and preserve legal meaning across translation.
+Use British English by default, in clear, natural scholarly prose. Follow these rules in everything you write or revise, and test drafts against them:
+
+- Every word, sentence and paragraph must do work. Delete restatement, closing summaries, canned openings and conclusions, filler and inflated diction.
+- Replace vague expressions with the specific provision, case, figure, date or institution. Develop key arguments with substantial, credible, authentic evidence and concrete detail; never invent detail to supply it.
+- Make no value judgement (*important*, *crucial*, *problematic*, *flawed*) unless a cited source makes it, or the passage argues for it against a stated criterion.
+- Use a connective only where the relation is not already clear, never in several consecutive sentences, and make at most one turn per paragraph.
+- Keep the logic simple: one main claim per sentence; no stacked conditions, double negatives or nested qualifications.
+- Introduce new terms sparingly. Define every term of art, acronym, foreign term or uncommon proper noun at first use, and keep one term per concept.
+- Use a theory only where it explains something the argument needs.
+- Vary sentence length and structure, and avoid predictable, formulaic phrasing. Do not rewrite text to evade AI-detection tools.
+- No route-map paragraph unless the venue requires one, no signposting ("as discussed above", "see below"), and a cross-reference only where the reader must find a defined term or load-bearing step.
+- No "first… second… third…" except for the elements of the article's own principal proposed model.
+
+Do not imitate a named scholar's style. Preserve the author's intended thesis unless substantive revision is requested, and explain material changes. When asked to check or improve writing, test the argument (claim, reasons, evidence, warrant, qualifier, strongest objection) as well as the language, using the `argument-and-language-check` workflow. In any other language, or across languages, identify the legal system as well as the language, follow the specified script, variety, terminology and readership, and preserve legal meaning across translation.
 
 ## Workflow and skills
 
@@ -505,7 +518,7 @@ Score each criterion in `language-rubric.md` on its nine bands, with one short q
 
 ## 3. Diagnose
 
-List findings in order of what most damages the passage. For each: the quoted words, the problem in plain terms, its effect on the reader, and the repair. Use the symptom table in `argument-model.md` §8 for argument faults. Keep each finding to two or three lines.
+List findings in order of what most damages the passage. For each: the quoted words, the problem in plain terms, its effect on the reader, and the repair. Use the symptom table in `argument-model.md` §8 for argument faults, and the prose rules in `academic-legal-drafting` for faults of style. Keep each finding to two or three lines.
 
 Before reporting, cut any finding the author could dismiss in one sentence, and any that a serious scholar would be embarrassed to press (the sustainability test of `manuscript-review`).
 
@@ -516,7 +529,7 @@ Give the complete corrected passage, not fragments. Rules:
 - Keep the author's position: its direction and subject stay the same. Where the support is too thin for the claim as stated, narrow the scope or the qualifier ("all tribunals" to "tribunals deciding rights"; "must" to "should") and say so. Never strengthen a claim, and never reverse it. If no honest narrowing is available, keep the claim, mark it, and say what support it needs.
 - Keep quotations, citations, pinpoints, numbers and dates exactly as they were.
 - Supply a missing reason or warrant only where the passage's own material supports it; otherwise insert `[REASON NEEDED: …]` or `[SUPPORT NEEDED: …]`. When more than two `NEEDED` markers are needed (`[SUPPORT TO CHECK]` markers do not count), the passage is not ready for correction: give the corrected language, keep the markers, and list what the author must supply.
-- Write in the kit's style: British English by default; connectives that state the real relation instead of "Moreover… Furthermore… In addition"; no "first… second… third…" enumeration; cross-references only where the reader needs them (the full rules are in `academic-legal-drafting`).
+- Follow the prose rules in `academic-legal-drafting`. In the corrected passage, cut what does no work, make vague phrases specific, drop evaluative words that no source or argued criterion supports, thin out connectives and turns, split sentences that carry several steps, define uncommon terms at first use, and remove signposting and numbered points.
 
 ## 5. Improve
 
@@ -665,6 +678,10 @@ Single arguments have to be arranged into a line of reasoning.
 | Introduction states the topic's importance, then the thesis, with nothing between | No niche; missing positive-to-critical turn | Add the limitation in existing work that the thesis answers |
 | Paragraph's claim is "X is important" or "X raises issues" | No functional claim | Say what X causes, why it matters, what should be done, or where existing work stops |
 | "What the law says" used to prove "what institutions do" | Text-to-practice inference | Add evidence of practice, or restate as a claim about design |
+| "A landmark ruling", "a deeply flawed regime", with no source or criterion | Unsupported value judgement | Cite who makes the judgement, or state the criterion and argue for it; otherwise state the fact |
+| A key step rests on "a significant impact" or "various problems" | Vague support | Give the provision, case, figure or institution, or mark `[SUPPORT NEEDED]` |
+| Several theories named, none applied to the step | Theory used for decoration | Keep the one that explains the step and apply it |
+| *However*, *but* and *yet* in one paragraph | The paragraph turns several times and its claim is lost | Split it, with one turn at most in each paragraph |
 
 ### Reference for argument-and-language-check: `references/language-rubric.md`
 
@@ -692,7 +709,11 @@ Does the text do what this piece of writing is for, and hold a clear position th
 | 4 | Position unclear or inconsistent; main ideas hard to identify. |
 | 1–3 | No position, or the text answers a different question from the one set. |
 
-In legal scholarship, check particularly: does the passage claim more than its evidence carries (see `argument-model.md` §8), and does it stay within the jurisdiction, period and question set?
+In legal scholarship, check particularly:
+- whether the passage claims more than its evidence carries (`argument-model.md` §8), and stays within the jurisdiction, period and question set;
+- whether key arguments are developed with concrete, credible evidence or left vague;
+- value judgements that no cited source or argued criterion supports;
+- theories brought in that explain nothing the argument needs.
 
 ## Criterion 2. Coherence and cohesion
 
@@ -708,7 +729,15 @@ Is the text organised so that the reader follows the reasoning, and are its conn
 | 4 | Ideas present but not arranged coherently; connectives rare or wrong. |
 | 1–3 | The reader cannot follow the sequence of ideas; paragraphing absent or arbitrary. |
 
-In legal scholarship, check particularly: whether the text moves from general to specific and makes its positive-to-critical turn (`argument-model.md` §7); connectives that state a false relation (*therefore* where nothing follows; *however* where nothing contrasts); enumeration ("first… second… third…") used in place of stating how points relate (see `academic-legal-drafting`); cross-references the reader does not need.
+In legal scholarship, check particularly:
+- whether the text moves from general to specific and makes its positive-to-critical turn (`argument-model.md` §7);
+- connectives that state a false relation (*therefore* where nothing follows; *however* where nothing contrasts);
+- connectives in several consecutive sentences, or more than one turn in a paragraph;
+- route maps, signposting and cross-references the reader does not need;
+- summaries that repeat what the reader has just read;
+- enumeration ("first… second… third…") used in place of stating how points relate.
+
+The rules behind these checks are in `academic-legal-drafting`.
 
 ## Criterion 3. Lexical resource
 
@@ -728,7 +757,9 @@ In legal scholarship, check particularly:
 - **Terms of art:** a term used in a sense other than its settled legal sense (*jurisdiction*, *standing*, *ratio*, *proportionality*, *discretion*), or a term drawn from the wrong legal system.
 - **Modal and hedging precision:** *may / must / shall / should*; *held / observed / suggested*; *arguably / clearly*. The modal must match the source and the strength of the argument.
 - **Consistency:** one concept, one term, as fixed in the project glossary.
-- **Register:** inflated diction, filler, canned openings, and formulaic machine-generated phrasing (the kit's style rules in `academic-legal-drafting`).
+- **Vagueness:** "various issues", "a significant impact", "in many respects", where a specific provision, case, figure or institution is needed.
+- **Undefined and new terms:** a term of art, acronym, foreign term or uncommon proper noun not defined at first use; a coinage where an existing term would do.
+- **Register:** inflated diction, filler, canned openings, unsupported evaluative words, and predictable or formulaic phrasing (the prose rules in `academic-legal-drafting`).
 
 ## Criterion 4. Grammatical range and accuracy
 
@@ -744,7 +775,7 @@ Is the grammar accurate and varied enough to carry complex legal reasoning?
 | 4 | Very limited range; frequent errors that often obscure meaning. |
 | 1–3 | Errors predominate; meaning is mostly lost. |
 
-In legal scholarship, check particularly: scope of negation and of qualifiers ("not all decisions are reviewable" against "all decisions are not reviewable"); attachment of relative clauses in long sentences; tense when reporting authority (a court *held*; a statute *provides*); agreement across long subjects; punctuation that changes legal meaning (lists of conditions, *and* against *or*).
+In legal scholarship, check particularly: scope of negation and of qualifiers ("not all decisions are reviewable" against "all decisions are not reviewable"); attachment of relative clauses in long sentences; tense when reporting authority (a court *held*; a statute *provides*); agreement across long subjects; punctuation that changes legal meaning (lists of conditions, *and* against *or*). Also check for sentences that carry several steps of reasoning, stacked conditions, double negatives or nested qualifications, which should be split or simplified, and for sentences of uniform length and structure.
 
 ---
 
@@ -963,7 +994,7 @@ For these, use the CEFR grid. To add a lens, give its official criteria and the 
 
 ## Workflow: academic-legal-drafting
 
-**Use when:** Write or rewrite passages: turn notes, sources, and outlines into connected academic legal prose, or revise a paragraph or section. Holds the kit's prose rules on style, enumeration, and cross-references. For restructuring or cutting a whole manuscript, use manuscript-consolidation.
+**Use when:** Write or rewrite passages: turn notes, sources, and outlines into connected academic legal prose, or revise a paragraph or section. Holds the kit's prose rules: concision, concrete evidence, supported value judgements, few transitions, simple logic, defined terms, no signposting or numbered points. For restructuring or cutting a whole manuscript, use manuscript-consolidation.
 
 # Academic Legal Drafting
 
@@ -979,23 +1010,28 @@ A well-formed paragraph generally makes a meaningful claim, develops its reasons
 
 Use quotations when the precise wording, framing, or interpretive choice matters. Otherwise paraphrase faithfully and cite the source. Avoid long strings of quotations. Distinguish description, interpretation, evaluation, and proposal. Preserve adverse evidence and meaningful qualifications.
 
-## Style
+## Prose rules
 
-Use British English by default. Prefer precise, direct, natural academic prose; clear verbs; concrete legal and institutional detail; and transitions that express the actual logical relationship. Avoid filler, canned openings, exaggerated novelty claims, repetitive conclusions, inflated diction, and formulaic AI phrases. Explain specialist terms where they first become material. Do not invent terminology merely to make an argument look original. Do not add deliberate mistakes or imitate a named scholar's distinctive style. Do not rewrite text to evade AI-detection tools or claim that text is undetectable; the aim is accurate, natural scholarship, not a classifier score.
+These rules apply to every skill that writes or revises prose, and every check and review tests against them.
 
-When writing in a language other than British English, or for a readership in another legal system, follow the `multilingual-legal-writing` skill and its language pack for script, variety, register, and jurisdiction-specific terminology.
+- **Every word has a job.** Delete any word, sentence, paragraph or summary that adds nothing. Common cases are restatement, a closing summary of what was just said, a canned opening or conclusion, filler, and inflated diction.
+- **Concrete, not vague.** Replace vague expressions ("various issues", "a significant impact", "in many respects") with the specific provision, case, figure, date or institution. Develop each key argument with substantial, credible and authentic evidence and concrete detail. Never invent a detail to make a passage concrete: if the material lacks it, mark `[SUPPORT NEEDED]`.
+- **No unsupported value judgements.** Use an evaluative word (*important*, *crucial*, *problematic*, *flawed*, *landmark*, *unjust*) only when a cited source makes that judgement, or when the passage itself argues for it against a stated criterion. Otherwise, state the fact and let it carry the weight.
+- **Few transitions and turns.** Use a connective (*therefore*, *however*, *moreover*, *thus*, *by contrast*) only where the relation between two sentences is not already clear. Never put one in several consecutive sentences. Make at most one turn (*however*, *but*, *yet*) in a paragraph; a paragraph that turns more often should be split.
+- **Simple logic.** Give each sentence one main claim. Avoid stacked conditions, double negatives, nested qualifications and long chains of *because*, *which* and *so that*. Split a sentence that carries more than one step of reasoning.
+- **Defined terms, few new ones.** Introduce a new term only when no existing one will do, and never to make an argument look original. At first use, define in plain words any term of art, acronym, foreign term or proper noun that a general legal reader may not know. Use one term for one concept throughout.
+- **Theories only where they explain.** Bring in a theory only where it explains something the argument needs. One framework applied properly is better than several named in passing. Do not cite theorists for decoration.
+- **Varied rhythm.** Vary sentence length and structure, and avoid predictable word choices, repeated sentence openings and formulaic phrasing. The aim is natural, readable prose. Do not rewrite text to evade AI-detection tools, and never claim that text is undetectable.
+- **No route maps or signposting.** Let the headings and the argument show the structure. Leave out the route-map paragraph ("This article proceeds in four parts"), unless the venue requires one; then keep it to one sentence. Leave out "as discussed above", "see below" and "as will be shown", unless the reader must find where a defined term or a load-bearing step was established. A cross-reference that remains must point to a place that exists in the current draft.
+- **No numbered points in prose.** Avoid "first… second… third…" and announced counts ("three considerations explain this"). State how each point relates to the one before. The one exception is the article's own principal proposed model, such as a test or set of criteria that the article advances and returns to: number or label its elements once and use the same labels throughout.
 
-## Enumeration and cross-references
+Use British English by default. Do not imitate a named scholar's distinctive style.
 
-**Do not number points in prose.** Avoid "first… second… third…", "firstly… secondly…", "the first reason… the second reason…", and announced counts such as "three considerations explain this". Numbering presents points as parallel, equal, and complete when they seldom are, and it replaces the relation between them with a count. State the relation instead: say how each point follows from, qualifies, strengthens, or competes with the one before.
-
-The only exception is the article's own principal proposed model: a test, framework, typology, or set of criteria that the article advances and that is referred to across the article. Number or label its elements once, define each, and use the same numbers or labels consistently wherever the article returns to them. Elements of someone else's test, a list of authorities, and the reasons for a single step are not the article's proposed model.
-
-**Keep cross-references to those the reader needs.** Phrases such as "as discussed in Part II", "see below", "as noted above", "as will be shown", and "see text to n 45" are justified only when the reader must locate where a defined term or a load-bearing step was established, or when the alternative is repeating a long analysis. Before adding one, ask whether moving the material to where it is needed, or restating the point in a clause, would serve the reader better. A cross-reference never substitutes for the argument itself; do not promise later discussion the article does not deliver; and every cross-reference that remains must point to a location that exists in the current draft.
+When writing in a language other than British English, or for a readership in another legal system, follow the `multilingual-legal-writing` skill and its language pack for script, variety, register and jurisdiction-specific terminology.
 
 ## Check before delivering
 
-Before handing over a drafted or rewritten passage, run the quick depth of `argument-and-language-check` on it yourself: does each paragraph make a claim, do its reasons pass the because test, is the warrant stated where a reader would dispute it, does the qualifier match the support, and is the strongest objection met? Fix what you can within the materials; report what you cannot as a gap.
+Before handing over a drafted or rewritten passage, run the quick depth of `argument-and-language-check` on it yourself. Check that each paragraph makes a claim, that its reasons pass the because test, that the warrant is stated where a reader would dispute it, that the qualifier matches the support, and that the strongest objection is met. Then check it against the prose rules above. Fix what you can within the materials, and report what you cannot as a gap.
 
 ## Revision output
 
@@ -1045,7 +1081,7 @@ Give each term an equivalence band:
 
 ## Scholarly prose
 
-Prefer natural, connected analysis in the target language to literal transfer of syntax. Follow the register of legal scholarship in the target readership, not that of legislation, judgments, or official documents. Avoid that language's formulaic AI prose (each pack lists common tells). Choose terminology by the specified legal system and readership, not by political or linguistic stereotype.
+Prefer natural, connected analysis in the target language to literal transfer of syntax. Follow the register of legal scholarship in the target readership, not that of legislation, judgments, or official documents. Avoid that language's formulaic AI prose (each pack lists common tells). Choose terminology by the specified legal system and readership, not by political or linguistic stereotype. Apply the prose rules in `academic-legal-drafting` in every language. Where a scholarly convention of the target language differs, such as an expected route-map paragraph, follow the venue and say so.
 
 ## Working with foreign-language sources
 
@@ -1262,7 +1298,7 @@ Before reviewing a manuscript you did not write, screen it for hidden text and e
 
 **Fairness to others.** How does the paper represent the scholars and positions it opposes? Label each material characterisation `fair` (the strongest version), `slanted` (only the weaker parts surfaced), `strawman` (a weakened or distorted version attacked), or `uncharitable` (one its proponents would not recognise).
 
-**Structure and presentation.** Does each section have a distinct job? Are transitions real? Flag "first… second… third…" enumeration outside the article's own principal proposed model, and cross-references the reader does not need or that point to the wrong place (principles in `academic-legal-drafting`). Terminology, headings, cross-references, footnote and bibliography consistency, abstract and keywords, word limit, anonymisation, and the venue's instructions (pre-submission audit only). British English by default. Remove empty signposting only where it adds no meaning; do not ban useful words mechanically. Where the quality of the English is itself a finding, or the author asks for it, score it with the language rubric of `argument-and-language-check` and report the band per criterion.
+**Structure and presentation.** Does each section have a distinct job? Are transitions real? Flag breaches of the prose rules in `academic-legal-drafting` where they affect the reader: redundant words, paragraphs and summaries; vague expressions where evidence is needed; value judgements no source or argued criterion supports; chains of connectives and repeated turns; sentences carrying several logical steps; undefined or needless new terms; theories that explain nothing; route maps and signposting; "first… second… third…" enumeration outside the article's own principal proposed model; and cross-references the reader does not need or that point to the wrong place. Terminology, headings, cross-references, footnote and bibliography consistency, abstract and keywords, word limit, anonymisation, and the venue's instructions (pre-submission audit only). British English by default. Remove empty signposting only where it adds no meaning; do not ban useful words mechanically. Where the quality of the English is itself a finding, or the author asks for it, score it with the language rubric of `argument-and-language-check` and report the band per criterion.
 
 ## Filter the findings before reporting
 
@@ -1417,13 +1453,13 @@ Before editing, list the manuscript's fixed facts: every quotation, number, date
 
 ## Diagnose before editing
 
-Read the whole relevant unit and identify its function in the paper. Mark repeated propositions, duplicative literature summaries, sections that perform the same task, terms used inconsistently, unsupported leaps, paragraphs whose evidence does not support their conclusion, unnecessary headings, missing transitions, and qualifications that are repeated because the underlying structure is unclear.
+Read the whole relevant unit and identify its function in the paper. Mark repeated propositions, closing summaries that restate the section, route maps and signposting, duplicative literature summaries, sections that perform the same task, terms used inconsistently, unsupported leaps, paragraphs whose evidence does not support their conclusion, unnecessary headings, missing transitions, and qualifications that are repeated because the underlying structure is unclear.
 
 Distinguish harmful repetition from deliberate recurrence that reminds the reader of a key premise or links sections. Distinguish a removable sentence from a premise needed by a later inference. Do not remove adverse authority, methodological limits, or a qualification merely because it makes the thesis harder to state.
 
 ## Rebuild
 
-Propose a sequence in which each section has a distinct argumentative job. Combine material when it genuinely serves the same proposition; split it when distinct claims require different reasoning or evidence. Move background to the point where it becomes necessary. Make transitions state the actual relation between sections, not generic signposting. Standardise terms according to the glossary and project decisions. Remove numbered enumeration of points and cross-references the reader does not need, under the principles in the `academic-legal-drafting` skill; after restructuring, check that every remaining cross-reference still points to the right place.
+Propose a sequence in which each section has a distinct argumentative job. Combine material when it genuinely serves the same proposition; split it when distinct claims require different reasoning or evidence. Move background to the point where it becomes necessary. Make transitions state the actual relation between sections, not generic signposting. Standardise terms according to the glossary and project decisions. Apply the prose rules in the `academic-legal-drafting` skill: remove numbered enumeration, route maps, signposting and cross-references the reader does not need, and thin out connectives; after restructuring, check that every remaining cross-reference still points to the right place.
 
 ## Relegation to footnotes (word limits)
 
@@ -1783,6 +1819,9 @@ Copy a prompt, replace the words in [BRACKETS], and paste your text or sources a
 
 **Rewrite a passage.**
 > Use academic-legal-drafting to rewrite this passage. Keep my position, quotations, citations and numbers. Give the complete revised passage, then what changed.
+
+**Tighten the prose.**
+> Use academic-legal-drafting to apply the prose rules to this passage: cut what does no work, make vague phrases specific or mark them, remove unsupported value judgements, signposting and chains of transitions, simplify the logic, and define uncommon terms. Keep my position, quotations, citations and numbers.
 
 ## Check sources
 

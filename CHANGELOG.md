@@ -36,6 +36,26 @@ Notable changes to this project are recorded here. Follow a consistent release f
 - Root `.plugin` stub (unrecognised by Claude Code and out of date).
 - README-SUPPLEMENTAL.md.
 
+## 0.4.0 — 2026-11-23
+
+Stricter prose rules, applied by every workflow that writes, checks or reviews prose.
+
+### Changed
+
+- `academic-legal-drafting` holds one set of prose rules:
+  - every word has a job, with redundant words, paragraphs and summaries cut;
+  - concrete, credible evidence in place of vague expressions;
+  - no value judgement without a cited source or an argued criterion;
+  - few transitions, with at most one turn in a paragraph;
+  - simple logic, with one main claim per sentence;
+  - few new terms, and every uncommon term defined at first use;
+  - theories only where they explain;
+  - varied sentence length and structure;
+  - no route maps, signposting or numbered points.
+- The project instructions carry the same rules for Projects that do not load skills.
+- `argument-and-language-check`, its language rubric and argument model, `manuscript-review`, `manuscript-consolidation` and `multilingual-legal-writing` test for and apply the rules.
+- A quick prompt for tightening prose, and an automated eval case for the rules.
+
 ## 0.3.0 — 2026-11-16
 
 Easier to start with, and a new workflow for checking and improving argument and language.

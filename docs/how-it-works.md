@@ -82,7 +82,7 @@ flowchart TB
     subgraph STD["Defined once"]
         AMOD["Argument model<br/>claim · reason · evidence · warrant<br/>qualifier · rebuttal · functional claims"]
         LRUB["Language rubric<br/>4 criteria × 9 bands<br/>+ lenses for 10 other tests"]
-        PROSE["Prose rules<br/>British English · no 'first, second'<br/>needed cross-references only"]
+        PROSE["Prose rules<br/>concise · concrete · supported judgements<br/>few transitions · simple logic · defined terms<br/>no signposting or numbering"]
         LABELS["Label vocabulary<br/>access · status · level · support · salience"]
         SEV["Severity scale<br/>critical · major · moderate · minor"]
     end

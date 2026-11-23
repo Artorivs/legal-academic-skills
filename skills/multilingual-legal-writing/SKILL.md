@@ -41,7 +41,7 @@ Give each term an equivalence band:
 
 ## Scholarly prose
 
-Prefer natural, connected analysis in the target language to literal transfer of syntax. Follow the register of legal scholarship in the target readership, not that of legislation, judgments, or official documents. Avoid that language's formulaic AI prose (each pack lists common tells). Choose terminology by the specified legal system and readership, not by political or linguistic stereotype.
+Prefer natural, connected analysis in the target language to literal transfer of syntax. Follow the register of legal scholarship in the target readership, not that of legislation, judgments, or official documents. Avoid that language's formulaic AI prose (each pack lists common tells). Choose terminology by the specified legal system and readership, not by political or linguistic stereotype. Apply the prose rules in `academic-legal-drafting` in every language. Where a scholarly convention of the target language differs, such as an expected route-map paragraph, follow the venue and say so.
 
 ## Working with foreign-language sources
 

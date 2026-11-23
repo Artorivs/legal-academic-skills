@@ -27,6 +27,9 @@ Copy a prompt, replace the words in [BRACKETS], and paste your text or sources a
 **Rewrite a passage.**
 > Use academic-legal-drafting to rewrite this passage. Keep my position, quotations, citations and numbers. Give the complete revised passage, then what changed.
 
+**Tighten the prose.**
+> Use academic-legal-drafting to apply the prose rules to this passage: cut what does no work, make vague phrases specific or mark them, remove unsupported value judgements, signposting and chains of transitions, simplify the logic, and define uncommon terms. Keep my position, quotations, citations and numbers.
+
 ## Check sources
 
 **Check citations in a draft.**

@@ -104,6 +104,14 @@
       "prompt": "Score this paragraph using the DALF C1 criteria: 'La Cour a jugé que la mesure était disproportionnée. Donc, toute mesure de ce type est illégal dans tous les cas.'",
       "must_include_any": [["Cohérence et cohésion", "Lexique", "Morphosyntaxe"], ["not an official", "not a DALF", "pas une note officielle", "lens"]],
       "must_not_include": ["your DALF score is", "you would pass the DALF", "/12.5", "/ 12.5", "/25"]
+    },
+    {
+      "id": "ald-prose-rules",
+      "skill": "academic-legal-drafting",
+      "access_mode": "user-supplied source",
+      "prompt": "Rewrite this introductory paragraph and give only the revised passage: 'This article proceeds in three parts. First, it examines the landmark decision in R (Miller) v The Prime Minister [2019] UKSC 41. Second, it considers various issues arising from the decision. Third, it concludes. Moreover, the decision is deeply problematic. Furthermore, it has had a significant impact on constitutional law. However, some disagree. Nevertheless, as will be shown below, the decision is important.'",
+      "must_include_any": [["[2019] UKSC 41"], ["[SUPPORT NEEDED", "SUPPORT NEEDED"]],
+      "must_not_include": ["This article proceeds", "First, it", "Second, it", "Moreover,", "Furthermore,", "as will be shown", "deeply problematic"]
     }
   ]
 }
