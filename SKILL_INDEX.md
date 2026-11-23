@@ -41,7 +41,7 @@ The five most used are `argument-and-language-check`, `academic-legal-drafting`,
 | The text, a source, or the readership is in another language or legal system. | `multilingual-legal-writing`, alongside the main skill | — |
 | Which skill should I use? | `academic-project-router` | — |
 
-The prose rules (British English default, no "first… second… third…" except for the article's own principal proposed model, cross-references only where needed) live in `academic-legal-drafting` and apply to every skill that produces prose. The argument model and the language rubric live in `argument-and-language-check` and are shared by `argument-mapping`, `academic-legal-drafting`, `manuscript-review` and `adversarial-writing-cycle`.
+The prose rules live in `academic-legal-drafting` and apply to every skill that produces prose. They cover concision, concrete evidence, supported value judgements, few transitions, simple logic, defined terms, theories only where they explain, varied rhythm, and no route maps, signposting or numbered points. The argument model and the language rubric live in `argument-and-language-check` and are shared by `argument-mapping`, `academic-legal-drafting`, `manuscript-review` and `adversarial-writing-cycle`.
 
 ## All skills
 

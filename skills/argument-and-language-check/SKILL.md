@@ -51,7 +51,7 @@ Score each criterion in `language-rubric.md` on its nine bands, with one short q
 
 ## 3. Diagnose
 
-List findings in order of what most damages the passage. For each: the quoted words, the problem in plain terms, its effect on the reader, and the repair. Use the symptom table in `argument-model.md` §8 for argument faults. Keep each finding to two or three lines.
+List findings in order of what most damages the passage. For each: the quoted words, the problem in plain terms, its effect on the reader, and the repair. Use the symptom table in `argument-model.md` §8 for argument faults, and the prose rules in `academic-legal-drafting` for faults of style. Keep each finding to two or three lines.
 
 Before reporting, cut any finding the author could dismiss in one sentence, and any that a serious scholar would be embarrassed to press (the sustainability test of `manuscript-review`).
 
@@ -62,7 +62,7 @@ Give the complete corrected passage, not fragments. Rules:
 - Keep the author's position: its direction and subject stay the same. Where the support is too thin for the claim as stated, narrow the scope or the qualifier ("all tribunals" to "tribunals deciding rights"; "must" to "should") and say so. Never strengthen a claim, and never reverse it. If no honest narrowing is available, keep the claim, mark it, and say what support it needs.
 - Keep quotations, citations, pinpoints, numbers and dates exactly as they were.
 - Supply a missing reason or warrant only where the passage's own material supports it; otherwise insert `[REASON NEEDED: …]` or `[SUPPORT NEEDED: …]`. When more than two `NEEDED` markers are needed (`[SUPPORT TO CHECK]` markers do not count), the passage is not ready for correction: give the corrected language, keep the markers, and list what the author must supply.
-- Write in the kit's style: British English by default; connectives that state the real relation instead of "Moreover… Furthermore… In addition"; no "first… second… third…" enumeration; cross-references only where the reader needs them (the full rules are in `academic-legal-drafting`).
+- Follow the prose rules in `academic-legal-drafting`. In the corrected passage, cut what does no work, make vague phrases specific, drop evaluative words that no source or argued criterion supports, thin out connectives and turns, split sentences that carry several steps, define uncommon terms at first use, and remove signposting and numbered points.
 
 ## 5. Improve
 

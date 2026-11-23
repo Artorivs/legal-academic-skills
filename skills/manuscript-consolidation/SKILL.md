@@ -13,13 +13,13 @@ Before editing, list the manuscript's fixed facts: every quotation, number, date
 
 ## Diagnose before editing
 
-Read the whole relevant unit and identify its function in the paper. Mark repeated propositions, duplicative literature summaries, sections that perform the same task, terms used inconsistently, unsupported leaps, paragraphs whose evidence does not support their conclusion, unnecessary headings, missing transitions, and qualifications that are repeated because the underlying structure is unclear.
+Read the whole relevant unit and identify its function in the paper. Mark repeated propositions, closing summaries that restate the section, route maps and signposting, duplicative literature summaries, sections that perform the same task, terms used inconsistently, unsupported leaps, paragraphs whose evidence does not support their conclusion, unnecessary headings, missing transitions, and qualifications that are repeated because the underlying structure is unclear.
 
 Distinguish harmful repetition from deliberate recurrence that reminds the reader of a key premise or links sections. Distinguish a removable sentence from a premise needed by a later inference. Do not remove adverse authority, methodological limits, or a qualification merely because it makes the thesis harder to state.
 
 ## Rebuild
 
-Propose a sequence in which each section has a distinct argumentative job. Combine material when it genuinely serves the same proposition; split it when distinct claims require different reasoning or evidence. Move background to the point where it becomes necessary. Make transitions state the actual relation between sections, not generic signposting. Standardise terms according to the glossary and project decisions. Remove numbered enumeration of points and cross-references the reader does not need, under the principles in the `academic-legal-drafting` skill; after restructuring, check that every remaining cross-reference still points to the right place.
+Propose a sequence in which each section has a distinct argumentative job. Combine material when it genuinely serves the same proposition; split it when distinct claims require different reasoning or evidence. Move background to the point where it becomes necessary. Make transitions state the actual relation between sections, not generic signposting. Standardise terms according to the glossary and project decisions. Apply the prose rules in the `academic-legal-drafting` skill: remove numbered enumeration, route maps, signposting and cross-references the reader does not need, and thin out connectives; after restructuring, check that every remaining cross-reference still points to the right place.
 
 ## Relegation to footnotes (word limits)
 
